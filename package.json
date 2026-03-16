@@ -1,8 +1,8 @@
 {
-  "name": "ucsp-algorithm",
+  "name": "the-algorithm-by-reset",
   "version": "1.0.0",
   "type": "module",
-  "description": "UCSP Algorithm - Social Intelligence para Universidad Católica San Pablo",
+  "description": "The Algorithm by Reset - Social Intelligence Template for Digital Marketing Optimization",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

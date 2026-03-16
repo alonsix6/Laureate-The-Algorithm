@@ -1,6 +1,6 @@
-# Guía de Scrapers - UCSP Algorithm
+# Guía de Scrapers - The Algorithm by Reset
 
-Esta guía explica cómo funcionan los 3 scrapers de tendencias educativas del proyecto UCSP Algorithm.
+Esta guía explica cómo funcionan los 3 scrapers de tendencias del proyecto The Algorithm.
 
 ---
 
@@ -11,7 +11,7 @@ Esta guía explica cómo funcionan los 3 scrapers de tendencias educativas del p
 - Independientes de cuentas personales
 - Sin necesidad de tokens privados (actualmente)
 - Datos curados de fuentes verificables
-- Enfocados en educación superior y admisiones UCSP
+- Enfocados en las necesidades del cliente configurado
 
 **NO extraen datos de cuentas personales ni requieren autenticación privada.**
 
@@ -20,7 +20,7 @@ Esta guía explica cómo funcionan los 3 scrapers de tendencias educativas del p
 ## 1. Google Trends Scraper
 
 ### Descripción
-Extrae tendencias de búsqueda para keywords de educación superior en el sur del Perú.
+Extrae tendencias de búsqueda para keywords configurados por cliente.
 
 ### Tecnología
 - **Librería:** `pytrends` (API no oficial de Google Trends)
@@ -28,7 +28,7 @@ Extrae tendencias de búsqueda para keywords de educación superior en el sur de
 - **Requiere Token:** NO
 
 ### Datos que proporciona
-- Keywords educativas (UCSP, admisión, carreras, becas, etc.)
+- Keywords configurados por cliente (ej: admisión, carreras, becas, etc.)
 - Interés promedio (0-100)
 - Tendencia (rising, stable, falling)
 - Crecimiento últimos 30 días
@@ -66,7 +66,7 @@ Curador de tendencias educativas y universitarias en TikTok.
 - **Requiere Token:** NO
 
 ### Datos que proporciona
-- Hashtags trending (#universidad, #vidauniversitaria, #ucsp, #admision2026)
+- Hashtags trending (ej: #universidad, #vidauniversitaria, #admision2026)
 - Views, posts, growth percentage
 - Relevance score (0-100)
 - Región (LATAM, Global, Peru)
@@ -97,7 +97,7 @@ Los datos son curados semanalmente basándose en:
 ## 3. Meta/Facebook Public Trends Scraper
 
 ### Descripción
-Curador de tendencias educativas en Facebook/Instagram público para UCSP.
+Curador de tendencias en Facebook/Instagram público para el cliente configurado.
 
 ### Tecnología
 - **Librería:** Node.js + fs
@@ -109,7 +109,7 @@ Curador de tendencias educativas en Facebook/Instagram público para UCSP.
 - Menciones, crecimiento, sentiment
 - Top brands/entidades por categoría
 - Métricas de engagement (reactions, comments, shares)
-- Análisis de grupos públicos de postulantes UCSP
+- Análisis de grupos públicos relevantes al cliente
 
 ### Cómo ejecutarlo
 ```bash
@@ -124,21 +124,13 @@ node scrapers/meta_scraper.js
 
 ### Fuentes de observación
 **Páginas públicas monitoreadas:**
-- Universidad Católica San Pablo (Oficial)
-- Admisión UCSP
-- UCSP Noticias
-- Facultades UCSP
+- Configuradas por cliente en `scrapers/config/[cliente].json`
 
 **Grupos públicos monitoreados:**
-- Postulantes UCSP 2026
-- Estudiantes UCSP
-- Ingresantes UCSP
+- Configurados por cliente en `scrapers/config/[cliente].json`
 
 **Instagram público:**
-- #ucsp
-- #admisionucsp
-- #universidadcatolicasanpablo
-- #arequipa
+- Hashtags configurados por cliente
 
 ### Método de curación
 Actualización semanal (cada lunes 8 AM Perú) basada en:
@@ -164,7 +156,7 @@ node scrapers/meta_scraper.js
 El workflow `.github/workflows/scrape-data.yml` ejecuta todos los scrapers automáticamente cada lunes a las 8 AM (hora de Perú).
 
 Para ejecutar manualmente:
-1. Ir a GitHub → Actions → "UCSP Algorithm - Weekly Data Scrape"
+1. Ir a GitHub → Actions → "The Algorithm - Weekly Data Scrape"
 2. Click "Run workflow"
 
 ---

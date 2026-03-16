@@ -199,9 +199,10 @@ class InsightGenerator {
       });
     }
 
-    // Brand presence
+    // Brand presence - uses client name from meta data or config
+    const clientName = (metaData.client || this.config.clientName || '').split(' - ')[0].toLowerCase();
     const brandTopics = topics.filter(t =>
-      t.top_brands?.some(b => b.toLowerCase().includes('ucsp'))
+      t.top_brands?.some(b => b.toLowerCase().includes(clientName))
     );
 
     if (brandTopics.length > 0) {
@@ -209,10 +210,10 @@ class InsightGenerator {
         id: 'social_brand_presence',
         type: 'social',
         priority: 'medium',
-        title: `UCSP presente en ${brandTopics.length}/${topics.length} conversaciones`,
+        title: `Marca presente en ${brandTopics.length}/${topics.length} conversaciones`,
         description: `La marca aparece en ${(brandTopics.length / topics.length * 100).toFixed(0)}% de los temas monitoreados`,
         action: brandTopics.length < topics.length / 2 ?
-          'Aumentar share of voice en temas donde no aparece UCSP' :
+          'Aumentar share of voice en temas donde no aparece la marca' :
           'Mantener presencia y monitorear competencia',
         confidence: 0.80,
         impact_score: 5,

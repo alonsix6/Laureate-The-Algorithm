@@ -7,23 +7,23 @@
         "clientName": {
             "title": "Nombre del Cliente",
             "type": "string",
-            "description": "Nombre corto del cliente (ej: UCSP)",
+            "description": "Nombre corto del cliente (ej: MiEmpresa)",
             "editor": "textfield",
-            "default": "UCSP"
+            "default": "Your Client Name"
         },
         "clientFullName": {
             "title": "Nombre Completo del Cliente",
             "type": "string",
             "description": "Nombre completo para reportes",
             "editor": "textfield",
-            "default": "Universidad Católica San Pablo"
+            "default": "Your Client Full Name"
         },
         "facebookPages": {
             "title": "Páginas de Facebook",
             "type": "array",
             "description": "URLs de páginas de Facebook a analizar",
             "editor": "stringList",
-            "default": ["https://www.facebook.com/UCSPoficial"]
+            "default": ["https://www.facebook.com/your-page"]
         },
         "topics": {
             "title": "Topics a Analizar",
@@ -32,24 +32,14 @@
             "editor": "json",
             "default": [
                 {
-                    "name": "Admisión 2026",
-                    "keywords": ["admisión", "admision", "postular", "ingreso", "examen de admisión"],
-                    "brands": ["UCSP", "Admisión UCSP"]
+                    "name": "Topic 1",
+                    "keywords": ["keyword1", "keyword2", "keyword3"],
+                    "brands": ["Brand A", "Brand B"]
                 },
                 {
-                    "name": "Carreras con mayor demanda",
-                    "keywords": ["carrera", "carreras", "ingeniería", "medicina", "derecho", "administración"],
-                    "brands": ["UCSP", "Ingeniería Industrial"]
-                },
-                {
-                    "name": "Becas y Financiamiento",
-                    "keywords": ["beca", "becas", "financiamiento", "descuento", "pensión"],
-                    "brands": ["UCSP", "Becas UCSP"]
-                },
-                {
-                    "name": "Vida Universitaria",
-                    "keywords": ["campus", "vida universitaria", "estudiantes", "actividades"],
-                    "brands": ["UCSP", "Campus UCSP"]
+                    "name": "Topic 2",
+                    "keywords": ["keyword4", "keyword5", "keyword6"],
+                    "brands": ["Brand C", "Brand D"]
                 }
             ]
         },

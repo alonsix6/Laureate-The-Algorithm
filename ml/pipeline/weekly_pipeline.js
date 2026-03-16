@@ -399,7 +399,7 @@ async function saveResults(results) {
 // ============================================================================
 
 async function runPipeline() {
-  console.log('🚀 ML Pipeline - UCSP Algorithm');
+  console.log('🚀 ML Pipeline - The Algorithm by Reset');
   console.log('================================');
   console.log(`📅 Fecha: ${new Date().toLocaleString('es-PE')}`);
 

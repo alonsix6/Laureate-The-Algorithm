@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * UCSP Algorithm - Validador de Datos
+ * The Algorithm by Reset - Validador de Datos
  *
  * Valida que los archivos JSON generados por los scrapers
  * tengan la estructura correcta esperada por el frontend.
@@ -155,7 +155,7 @@ function getRecordCount(data, schema) {
 }
 
 async function main() {
-  console.log('🔍 UCSP Algorithm - Validación de Datos\n');
+  console.log('🔍 The Algorithm - Validación de Datos\n');
   console.log('='.repeat(60));
 
   const dataDir = path.join(__dirname, '../data');

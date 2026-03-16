@@ -1,8 +1,8 @@
-# Plan de Arquitectura ML - UCSP Algorithm
+# Plan de Arquitectura ML - The Algorithm by Reset
 
 ## Resumen Ejecutivo
 
-Este documento presenta el plan completo de Machine Learning para transformar el UCSP Algorithm de un sistema basado en reglas estáticas a una plataforma de inteligencia predictiva.
+Este documento presenta el plan completo de Machine Learning para transformar The Algorithm de un sistema basado en reglas estáticas a una plataforma de inteligencia predictiva.
 
 ---
 
@@ -847,5 +847,5 @@ ml/
 
 ---
 
-*Documento preparado para UCSP Algorithm MVP*
+*Documento preparado para The Algorithm by Reset*
 *Versión 1.0 - Enero 2026*
