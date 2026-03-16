@@ -1,7 +1,7 @@
 {
   "timestamp": "2025-12-04T22:55:00Z",
   "source": "Google Analytics 4 (Mock)",
-  "property": "UCSP - Universidad Católica San Pablo - Admisión",
+  "property": "FitZone Peru - Membresías (Demo)",
   "dateRange": {
     "start": "2025-11-04",
     "end": "2025-12-04"
@@ -186,8 +186,8 @@
     }
   },
   "metadata": {
-    "note": "Mock data for MVP demonstration - UCSP Admisiones",
-    "actualIntegration": "Requires UCSP GA4 property access",
+    "note": "Mock data for MVP demonstration - FitZone (Demo Client)",
+    "actualIntegration": "Requires client GA4 property access",
     "updateFrequency": "Daily automatic once integrated"
   }
 }

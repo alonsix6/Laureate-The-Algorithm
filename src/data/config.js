@@ -1,16 +1,18 @@
-// Configuración general del FitZone Algorithm
+// Configuración general de The Algorithm by Reset
 // Textos, mensajes, secciones y configuración de UI
 
 // ============================================================================
-// BRAND CONFIGURATION - Configuración de marca FitZone
+// BRAND CONFIGURATION - Configuración de producto y cliente demo
 // ============================================================================
 export const BRAND_CONFIG = {
-  name: 'FitZone Algorithm',
-  tagline: 'Inteligencia de Mercado Fitness',
+  name: 'The Algorithm by Reset',
+  tagline: 'Social Intelligence Platform',
   subtitle: 'Optimización automática de inversión digital en adquisición de miembros',
   product: 'Membresías y Servicios 2026',
   market: 'Lima Metropolitana (12 sedes)',
   client: 'FitZone Perú',
+  agency: 'Reset Agency',
+  isTemplate: true,
   version: '1.0.0',
   slogan: 'Tu Espacio, Tu Ritmo',
   founded: 2019,

@@ -1,20 +1,20 @@
 # Guía Paso a Paso: Configuración de APIs
 
-Esta guía detalla los pasos exactos para obtener acceso a cada API requerida para el sistema UCSP Algorithm.
+Esta guía detalla los pasos exactos para obtener acceso a cada API requerida para el sistema The Algorithm by Reset.
 
 ---
 
 ## 1. Google Analytics 4 (GA4) API
 
 **Tiempo estimado:** 30-60 minutos
-**Requisitos:** Acceso admin a GA4 property de UCSP
+**Requisitos:** Acceso admin a GA4 property del cliente
 
 ### Paso 1: Crear Proyecto en Google Cloud
 
 1. Ir a [Google Cloud Console](https://console.cloud.google.com/)
 2. Click en el selector de proyectos (arriba a la izquierda)
 3. Click **"+ CREATE PROJECT"**
-4. Nombre: `ucsp-algorithm-api`
+4. Nombre: `the-algorithm-api`
 5. Click **"CREATE"**
 
 ### Paso 2: Habilitar las APIs Necesarias
@@ -30,9 +30,9 @@ Esta guía detalla los pasos exactos para obtener acceso a cada API requerida pa
 1. Ir a [Service Accounts](https://console.cloud.google.com/iam-admin/serviceaccounts)
 2. Click **"+ CREATE SERVICE ACCOUNT"**
 3. Llenar:
-   - **Service account name:** `ucsp-ga4-reader`
+   - **Service account name:** `algorithm-ga4-reader`
    - **Service account ID:** se genera automáticamente
-   - **Description:** `Service account para leer datos GA4 de UCSP`
+   - **Description:** `Service account para leer datos GA4 del cliente`
 4. Click **"CREATE AND CONTINUE"**
 5. En "Grant this service account access to project":
    - Rol: **Viewer** (básico)
@@ -51,11 +51,11 @@ Esta guía detalla los pasos exactos para obtener acceso a cada API requerida pa
 ### Paso 5: Agregar Service Account a GA4
 
 1. Ir a [Google Analytics](https://analytics.google.com/)
-2. Seleccionar la propiedad de UCSP
+2. Seleccionar la propiedad del cliente
 3. Click **Admin** (engranaje abajo a la izquierda)
 4. En la columna "Property", click **"Property Access Management"**
 5. Click **"+"** > **"Add users"**
-6. Pegar el email del service account (ej: `ucsp-ga4-reader@ucsp-algorithm-api.iam.gserviceaccount.com`)
+6. Pegar el email del service account (ej: `algorithm-ga4-reader@the-algorithm-api.iam.gserviceaccount.com`)
 7. Rol: **Viewer**
 8. Click **"Add"**
 
@@ -72,7 +72,7 @@ Esta guía detalla los pasos exactos para obtener acceso a cada API requerida pa
 mkdir -p secrets
 
 # Mover el archivo JSON descargado
-mv ~/Downloads/ucsp-algorithm-api-xxxxx.json secrets/ga4-service-account.json
+mv ~/Downloads/the-algorithm-api-xxxxx.json secrets/ga4-service-account.json
 
 # Agregar a .env
 echo "GA4_PROPERTY_ID=TU_PROPERTY_ID" >> .env
@@ -114,10 +114,10 @@ const client = new BetaAnalyticsDataClient({
 1. Ir a [API Center](https://ads.google.com/aw/apicenter)
 2. Iniciar sesión con la Manager Account
 3. Completar el formulario:
-   - **Company name:** Universidad Católica San Pablo
-   - **Company website:** https://ucsp.edu.pe (debe estar activo)
+   - **Company name:** Reset Agency (or client company name)
+   - **Company website:** https://resetagency.com (debe estar activo)
    - **API contact email:** email monitoreado regularmente
-   - **Describe your use case:** "Internal marketing analytics dashboard for tracking campaign performance, CPL metrics, and budget optimization for university admissions"
+   - **Describe your use case:** "Internal marketing analytics dashboard for tracking campaign performance, CPL metrics, and budget optimization"
 4. Aceptar Terms and Conditions
 5. Click **"Submit"**
 
@@ -134,7 +134,7 @@ Recibirás un **Test Account Access** inmediatamente. Úsalo para:
 3. Ir a **APIs & Services > Credentials**
 4. Click **"+ CREATE CREDENTIALS" > "OAuth client ID"**
 5. Tipo: **Web application** o **Desktop app**
-6. Nombre: `UCSP Ads API Client`
+6. Nombre: `The Algorithm Ads API Client`
 7. Click **"CREATE"**
 8. Descargar el JSON con Client ID y Client Secret
 
@@ -180,15 +180,15 @@ GOOGLE_ADS_LOGIN_CUSTOMER_ID=123-456-7890  # Manager account
 ## 3. Meta Marketing API (Facebook/Instagram Ads)
 
 **Tiempo estimado:** 1-3 días
-**Requisitos:** Admin de Business Manager de UCSP
+**Requisitos:** Admin de Business Manager del cliente
 
 ### Paso 1: Crear App en Meta for Developers
 
 1. Ir a [Meta for Developers](https://developers.facebook.com/)
 2. Click **"My Apps"** > **"Create App"**
 3. Tipo: **Business**
-4. Nombre: `UCSP Marketing Analytics`
-5. Business Manager: Seleccionar el de UCSP
+4. Nombre: `The Algorithm Marketing Analytics`
+5. Business Manager: Seleccionar el del cliente
 6. Click **"Create App"**
 
 ### Paso 2: Agregar Marketing API
@@ -203,7 +203,7 @@ GOOGLE_ADS_LOGIN_CUSTOMER_ID=123-456-7890  # Manager account
 2. En el menú izquierdo: **Users > System Users**
 3. Click **"Add"**
 4. Configurar:
-   - **System Username:** `ucsp-api-user`
+   - **System Username:** `algorithm-api-user`
    - **Role:** Admin
 5. Click **"Create System User"**
 
@@ -212,9 +212,9 @@ GOOGLE_ADS_LOGIN_CUSTOMER_ID=123-456-7890  # Manager account
 1. Después de crear, click en el System User
 2. Click **"Add Assets"**
 3. Seleccionar:
-   - **Ad Accounts:** La cuenta de ads de UCSP
-   - **Pages:** Páginas de Facebook de UCSP (opcional)
-   - **Pixels:** El pixel de UCSP
+   - **Ad Accounts:** La cuenta de ads del cliente
+   - **Pages:** Páginas de Facebook del cliente (opcional)
+   - **Pixels:** El pixel del cliente
 4. Dar **Full Control** a cada asset
 5. Click **"Save Changes"**
 
@@ -243,7 +243,7 @@ GOOGLE_ADS_LOGIN_CUSTOMER_ID=123-456-7890  # Manager account
 2. En el menú izquierdo: **App Settings > Basic**
 3. Completar:
    - Privacy Policy URL
-   - Terms of Service URL (puede ser de UCSP)
+   - Terms of Service URL (puede ser del cliente)
 4. Toggle **"App Mode"** de Development a **Live**
 
 ### Paso 8: Configurar en el Proyecto
@@ -276,7 +276,7 @@ curl -G \
 ## 4. HubSpot CRM API
 
 **Tiempo estimado:** 30 minutos
-**Requisitos:** Super Admin en HubSpot de UCSP
+**Requisitos:** Super Admin en HubSpot del cliente
 
 ### Importante: API Keys Deprecadas
 
@@ -293,7 +293,7 @@ Las API keys tradicionales de HubSpot fueron deprecadas. Ahora se usan **Private
 
 1. Click **"Create a private app"**
 2. En **Basic Info:**
-   - **Name:** `UCSP Algorithm Integration`
+   - **Name:** `The Algorithm Integration`
    - **Description:** `API access for marketing analytics dashboard`
 3. Click **"Next"**
 
@@ -402,9 +402,9 @@ Para que yo pueda ayudarte a configurar cada API, necesito:
 
 | API | Información Requerida |
 |-----|----------------------|
-| GA4 | Acceso como admin a la propiedad GA4 de UCSP |
+| GA4 | Acceso como admin a la propiedad GA4 del cliente |
 | Google Ads | Acceso a Manager Account de Google Ads |
-| Meta | Acceso como admin a Business Manager de UCSP |
+| Meta | Acceso como admin a Business Manager del cliente |
 | HubSpot | Acceso como Super Admin al portal HubSpot |
 
 ---

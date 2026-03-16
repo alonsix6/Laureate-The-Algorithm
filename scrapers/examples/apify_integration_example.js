@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * UCSP Algorithm - Ejemplo de Integración con Apify
+ * The Algorithm by Reset - Ejemplo de Integración con Apify (UCSP como ejemplo de cliente)
  *
  * Este archivo muestra cómo integrar los scrapers con Apify
  * para obtener datos reales de TikTok, Facebook e Instagram.
@@ -332,7 +332,7 @@ async function saveResults(data, type) {
 // EJECUCIÓN PRINCIPAL
 // ===========================================================================
 async function main() {
-  console.log('🚀 UCSP Algorithm - Scraping con Apify\n');
+  console.log('🚀 The Algorithm - Scraping con Apify\n');
   console.log('='.repeat(50));
 
   try {

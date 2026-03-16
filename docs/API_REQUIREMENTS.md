@@ -1,8 +1,8 @@
-# API Requirements - UCSP Algorithm MVP
+# API Requirements - The Algorithm by Reset
 
 ## Overview
 
-This document lists ALL API accesses required to fully operationalize the UCSP Algorithm platform.
+This document lists ALL API accesses required to fully operationalize The Algorithm platform.
 
 ---
 
@@ -38,7 +38,7 @@ This document lists ALL API accesses required to fully operationalize the UCSP A
 - **Method**: Custom Apify actor `globular_cinema/my-actor`
 - **Authentication**: Apify API Token
 - **Data Retrieved**:
-  - Page engagement metrics (UCSP, competitors)
+  - Page engagement metrics (client pages, competitors)
   - Trending topics in education sector
   - Sentiment analysis
   - Brand mentions

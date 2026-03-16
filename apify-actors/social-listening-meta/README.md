@@ -1,6 +1,6 @@
-# Social Listening Meta - Apify Actor
+# Social Listening Meta - Apify Actor (The Algorithm by Reset)
 
-Actor de Apify para análisis de social listening en Facebook/Meta.
+Actor de Apify para análisis de social listening en Facebook/Meta. Parte de **The Algorithm by Reset**, configurable para cualquier cliente.
 
 ## Funcionalidades
 
@@ -22,15 +22,15 @@ El actor genera datos en el formato esperado por el frontend:
   "source": "Meta/Facebook Social Listening",
   "region": "LATAM",
   "category": "Social Listening",
-  "client": "UCSP - Universidad Católica San Pablo",
+  "client": "Your Client Name",
   "aggregatedTopics": [
     {
-      "topic": "Admisión 2024",
+      "topic": "Campaign 2024",
       "mentions": 45,
       "engagement_score": 8.5,
       "growth": "+25%",
       "sentiment": "muy_positivo",
-      "top_brands": ["UCSP", "UNSA"],
+      "top_brands": ["Brand A", "Brand B"],
       "avg_reactions": 120,
       "avg_comments": 15,
       "avg_shares": 8
@@ -96,14 +96,14 @@ Esto creará el actor en tu cuenta de Apify con el nombre `social-listening-meta
 {
   "topics": [
     {
-      "name": "Admisión 2024",
-      "keywords": ["admisión", "admision", "postular", "examen de admisión", "ingreso"],
-      "brands": ["UCSP", "UNSA", "UCSM"]
+      "name": "Product Launch",
+      "keywords": ["launch", "new product", "release", "available now"],
+      "brands": ["Brand A", "Brand B", "Brand C"]
     },
     {
-      "name": "Becas",
-      "keywords": ["beca", "becas", "descuento", "apoyo económico"],
-      "brands": ["PRONABEC", "Beca 18"]
+      "name": "Customer Feedback",
+      "keywords": ["review", "opinion", "recommend", "experience"],
+      "brands": ["Competitor X", "Competitor Y"]
     }
   ]
 }
@@ -117,16 +117,16 @@ import { ApifyClient } from 'apify-client';
 const client = new ApifyClient({ token: process.env.APIFY_TOKEN });
 
 const input = {
-  clientName: "UCSP",
-  clientFullName: "Universidad Católica San Pablo",
+  clientName: "YourClient",
+  clientFullName: "Your Client Full Name",
   facebookPages: [
-    "https://www.facebook.com/UCSPoficial"
+    "https://www.facebook.com/your-page"
   ],
   topics: [
     {
-      name: "Admisión",
-      keywords: ["admisión", "admision", "postular", "examen"],
-      brands: ["UCSP", "UNSA"]
+      name: "Topic Name",
+      keywords: ["keyword1", "keyword2", "keyword3"],
+      brands: ["Brand A", "Brand B"]
     }
   ],
   maxPostsPerPage: 50,

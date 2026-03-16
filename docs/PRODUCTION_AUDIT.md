@@ -1,4 +1,4 @@
-# UCSP Algorithm - Auditoría para Producción
+# The Algorithm by Reset - Auditoría para Producción
 
 **Fecha:** 2026-01-05
 **Versión analizada:** 1.0.0
@@ -10,7 +10,7 @@
 
 ### Estado Actual: MVP con Datos Simulados
 
-El sistema UCSP Algorithm es un **dashboard de Social Intelligence** bien estructurado pero que actualmente funciona con **datos hardcodeados/curados**. Para producción con datos reales de Apify, se requieren cambios significativos en la capa de scraping.
+El sistema The Algorithm es un **dashboard de Social Intelligence** bien estructurado pero que actualmente funciona con **datos hardcodeados/curados**. Para producción con datos reales de Apify, se requieren cambios significativos en la capa de scraping.
 
 ### Hallazgos Críticos
 
@@ -202,8 +202,8 @@ TIMEZONE=America/Lima
 HUBSPOT_API_KEY=
 HUBSPOT_PORTAL_ID=
 
-# === KEYWORDS UCSP ===
-UCSP_KEYWORDS=UCSP,admisión UCSP 2026,universidad arequipa,becas UCSP
+# === CLIENT KEYWORDS ===
+CLIENT_KEYWORDS=keyword1,keyword2,keyword3
 
 # === LOGGING ===
 LOG_LEVEL=info
