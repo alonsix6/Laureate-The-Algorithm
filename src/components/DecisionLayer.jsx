@@ -15,7 +15,7 @@ export default function DecisionLayer() {
   const recommendations = [
     {
       priority: 'high',
-      category: 'Meta Ads',
+      category: 'TikTok Ads',
       action: 'Aumentar budget TikTok 25% - CPL 12% debajo del objetivo, audiencia joven con engagement excepcional',
       impact: '+150 leads/mes estimados de jóvenes 18-25',
       confidence: 94
