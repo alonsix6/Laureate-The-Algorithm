@@ -1,4 +1,4 @@
-import { Target, Users, MessageSquare, TrendingUp, Lightbulb, Zap, AlertCircle, Dumbbell, Flame, BarChart3, CheckCircle, FlaskConical, Calendar } from 'lucide-react';
+import { Target, Users, MessageSquare, TrendingUp, Lightbulb, Zap, AlertCircle, Dumbbell, Flame, BarChart3, CheckCircle, FlaskConical, Calendar, Award } from 'lucide-react';
 import { OPPORTUNITY_SCORE } from '../data/mockData';
 import { LAYER_CONFIG, KEY_MESSAGES, TARGET_AUDIENCES } from '../data/config';
 
@@ -94,7 +94,7 @@ export default function DecisionLayer() {
         </div>
       </div>
 
-      {/* FitZone Opportunity Score */}
+      {/* UPN Opportunity Score */}
       <div className="bg-fitzone-purple text-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 sm:gap-6 mb-4 sm:mb-6 lg:mb-8">
           <div className="flex items-center gap-3 sm:gap-4">
@@ -287,67 +287,67 @@ export default function DecisionLayer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
-              <Dumbbell className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 1: {KEY_MESSAGES.espacio.title}</p>
+              <Award className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
+              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 1: {KEY_MESSAGES.empleabilidad.title}</p>
             </div>
-            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.espacio.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.espacio.description}</p>
+            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.empleabilidad.message}"</p>
+            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.empleabilidad.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Horarios flexibles</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Libertad</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Egresados empleados</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Primer sueldo</span>
             </div>
           </div>
 
           <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 2: {KEY_MESSAGES.tecnologia.title}</p>
+              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 2: {KEY_MESSAGES.acceso.title}</p>
             </div>
-            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.tecnologia.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.tecnologia.description}</p>
+            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.acceso.message}"</p>
+            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.acceso.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">App</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">IA</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Becas</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Financiamiento</span>
             </div>
           </div>
 
           <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Users className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 3: {KEY_MESSAGES.comunidad.title}</p>
+              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 3: {KEY_MESSAGES.acreditacion.title}</p>
             </div>
-            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.comunidad.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.comunidad.description}</p>
+            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.acreditacion.message}"</p>
+            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.acreditacion.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Clases grupales</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Challenges</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">SUNEDU</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Acreditada</span>
             </div>
           </div>
 
           <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Target className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 4: {KEY_MESSAGES.resultados.title}</p>
+              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 4: {KEY_MESSAGES.red.title}</p>
             </div>
-            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.resultados.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.resultados.description}</p>
+            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.red.message}"</p>
+            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.red.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Transformaciones</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Nutricion</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Laureate</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Red global</span>
             </div>
           </div>
 
           <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20 sm:col-span-2">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 5: {KEY_MESSAGES.precio.title}</p>
+              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 5: {KEY_MESSAGES.flexibilidad.title}</p>
             </div>
-            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.precio.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.precio.description}</p>
+            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.flexibilidad.message}"</p>
+            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.flexibilidad.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Precio justo</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Sin costos ocultos</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Congelamiento gratis</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Modalidad virtual</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Horarios noche</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Trabajo + estudio</span>
             </div>
           </div>
         </div>

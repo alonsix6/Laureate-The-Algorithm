@@ -333,20 +333,20 @@ export default function OptimizationLayer() {
           <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4">
             <h4 className="font-bold text-sm sm:text-base mb-2 sm:mb-3 flex items-center gap-1.5 sm:gap-2">
               <Zap className="w-4 h-4 sm:w-5 sm:h-5" />
-              Jovenes Activos
+              Bachilleres Jóvenes (17-22)
             </h4>
             <div className="space-y-1.5 sm:space-y-2">
               <div className="flex justify-between text-xs sm:text-sm">
                 <span>CPL Target</span>
-                <span className="font-bold">${CRM_CONFIG.cpl_thresholds.jovenes_activos.cpl_target}</span>
+                <span className="font-bold">${CRM_CONFIG.cpl_thresholds.bachilleres_jovenes.cpl_target}</span>
               </div>
               <div className="flex justify-between text-xs sm:text-sm">
                 <span>Alerta en</span>
-                <span className="font-bold text-yellow-300">${CRM_CONFIG.cpl_thresholds.jovenes_activos.cpl_alert}</span>
+                <span className="font-bold text-yellow-300">${CRM_CONFIG.cpl_thresholds.bachilleres_jovenes.cpl_alert}</span>
               </div>
               <div className="flex justify-between text-xs sm:text-sm">
                 <span>Pausar en</span>
-                <span className="font-bold text-red-300">${CRM_CONFIG.cpl_thresholds.jovenes_activos.cpl_pause}</span>
+                <span className="font-bold text-red-300">${CRM_CONFIG.cpl_thresholds.bachilleres_jovenes.cpl_pause}</span>
               </div>
             </div>
           </div>
@@ -354,41 +354,20 @@ export default function OptimizationLayer() {
           <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4">
             <h4 className="font-bold text-sm sm:text-base mb-2 sm:mb-3 flex items-center gap-1.5 sm:gap-2">
               <Target className="w-4 h-4 sm:w-5 sm:h-5" />
-              Profesionales Wellness
+              Padres de Familia (35-55)
             </h4>
             <div className="space-y-1.5 sm:space-y-2">
               <div className="flex justify-between text-xs sm:text-sm">
                 <span>CPL Target</span>
-                <span className="font-bold">${CRM_CONFIG.cpl_thresholds.profesionales_wellness.cpl_target}</span>
+                <span className="font-bold">${CRM_CONFIG.cpl_thresholds.padres_de_familia.cpl_target}</span>
               </div>
               <div className="flex justify-between text-xs sm:text-sm">
                 <span>Alerta en</span>
-                <span className="font-bold text-yellow-300">${CRM_CONFIG.cpl_thresholds.profesionales_wellness.cpl_alert}</span>
+                <span className="font-bold text-yellow-300">${CRM_CONFIG.cpl_thresholds.padres_de_familia.cpl_alert}</span>
               </div>
               <div className="flex justify-between text-xs sm:text-sm">
                 <span>Pausar en</span>
-                <span className="font-bold text-red-300">${CRM_CONFIG.cpl_thresholds.profesionales_wellness.cpl_pause}</span>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 sm:col-span-2 lg:col-span-1">
-            <h4 className="font-bold text-sm sm:text-base mb-2 sm:mb-3 flex items-center gap-1.5 sm:gap-2">
-              <Users className="w-4 h-4 sm:w-5 sm:h-5" />
-              Familias Activas
-            </h4>
-            <div className="space-y-1.5 sm:space-y-2">
-              <div className="flex justify-between text-xs sm:text-sm">
-                <span>CPL Target</span>
-                <span className="font-bold">${CRM_CONFIG.cpl_thresholds.familias_activas.cpl_target}</span>
-              </div>
-              <div className="flex justify-between text-xs sm:text-sm">
-                <span>Alerta en</span>
-                <span className="font-bold text-yellow-300">${CRM_CONFIG.cpl_thresholds.familias_activas.cpl_alert}</span>
-              </div>
-              <div className="flex justify-between text-xs sm:text-sm">
-                <span>Pausar en</span>
-                <span className="font-bold text-red-300">${CRM_CONFIG.cpl_thresholds.familias_activas.cpl_pause}</span>
+                <span className="font-bold text-red-300">${CRM_CONFIG.cpl_thresholds.padres_de_familia.cpl_pause}</span>
               </div>
             </div>
           </div>

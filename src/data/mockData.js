@@ -332,8 +332,8 @@ export const SEDES_PERFORMANCE = [
   { id: 5, nombre: 'UPN San Juan de Lurigancho', miembros: 6900, nuevos: 52, ocupacion: 78, revenue: 4140000, trend: 'up' },
   { id: 6, nombre: 'UPN San Juan de Miraflores', miembros: 5800, nuevos: 44, ocupacion: 76, revenue: 3480000, trend: 'stable' },
   { id: 7, nombre: 'UPN Ate', miembros: 5200, nuevos: 40, ocupacion: 74, revenue: 3120000, trend: 'up' },
-  { id: 8, nombre: 'UPN Trujillo Norte', miembros: 8600, nuevos: 68, ocupacion: 86, revenue: 5160000, trend: 'up' },
-  { id: 9, nombre: 'UPN Trujillo Centro', miembros: 7100, nuevos: 54, ocupacion: 83, revenue: 4260000, trend: 'stable' },
+  { id: 8, nombre: 'UPN Trujillo El Molino', miembros: 8600, nuevos: 68, ocupacion: 86, revenue: 5160000, trend: 'up' },
+  { id: 9, nombre: 'UPN Trujillo San Isidro', miembros: 7100, nuevos: 54, ocupacion: 83, revenue: 4260000, trend: 'stable' },
   { id: 10, nombre: 'UPN Cajamarca', miembros: 3800, nuevos: 32, ocupacion: 72, revenue: 2280000, trend: 'up' },
 ];
 
