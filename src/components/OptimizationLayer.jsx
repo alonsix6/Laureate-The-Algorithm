@@ -1,4 +1,4 @@
-import { TrendingUp, BarChart3, RefreshCw, Award, Target, Users, Heart, Zap, AlertCircle, Dumbbell, Bell, Globe, FileText, CheckCircle, Lightbulb, Activity, UserPlus, Calendar, GraduationCap } from 'lucide-react';
+import { TrendingUp, BarChart3, RefreshCw, Award, Target, Users, Heart, Zap, AlertCircle, Bell, Globe, FileText, CheckCircle, Lightbulb, Activity, UserPlus, Calendar, GraduationCap } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { PERFORMANCE_KPIS, ALERTS, COMPETITOR_INSIGHTS, CRM_MOCKUP } from '../data/mockData';
 import { LAYER_CONFIG, CRM_CONFIG } from '../data/config';
@@ -48,7 +48,7 @@ export default function OptimizationLayer() {
       <div className="bg-fitzone-slate rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-fitzone-purple/20">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-4">
           <div>
-            <h2 className="text-base sm:text-lg font-bold text-white mb-1 sm:mb-2">
+            <h2 className="text-base sm:text-lg font-bold text-fitzone-navy mb-1 sm:mb-2">
               {LAYER_CONFIG.optimization.name}
             </h2>
             <p className="text-xs sm:text-sm text-fitzone-textGray">
@@ -76,7 +76,7 @@ export default function OptimizationLayer() {
           <div className="flex items-center justify-between mb-2 sm:mb-3">
             <UserPlus className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
             <span className={`px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-bold ${
-              PERFORMANCE_KPIS.leads.trend_value > 0 ? 'bg-fitzone-emerald text-fitzone-charcoal' : 'bg-red-400'
+              PERFORMANCE_KPIS.leads.trend_value > 0 ? 'bg-fitzone-emerald text-upn-navy' : 'bg-red-400'
             }`}>
               {PERFORMANCE_KPIS.leads.trend}
             </span>
@@ -99,7 +99,7 @@ export default function OptimizationLayer() {
           <div className="flex items-center justify-between mb-2 sm:mb-3">
             <Users className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
             <span className={`px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-bold ${
-              PERFORMANCE_KPIS.reach.trend_value > 0 ? 'bg-fitzone-emerald text-fitzone-charcoal' : 'bg-red-400'
+              PERFORMANCE_KPIS.reach.trend_value > 0 ? 'bg-fitzone-emerald text-upn-navy' : 'bg-red-400'
             }`}>
               {PERFORMANCE_KPIS.reach.trend}
             </span>
@@ -118,34 +118,34 @@ export default function OptimizationLayer() {
         </div>
 
         {/* Engagement */}
-        <div className="bg-fitzone-emerald text-fitzone-charcoal rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 shadow-lg">
+        <div className="bg-fitzone-emerald text-upn-navy rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 shadow-lg">
           <div className="flex items-center justify-between mb-2 sm:mb-3">
             <Heart className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
             <span className={`px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-bold ${
-              PERFORMANCE_KPIS.engagement.trend_value > 0 ? 'bg-fitzone-charcoal text-fitzone-emerald' : 'bg-red-400 text-white'
+              PERFORMANCE_KPIS.engagement.trend_value > 0 ? 'bg-upn-navy/20 text-upn-navy' : 'bg-red-400 text-white'
             }`}>
               {PERFORMANCE_KPIS.engagement.trend}
             </span>
           </div>
-          <h3 className="text-xs sm:text-sm font-medium text-fitzone-charcoal/80 mb-0.5 sm:mb-1">Interacciones Totales</h3>
+          <h3 className="text-xs sm:text-sm font-medium text-upn-navy/80 mb-0.5 sm:mb-1">Interacciones Totales</h3>
           <p className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">{(PERFORMANCE_KPIS.engagement.total_interactions / 1000).toFixed(1)}K</p>
           <div className="flex items-baseline gap-1 sm:gap-2 flex-wrap">
-            <span className="text-xs sm:text-sm text-fitzone-charcoal/70">Engagement Rate</span>
-            <span className="text-xs bg-fitzone-charcoal/20 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded">{PERFORMANCE_KPIS.engagement.engagement_rate}%</span>
+            <span className="text-xs sm:text-sm text-upn-navy/70">Engagement Rate</span>
+            <span className="text-xs bg-upn-navy/10 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded">{PERFORMANCE_KPIS.engagement.engagement_rate}%</span>
           </div>
-          <div className="mt-2 sm:mt-3 pt-2 sm:pt-3 border-t border-fitzone-charcoal/20">
+          <div className="mt-2 sm:mt-3 pt-2 sm:pt-3 border-t border-upn-navy/20">
             <div className="flex justify-between text-xs">
-              <span className="text-fitzone-charcoal/70">Shares</span>
+              <span className="text-upn-navy/70">Shares</span>
               <span className="font-bold">{(PERFORMANCE_KPIS.engagement.shares / 1000).toFixed(1)}K</span>
             </div>
           </div>
         </div>
 
         {/* Budget */}
-        <div className="bg-fitzone-slate text-white rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 shadow-lg border border-fitzone-purple/30">
+        <div className="bg-fitzone-slate text-fitzone-navy rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 shadow-card border border-fitzone-purple/30">
           <div className="flex items-center justify-between mb-2 sm:mb-3">
             <Award className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-fitzone-purple" />
-            <span className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-bold bg-fitzone-emerald text-fitzone-charcoal">
+            <span className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-bold bg-fitzone-emerald text-upn-navy">
               {PERFORMANCE_KPIS.budget.spent_percentage.toFixed(0)}%
             </span>
           </div>
@@ -167,7 +167,7 @@ export default function OptimizationLayer() {
       <div className="bg-fitzone-slate rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-fitzone-purple/20">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 mb-4 sm:mb-6">
           <div>
-            <h3 className="text-sm sm:text-base font-bold text-white">Performance Ultimos 7 Dias</h3>
+            <h3 className="text-sm sm:text-base font-bold text-fitzone-navy">Performance Ultimos 7 Dias</h3>
             <p className="text-xs sm:text-sm text-fitzone-textGray">Evolucion de metricas clave</p>
           </div>
           <div className="flex gap-3 sm:gap-4 text-xs sm:text-sm">
@@ -190,8 +190,8 @@ export default function OptimizationLayer() {
               <YAxis yAxisId="left" stroke="#9CA3AF" style={{ fontSize: '10px' }} tick={{ fontSize: 10 }} width={35} />
               <YAxis yAxisId="right" orientation="right" stroke="#9CA3AF" style={{ fontSize: '10px' }} tick={{ fontSize: 10 }} width={35} />
               <Tooltip
-                contentStyle={{ backgroundColor: '#1A1A2E', border: '1px solid #FF6B35', borderRadius: '8px', color: '#fff', fontSize: '12px' }}
-                labelStyle={{ fontWeight: 'bold', marginBottom: '8px', color: '#FF6B35' }}
+                contentStyle={{ backgroundColor: '#001F5B', border: '1px solid #F5A623', borderRadius: '8px', color: '#fff', fontSize: '12px' }}
+                labelStyle={{ fontWeight: 'bold', marginBottom: '8px', color: '#F5A623' }}
               />
               <Line yAxisId="left" type="monotone" dataKey="leads" stroke="#FF6B35" strokeWidth={2} dot={{ r: 3 }} />
               <Line yAxisId="right" type="monotone" dataKey="engagement" stroke="#00D4FF" strokeWidth={2} dot={{ r: 3 }} />
@@ -202,7 +202,7 @@ export default function OptimizationLayer() {
 
       {/* Channel Distribution */}
       <div className="bg-fitzone-slate rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 border border-fitzone-purple/20">
-        <h3 className="text-sm sm:text-base font-bold text-white mb-4 sm:mb-6 lg:mb-8 text-center md:text-left">Distribucion de Leads por Canal</h3>
+        <h3 className="text-sm sm:text-base font-bold text-fitzone-navy mb-4 sm:mb-6 lg:mb-8 text-center md:text-left">Distribucion de Leads por Canal</h3>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-4 sm:gap-6 lg:gap-12">
           {/* Pie Chart */}
@@ -223,7 +223,7 @@ export default function OptimizationLayer() {
                     <Cell key={`cell-${index}`} fill={entry.color} />
                   ))}
                 </Pie>
-                <Tooltip contentStyle={{ backgroundColor: '#1A1A2E', border: '1px solid #FF6B35', borderRadius: '8px', color: '#fff', fontSize: '12px' }} />
+                <Tooltip contentStyle={{ backgroundColor: '#001F5B', border: '1px solid #F5A623', borderRadius: '8px', color: '#fff', fontSize: '12px' }} />
               </PieChart>
             </ResponsiveContainer>
           </div>
@@ -234,14 +234,14 @@ export default function OptimizationLayer() {
           {/* Legend */}
           <div className="flex-1 w-full max-w-md space-y-2 sm:space-y-3">
             {channelData.map((channel, idx) => (
-              <div key={idx} className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-fitzone-charcoal rounded-lg hover:bg-fitzone-charcoal/80 transition-all duration-200 border border-fitzone-purple/10 hover:border-fitzone-purple/30">
+              <div key={idx} className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-fitzone-darkSlate rounded-lg hover:bg-fitzone-surface transition-colors duration-200 border border-fitzone-border hover:border-fitzone-purple/30">
                 <div className="flex items-center gap-2 sm:gap-3 min-w-0">
                   <div className="w-3 h-3 sm:w-3.5 sm:h-3.5 rounded-full flex-shrink-0 shadow-sm" style={{ backgroundColor: channel.color }}></div>
-                  <span className="text-xs sm:text-sm font-medium text-white truncate">{channel.name}</span>
+                  <span className="text-xs sm:text-sm font-medium text-fitzone-navy truncate">{channel.name}</span>
                 </div>
                 <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0 ml-2 sm:ml-4">
-                  <span className="text-xs sm:text-sm font-bold text-white">{channel.leads}</span>
-                  <span className="text-xs sm:text-sm font-bold text-fitzone-charcoal bg-fitzone-purple px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md min-w-[40px] sm:min-w-[48px] text-center">
+                  <span className="text-xs sm:text-sm font-bold text-fitzone-navy">{channel.leads}</span>
+                  <span className="text-xs sm:text-sm font-bold text-white bg-fitzone-purple px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md min-w-[40px] sm:min-w-[48px] text-center">
                     {channel.value}%
                   </span>
                 </div>
@@ -253,7 +253,7 @@ export default function OptimizationLayer() {
 
       {/* Funnel de Conversion - Responsive */}
       <div className="bg-fitzone-slate rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-fitzone-purple/20">
-        <h3 className="text-sm sm:text-base font-bold text-white mb-4 sm:mb-6">Funnel de Conversión UPN — Admisión 2026</h3>
+        <h3 className="text-sm sm:text-base font-bold text-fitzone-navy mb-4 sm:mb-6">Funnel de Conversión UPN — Admisión 2026</h3>
 
         {/* Mobile: Vertical Stack, Desktop: Horizontal Flow */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 sm:gap-3 lg:gap-3 overflow-x-auto pb-2 lg:pb-4">
@@ -401,7 +401,7 @@ export default function OptimizationLayer() {
       <div className="bg-fitzone-slate rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-fitzone-purple/20">
         <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
           <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6 text-fitzone-purple" />
-          <h3 className="text-sm sm:text-base font-bold text-white">Alertas del Mercado Fitness</h3>
+          <h3 className="text-sm sm:text-base font-bold text-fitzone-navy">Alertas del Mercado Universitario</h3>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
           {ALERTS.slice(0, 3).map((alert) => (
@@ -411,7 +411,7 @@ export default function OptimizationLayer() {
               'bg-fitzone-cyan/10 border-fitzone-cyan'
             }`}>
               <div className="flex items-start justify-between gap-2 mb-1.5 sm:mb-2">
-                <h4 className="font-bold text-white text-xs sm:text-sm">{alert.title}</h4>
+                <h4 className="font-bold text-fitzone-navy text-xs sm:text-sm">{alert.title}</h4>
                 <span className={`px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-xs font-bold flex-shrink-0 ${
                   alert.severity === 'high' ? 'bg-red-500/30 text-red-300' :
                   alert.severity === 'medium' ? 'bg-yellow-500/30 text-yellow-300' :
@@ -431,13 +431,13 @@ export default function OptimizationLayer() {
 
       {/* Competitor Analysis */}
       <div className="bg-fitzone-slate rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-fitzone-purple/20">
-        <h3 className="text-sm sm:text-base font-bold text-white mb-3 sm:mb-4">Análisis de Competencia Universitaria</h3>
+        <h3 className="text-sm sm:text-base font-bold text-fitzone-navy mb-3 sm:mb-4">Análisis de Competencia Universitaria</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
           {COMPETITOR_INSIGHTS.filter(c => c.brand !== 'UPN').map((comp, idx) => (
-            <div key={idx} className="p-3 sm:p-4 bg-fitzone-charcoal border-2 border-fitzone-slate rounded-lg hover:border-fitzone-purple/50 transition-colors">
+            <div key={idx} className="p-3 sm:p-4 bg-white border-2 border-fitzone-border rounded-lg hover:border-fitzone-purple/50 transition-colors card-hover-lift">
               <div className="flex items-start justify-between gap-2 mb-2">
                 <div className="min-w-0">
-                  <h4 className="font-bold text-white text-sm sm:text-base truncate">{comp.brand}</h4>
+                  <h4 className="font-bold text-fitzone-navy text-sm sm:text-base truncate">{comp.brand}</h4>
                   <p className="text-xs text-fitzone-textGray">{comp.location}</p>
                 </div>
                 <span className={`px-1.5 sm:px-2 py-0.5 sm:py-1 rounded text-xs font-bold flex-shrink-0 ${
@@ -454,7 +454,7 @@ export default function OptimizationLayer() {
               <div className="grid grid-cols-2 gap-2 sm:gap-3 mb-2 sm:mb-3">
                 <div>
                   <p className="text-xs text-fitzone-textGray">Share of Voice</p>
-                  <p className="text-sm sm:text-base font-bold text-white">{comp.share_of_voice}%</p>
+                  <p className="text-sm sm:text-base font-bold text-fitzone-navy">{comp.share_of_voice}%</p>
                 </div>
                 <div>
                   <p className="text-xs text-fitzone-textGray">Sentimiento</p>
@@ -466,7 +466,7 @@ export default function OptimizationLayer() {
                 <p className="text-xs text-fitzone-textGray mb-1">Temas Trending</p>
                 <div className="flex flex-wrap gap-1">
                   {comp.trending_topics.slice(0, 3).map((topic, topicIdx) => (
-                    <span key={topicIdx} className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-slate rounded text-xs text-fitzone-textGray">
+                    <span key={topicIdx} className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-darkSlate rounded text-xs text-fitzone-textGray">
                       {topic}
                     </span>
                   ))}
