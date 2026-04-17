@@ -1,4 +1,4 @@
-import { TrendingUp, BarChart3, RefreshCw, Award, Target, Users, Heart, Zap, AlertCircle, Dumbbell, Bell, Globe, FileText, CheckCircle, Lightbulb, Activity, UserPlus, Calendar } from 'lucide-react';
+import { TrendingUp, BarChart3, RefreshCw, Award, Target, Users, Heart, Zap, AlertCircle, Dumbbell, Bell, Globe, FileText, CheckCircle, Lightbulb, Activity, UserPlus, Calendar, GraduationCap } from 'lucide-react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 import { PERFORMANCE_KPIS, ALERTS, COMPETITOR_INSIGHTS, CRM_MOCKUP } from '../data/mockData';
 import { LAYER_CONFIG, CRM_CONFIG } from '../data/config';
@@ -13,7 +13,7 @@ export default function OptimizationLayer() {
 
   const monthlyPeriod = getMonthlyPeriod();
 
-  // Performance últimos 7 días - FitZone Fitness
+  // Performance últimos 7 días - UPN Admisión
   const performanceData = [
     { date: '14 Ene', leads: 58, reach: 340000, engagement: 32500, spent: 3280 },
     { date: '15 Ene', leads: 72, reach: 385000, engagement: 38200, spent: 3520 },
@@ -24,22 +24,22 @@ export default function OptimizationLayer() {
     { date: '20 Ene', leads: 68, reach: 375000, engagement: 36200, spent: 3420 }
   ];
 
-  // Channel performance distribution - FitZone
+  // Channel performance distribution - UPN
   const channelData = [
-    { name: 'Meta Ads', value: 40, leads: 740, color: '#FF6B35' },
-    { name: 'Google Search', value: 30, leads: 555, color: '#00D4FF' },
-    { name: 'TikTok Ads', value: 15, leads: 278, color: '#B8FF00' },
-    { name: 'Display', value: 10, leads: 185, color: '#F97316' },
-    { name: 'Influencers', value: 5, leads: 92, color: '#14B8A6' }
+    { name: 'Meta Ads', value: 38, leads: 975, color: '#FF6B35' },
+    { name: 'Google Search', value: 32, leads: 820, color: '#00D4FF' },
+    { name: 'TikTok Ads', value: 13, leads: 334, color: '#B8FF00' },
+    { name: 'Display', value: 10, leads: 257, color: '#F97316' },
+    { name: 'Influencers', value: 7, leads: 179, color: '#14B8A6' }
   ];
 
-  // Funnel de conversión FitZone - Journey del cliente
+  // Funnel de conversión UPN - Journey del prospecto
   const funnelSteps = [
-    { stage: 'Alcance', value: 2500000, conversionRate: 2.7, IconComponent: Users, bgColor: 'bg-fitzone-purple' },
-    { stage: 'Visitas Landing', value: 68500, conversionRate: 2.7, IconComponent: Globe, bgColor: 'bg-fitzone-darkPurple' },
-    { stage: 'Trials Solicitados', value: 1850, conversionRate: 46.8, IconComponent: Activity, bgColor: 'bg-fitzone-cyan' },
-    { stage: 'Trials Activos', value: 866, conversionRate: 55.0, IconComponent: Dumbbell, bgColor: 'bg-fitzone-emerald' },
-    { stage: 'Nuevos Miembros', value: 476, conversionRate: null, IconComponent: CheckCircle, bgColor: 'bg-green-500' }
+    { stage: 'Alcance', value: 2350000, conversionRate: 3.2, IconComponent: Users, bgColor: 'bg-fitzone-purple' },
+    { stage: 'Visitas Landing', value: 74200, conversionRate: 3.5, IconComponent: Globe, bgColor: 'bg-fitzone-darkPurple' },
+    { stage: 'Leads Generados', value: 2565, conversionRate: 72.1, IconComponent: Activity, bgColor: 'bg-fitzone-cyan' },
+    { stage: 'Leads Calificados', value: 1850, conversionRate: 24.3, IconComponent: Target, bgColor: 'bg-fitzone-emerald' },
+    { stage: 'Nuevos Matriculados', value: 449, conversionRate: null, IconComponent: CheckCircle, bgColor: 'bg-green-500' }
   ];
 
   return (
@@ -81,7 +81,7 @@ export default function OptimizationLayer() {
               {PERFORMANCE_KPIS.leads.trend}
             </span>
           </div>
-          <h3 className="text-xs sm:text-sm font-medium text-white/80 mb-0.5 sm:mb-1">Nuevos Miembros</h3>
+          <h3 className="text-xs sm:text-sm font-medium text-white/80 mb-0.5 sm:mb-1">Nuevos Matriculados</h3>
           <p className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">{PERFORMANCE_KPIS.nuevos_miembros.current.toLocaleString()}</p>
           <div className="flex items-baseline gap-2">
             <span className="text-xs sm:text-sm text-white/70">{PERFORMANCE_KPIS.leads.qualified.toLocaleString()} leads calificados</span>
@@ -253,7 +253,7 @@ export default function OptimizationLayer() {
 
       {/* Funnel de Conversion - Responsive */}
       <div className="bg-fitzone-slate rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-fitzone-purple/20">
-        <h3 className="text-sm sm:text-base font-bold text-white mb-4 sm:mb-6">Funnel de Conversion FitZone</h3>
+        <h3 className="text-sm sm:text-base font-bold text-white mb-4 sm:mb-6">Funnel de Conversión UPN — Admisión 2026</h3>
 
         {/* Mobile: Vertical Stack, Desktop: Horizontal Flow */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 sm:gap-3 lg:gap-3 overflow-x-auto pb-2 lg:pb-4">
@@ -295,19 +295,19 @@ export default function OptimizationLayer() {
         <div className="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-fitzone-purple/20">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
             <div className="bg-fitzone-purple/10 rounded-lg p-3 border border-fitzone-purple/20">
-              <p className="text-xs text-fitzone-textGray mb-0.5 sm:mb-1">Conversion Global</p>
+              <p className="text-xs text-fitzone-textGray mb-0.5 sm:mb-1">Conversión Global</p>
               <p className="text-lg sm:text-xl font-bold text-fitzone-purple">0.019%</p>
-              <p className="text-xs text-fitzone-textGray">Alcance - Miembros</p>
+              <p className="text-xs text-fitzone-textGray">Alcance → Matriculado</p>
             </div>
             <div className="bg-fitzone-emerald/10 rounded-lg p-3 border border-fitzone-emerald/20">
-              <p className="text-xs text-fitzone-textGray mb-0.5 sm:mb-1">Trial - Miembro</p>
-              <p className="text-lg sm:text-xl font-bold text-fitzone-emerald">55.0%</p>
-              <p className="text-xs text-fitzone-textGray">Excelente retencion</p>
+              <p className="text-xs text-fitzone-textGray mb-0.5 sm:mb-1">Lead Calificado → Matrícula</p>
+              <p className="text-lg sm:text-xl font-bold text-fitzone-emerald">24.3%</p>
+              <p className="text-xs text-fitzone-textGray">Excelente calificación</p>
             </div>
             <div className="bg-fitzone-cyan/10 rounded-lg p-3 border border-fitzone-cyan/20">
-              <p className="text-xs text-fitzone-textGray mb-0.5 sm:mb-1">Tasa Conversion Web</p>
-              <p className="text-lg sm:text-xl font-bold text-fitzone-cyan">2.7%</p>
-              <p className="text-xs text-fitzone-textGray">Landing - Trial</p>
+              <p className="text-xs text-fitzone-textGray mb-0.5 sm:mb-1">Tasa Conversión Web</p>
+              <p className="text-lg sm:text-xl font-bold text-fitzone-cyan">1.67%</p>
+              <p className="text-xs text-fitzone-textGray">Visita → Charla/Lead</p>
             </div>
           </div>
         </div>
@@ -452,9 +452,9 @@ export default function OptimizationLayer() {
 
       {/* Competitor Analysis */}
       <div className="bg-fitzone-slate rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-fitzone-purple/20">
-        <h3 className="text-sm sm:text-base font-bold text-white mb-3 sm:mb-4">Analisis de Competencia Fitness</h3>
+        <h3 className="text-sm sm:text-base font-bold text-white mb-3 sm:mb-4">Análisis de Competencia Universitaria</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-          {COMPETITOR_INSIGHTS.filter(c => c.brand !== 'FitZone').map((comp, idx) => (
+          {COMPETITOR_INSIGHTS.filter(c => c.brand !== 'UPN').map((comp, idx) => (
             <div key={idx} className="p-3 sm:p-4 bg-fitzone-charcoal border-2 border-fitzone-slate rounded-lg hover:border-fitzone-purple/50 transition-colors">
               <div className="flex items-start justify-between gap-2 mb-2">
                 <div className="min-w-0">
@@ -497,27 +497,27 @@ export default function OptimizationLayer() {
           ))}
         </div>
 
-        {/* FitZone Comparison */}
+        {/* UPN Self-Comparison */}
         <div className="mt-3 sm:mt-4 p-3 sm:p-4 lg:p-5 bg-fitzone-purple text-white rounded-lg sm:rounded-xl">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4">
             <div className="flex-1">
               <h4 className="font-bold text-sm sm:text-base mb-1 flex items-center gap-1.5 sm:gap-2">
-                <Dumbbell className="w-4 h-4 sm:w-5 sm:h-5" />
-                FitZone Peru
+                <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5" />
+                UPN — Universidad Privada del Norte
               </h4>
-              <p className="text-xs text-white/70 mb-2">Cadena mid-premium con mejor relacion precio-valor y tecnologia</p>
+              <p className="text-xs text-white/70 mb-2">Red Laureate · Value Premium · Mejor empleabilidad vs precio en el segmento</p>
               <div className="flex flex-wrap gap-4 sm:gap-6">
                 <div>
                   <p className="text-xs text-white/70">Share of Voice</p>
-                  <p className="text-lg sm:text-xl font-bold">15%</p>
+                  <p className="text-lg sm:text-xl font-bold">20%</p>
                 </div>
                 <div>
                   <p className="text-xs text-white/70">Sentimiento</p>
-                  <p className="text-lg sm:text-xl font-bold">80%</p>
+                  <p className="text-lg sm:text-xl font-bold">79%</p>
                 </div>
                 <div>
-                  <p className="text-xs text-white/70">Sedes</p>
-                  <p className="text-lg sm:text-xl font-bold">12</p>
+                  <p className="text-xs text-white/70">Campus</p>
+                  <p className="text-lg sm:text-xl font-bold">10</p>
                 </div>
               </div>
             </div>

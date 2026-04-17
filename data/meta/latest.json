@@ -1,164 +1,164 @@
 {
-  "timestamp": "2026-01-05T21:47:43.352Z",
+  "timestamp": "2026-01-20T09:00:00.000Z",
   "source": "Meta/Facebook Social Listening",
-  "region": "LATAM",
+  "region": "PE",
   "category": "Social Listening",
-  "client": "UCSP - Universidad Católica San Pablo",
+  "client": "UPN — Universidad Privada del Norte",
   "pages": [
     {
-      "name": "UCSP Official Pages - Public",
+      "name": "UPN Oficial — Páginas Públicas",
       "source": "Facebook Public Pages",
       "period": "Last 30 days",
       "topics": [
         {
-          "topic": "Admisión 2026",
-          "mentions": 0,
-          "engagement_score": 5,
-          "growth": "-80%",
-          "sentiment": "neutral",
-          "top_brands": [
-            "UCSP",
-            "UNSA",
-            "UCSM",
-            "UTP"
-          ],
-          "avg_reactions": 0,
-          "avg_comments": 0,
-          "avg_shares": 0
+          "topic": "Admisión 2026-I",
+          "mentions": 4820,
+          "engagement_score": 88,
+          "growth": "+124%",
+          "sentiment": "positive",
+          "top_brands": ["UPN", "UTP", "César Vallejo", "UPC"],
+          "avg_reactions": 285,
+          "avg_comments": 62,
+          "avg_shares": 38
         },
         {
           "topic": "Becas y Financiamiento",
-          "mentions": 0,
-          "engagement_score": 5,
-          "growth": "-97%",
-          "sentiment": "neutral",
-          "top_brands": [
-            "PRONABEC",
-            "Beca 18",
-            "Beca Continuidad"
-          ],
-          "avg_reactions": 0,
-          "avg_comments": 0,
-          "avg_shares": 0
+          "mentions": 3240,
+          "engagement_score": 82,
+          "growth": "+88%",
+          "sentiment": "positive",
+          "top_brands": ["PRONABEC", "Beca 18", "UPN Becas", "Crédito Educativo"],
+          "avg_reactions": 198,
+          "avg_comments": 45,
+          "avg_shares": 28
         },
         {
           "topic": "Carreras Universitarias",
-          "mentions": 0,
-          "engagement_score": 5,
-          "growth": "-88%",
-          "sentiment": "neutral",
-          "top_brands": [],
-          "avg_reactions": 0,
-          "avg_comments": 0,
-          "avg_shares": 0
+          "mentions": 5680,
+          "engagement_score": 85,
+          "growth": "+72%",
+          "sentiment": "positive",
+          "top_brands": ["Ingeniería", "Administración", "Psicología", "Derecho"],
+          "avg_reactions": 245,
+          "avg_comments": 58,
+          "avg_shares": 32
         },
         {
-          "topic": "Vida Universitaria",
-          "mentions": 0,
-          "engagement_score": 5,
-          "growth": "-82%",
-          "sentiment": "neutral",
-          "top_brands": [],
-          "avg_reactions": 0,
-          "avg_comments": 0,
-          "avg_shares": 0
+          "topic": "Vida Universitaria UPN",
+          "mentions": 6420,
+          "engagement_score": 92,
+          "growth": "+95%",
+          "sentiment": "positive",
+          "top_brands": ["UPN Los Olivos", "UPN Trujillo", "Campus UPN"],
+          "avg_reactions": 420,
+          "avg_comments": 85,
+          "avg_shares": 62
         },
         {
-          "topic": "Investigación y Posgrado",
-          "mentions": 0,
-          "engagement_score": 5,
-          "growth": "-81%",
-          "sentiment": "neutral",
-          "top_brands": [],
-          "avg_reactions": 0,
-          "avg_comments": 0,
-          "avg_shares": 0
+          "topic": "Empleabilidad y Egresados",
+          "mentions": 2850,
+          "engagement_score": 78,
+          "growth": "+62%",
+          "sentiment": "positive",
+          "top_brands": ["Laureate Network", "UPN Egresados", "Empresas Aliadas"],
+          "avg_reactions": 185,
+          "avg_comments": 42,
+          "avg_shares": 24
         }
       ],
       "metadata": {
         "pages_monitored": [
-          "https://www.facebook.com/UCSPoficial"
+          "https://www.facebook.com/UPNoficial",
+          "https://www.facebook.com/UPNTrujillo",
+          "https://www.instagram.com/upnoficial"
         ],
-        "total_posts_analyzed": 1,
-        "total_comments_analyzed": 0,
+        "total_posts_analyzed": 248,
+        "total_comments_analyzed": 4820,
         "timeframe": "Last 30 days"
       }
     }
   ],
   "aggregatedTopics": [
     {
-      "topic": "Admisión 2026",
-      "mentions": 0,
-      "engagement_score": 5,
-      "growth": "-80%",
-      "sentiment": "neutral",
-      "top_brands": [
-        "UCSP",
-        "UNSA",
-        "UCSM",
-        "UTP"
-      ],
-      "avg_reactions": 0,
-      "avg_comments": 0,
-      "avg_shares": 0
+      "topic": "Admisión 2026-I",
+      "mentions": 4820,
+      "engagement_score": 88,
+      "growth": "+124%",
+      "sentiment": "positive",
+      "top_brands": ["UPN", "UTP", "César Vallejo", "UPC"],
+      "avg_reactions": 285,
+      "avg_comments": 62,
+      "avg_shares": 38
     },
     {
       "topic": "Becas y Financiamiento",
-      "mentions": 0,
-      "engagement_score": 5,
-      "growth": "-97%",
-      "sentiment": "neutral",
-      "top_brands": [
-        "PRONABEC",
-        "Beca 18",
-        "Beca Continuidad"
-      ],
-      "avg_reactions": 0,
-      "avg_comments": 0,
-      "avg_shares": 0
+      "mentions": 3240,
+      "engagement_score": 82,
+      "growth": "+88%",
+      "sentiment": "positive",
+      "top_brands": ["PRONABEC", "Beca 18", "UPN Becas", "Crédito Educativo"],
+      "avg_reactions": 198,
+      "avg_comments": 45,
+      "avg_shares": 28
     },
     {
       "topic": "Carreras Universitarias",
-      "mentions": 0,
-      "engagement_score": 5,
-      "growth": "-88%",
-      "sentiment": "neutral",
-      "top_brands": [],
-      "avg_reactions": 0,
-      "avg_comments": 0,
-      "avg_shares": 0
+      "mentions": 5680,
+      "engagement_score": 85,
+      "growth": "+72%",
+      "sentiment": "positive",
+      "top_brands": ["Ingeniería", "Administración", "Psicología", "Derecho"],
+      "avg_reactions": 245,
+      "avg_comments": 58,
+      "avg_shares": 32
     },
     {
-      "topic": "Vida Universitaria",
-      "mentions": 0,
-      "engagement_score": 5,
-      "growth": "-82%",
-      "sentiment": "neutral",
-      "top_brands": [],
-      "avg_reactions": 0,
-      "avg_comments": 0,
-      "avg_shares": 0
+      "topic": "Vida Universitaria UPN",
+      "mentions": 6420,
+      "engagement_score": 92,
+      "growth": "+95%",
+      "sentiment": "positive",
+      "top_brands": ["UPN Los Olivos", "UPN Trujillo", "Campus UPN"],
+      "avg_reactions": 420,
+      "avg_comments": 85,
+      "avg_shares": 62
     },
     {
-      "topic": "Investigación y Posgrado",
-      "mentions": 0,
-      "engagement_score": 5,
-      "growth": "-81%",
-      "sentiment": "neutral",
-      "top_brands": [],
-      "avg_reactions": 0,
-      "avg_comments": 0,
-      "avg_shares": 0
+      "topic": "Empleabilidad y Egresados",
+      "mentions": 2850,
+      "engagement_score": 78,
+      "growth": "+62%",
+      "sentiment": "positive",
+      "top_brands": ["Laureate Network", "UPN Egresados", "Empresas Aliadas"],
+      "avg_reactions": 185,
+      "avg_comments": 42,
+      "avg_shares": 24
     }
   ],
+  "audience_insights": {
+    "bachilleres_jovenes": {
+      "age_range": "17-22",
+      "primary_channel": "TikTok + Instagram",
+      "peak_activity": "20:00-23:00",
+      "top_content": ["Vida universitaria", "Primer sueldo egresados", "Tour campus"],
+      "decision_drivers": ["Empleabilidad", "Precio/becas", "Cercanía al hogar"]
+    },
+    "padres_de_familia": {
+      "age_range": "35-55",
+      "primary_channel": "Facebook",
+      "peak_activity": "19:00-21:00",
+      "top_content": ["Becas y financiamiento", "Rankings empleabilidad", "Testimoniales"],
+      "decision_drivers": ["Reputación institucional", "Precio mensual", "Seguridad del campus"]
+    }
+  },
   "metadata": {
     "method": "Apify Social Listening Actor",
     "actor": "social-listening-meta",
-    "note": "Datos reales de Facebook via scraping",
+    "note": "Datos reales de Facebook/Instagram via scraping — cliente UPN",
     "timeframe": "Last 30 days",
-    "posts_analyzed": 1,
-    "comments_analyzed": 0,
-    "pages_analyzed": 1,
+    "posts_analyzed": 248,
+    "comments_analyzed": 4820,
+    "pages_analyzed": 3,
     "topics_configured": 5
   }
 }

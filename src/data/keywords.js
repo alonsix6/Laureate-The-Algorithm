@@ -1,130 +1,130 @@
-// Keywords y hashtags para FitZone - Cadena de gimnasios Peru
-// Configuracion completa para busquedas y monitoreo social
+// Keywords y hashtags para UPN — Universidad Privada del Norte
+// Configuración completa para búsquedas y monitoreo social — Admisión 2026
 
-export const KEYWORDS_FITZONE = {
-  // Marca FitZone
+export const KEYWORDS_UPN = {
+  // Marca UPN
   marca: [
-    'fitzone peru',
-    'fitzone gimnasio',
-    'fitzone miraflores',
-    'fitzone precio',
-    'fitzone membresia',
-    'fitzone san isidro',
-    'fitzone surco',
-    'fitzone promocion',
-    'fitzone horarios',
-    'fitzone clases',
+    'UPN universidad',
+    'universidad privada del norte',
+    'upn peru admision',
+    'upn carreras',
+    'upn becas',
+    'upn los olivos',
+    'upn trujillo',
+    'upn matricula 2026',
+    'upn horarios',
+    'upn virtual',
   ],
 
-  // Keywords de categoria
+  // Keywords de categoría
   categoria: [
-    'gimnasio lima',
-    'gym cerca de mi',
-    'mejor gimnasio lima',
-    'gimnasio precio mensual',
-    'membresia gimnasio',
-    'gimnasio barato lima',
-    'gimnasio miraflores',
-    'gimnasio san isidro',
-    'gimnasio surco',
-    'gimnasio premium lima',
+    'universidad lima peru',
+    'mejor universidad peru',
+    'universidad privada lima precio',
+    'carreras universitarias peru',
+    'admision universidad 2026',
+    'universidad lima norte',
+    'universidad value peru',
+    'estudiar en lima',
+    'universidad con becas peru',
+    'universidad acreditada peru',
   ],
 
-  // Intencion de compra alta
+  // Intención de inscripción alta
   intencion: [
-    'inscripcion gimnasio',
-    'promocion gimnasio enero',
-    'gimnasio sin matricula',
-    'gimnasio 24 horas lima',
-    'gimnasio con piscina lima',
-    'gimnasio cerca a mi ubicacion',
-    'precio gimnasio mensual lima',
-    'membresia gym lima',
-    'oferta gimnasio lima',
-    'gimnasio prueba gratis',
+    'inscripcion universidad 2026',
+    'postular upn 2026',
+    'examen admision upn',
+    'requisitos ingreso universidad',
+    'costo mensualidad upn',
+    'beca universidad peru 2026',
+    'charla informativa universidad',
+    'universidad sin examen lima',
+    'admision directa universidad',
+    'como inscribirse en upn',
   ],
 
-  // Keywords de servicios
-  servicios: [
-    'clases spinning lima',
-    'yoga miraflores',
-    'crossfit lima precio',
-    'personal trainer lima',
-    'funcional training lima',
-    'pilates reformer lima',
-    'clases grupales gimnasio',
-    'entrenador personal precio',
-    'hiit clases lima',
-    'zumba lima',
+  // Keywords por carrera
+  carreras: [
+    'ingenieria industrial lima',
+    'ingenieria sistemas lima',
+    'administracion empresas lima',
+    'marketing lima universidad',
+    'derecho lima universidad',
+    'psicologia lima universidad',
+    'enfermeria lima universidad',
+    'medicina veterinaria lima',
+    'contabilidad lima universidad',
+    'arquitectura lima universidad',
   ],
 
   // Competencia
   competidores: [
-    'smart fit peru',
-    'smart fit precio',
-    'b2 gimnasio',
-    'b2 gimnasio precio',
-    'bio ritmo gimnasio',
-    'sportlife peru',
-    'ko urban lima',
-    'gimnasio vs smart fit',
-    'alternativa smart fit',
-    'mejor que smart fit',
+    'universidad tecnologica peru',
+    'utp admision',
+    'cesar vallejo lima',
+    'san martin de porres precio',
+    'usil admision',
+    'upc precio mensualidad',
+    'alternativa utp',
+    'mejor que utp',
+    'universidad barata lima',
+    'universidad calidad precio lima',
   ],
 
-  // Disciplinas fitness
-  disciplinas: [
-    'crossfit lima',
-    'funcional lima',
-    'spinning lima',
-    'yoga lima',
-    'pilates lima',
-    'boxeo fitness lima',
-    'hiit lima',
-    'entrenamiento fuerza',
-    'musculacion lima',
-    'cardio lima',
+  // Financiamiento y becas
+  becas: [
+    'beca universidad peru',
+    'beca 18 universidad',
+    'pronabec universidad',
+    'financiamiento universitario peru',
+    'credito educativo peru',
+    'universidad con beca completa',
+    'descuento matricula universidad',
+    'universidad pago mensual',
+    'cuotas universidad peru',
+    'beca talento upn',
   ],
 
-  // Resultados/transformacion
-  resultados: [
-    'bajar de peso gimnasio',
-    'ganar musculo gym',
-    'transformacion fitness',
-    'antes y despues gym',
-    'resultados gimnasio',
-    'rutina para principiantes',
-    'como empezar gym',
-    'dieta y gimnasio',
-    'perder grasa gym',
-    'tonificar cuerpo',
+  // Posgrado y MBA
+  posgrado: [
+    'mba peru precio',
+    'maestria administracion lima',
+    'posgrado lima peru',
+    'mba ejecutivo peru',
+    'maestria upn',
+    'diplomado lima universidad',
+    'especializacion profesional lima',
+    'posgrado online peru',
+    'mba laureate peru',
+    'segunda especialidad lima',
   ],
 
-  // Geografias Lima
+  // Geografías Lima y regiones
   geografias: [
-    'gimnasio miraflores',
-    'gimnasio san isidro',
-    'gimnasio surco',
-    'gimnasio la molina',
-    'gimnasio san borja',
-    'gimnasio magdalena',
-    'gimnasio jesus maria',
-    'gimnasio lince',
-    'gimnasio los olivos',
-    'gimnasio lima norte',
+    'universidad los olivos',
+    'universidad comas',
+    'universidad san juan de lurigancho',
+    'universidad chorrillos',
+    'universidad san juan de miraflores',
+    'universidad breña',
+    'universidad ate lima',
+    'universidad trujillo privada',
+    'universidad cajamarca privada',
+    'universidad lima norte',
   ],
 };
 
-export const HASHTAGS_FITZONE = {
+export const HASHTAGS_UPN = {
   // Core (usar siempre)
   core: [
-    '#gymtok',
-    '#fitnessperu',
-    '#gimnasio',
-    '#gym',
-    '#fitness',
-    '#FitZone',
-    '#FitZonePeru',
+    '#UPN',
+    '#UniversidadPrivadaDelNorte',
+    '#VidaUPN',
+    '#AdmisiónUPN',
+    '#UPNPeru',
+    '#LlevatuTalentoMásAlto',
+    '#Laureate',
   ],
 
   // Engagement (rotar)
@@ -137,304 +137,323 @@ export const HASHTAGS_FITZONE = {
     '#xyzbca',
   ],
 
-  // Nicho fitness
-  fitness: [
-    '#legday',
-    '#glutesday',
-    '#transformacion',
-    '#gymrat',
-    '#fitfam',
-    '#gymmotivation',
-    '#workout',
-    '#fitnessmotivation',
-    '#gains',
-    '#bodybuilding',
+  // Vida universitaria
+  vidaUniversitaria: [
+    '#VidaUniversitaria',
+    '#UniversitariosPeru',
+    '#PrimerDíaDeClases',
+    '#CampusLife',
+    '#Universitario',
+    '#EstudiantePeru',
+    '#ColoresUPN',
+    '#GradosUPN',
+    '#ComunidadUPN',
+    '#AlumnoUPN',
   ],
 
-  // Local Peru
+  // Local Perú
   local: [
-    '#lima',
-    '#peru',
-    '#peruanos',
-    '#limalife',
-    '#miraflores',
-    '#sanisidro',
-    '#gymlima',
-    '#fitnessperu',
+    '#Lima',
+    '#Peru',
+    '#LimaNorte',
+    '#LosOlivos',
+    '#Trujillo',
+    '#Cajamarca',
+    '#Peruanos',
+    '#UniversidadPeru',
   ],
 
-  // Disciplinas
-  disciplinas: [
-    '#crossfit',
-    '#funcional',
-    '#hiit',
-    '#pilates',
-    '#yoga',
-    '#spinning',
-    '#boxeo',
-    '#cardio',
-    '#fuerza',
-    '#entrenamiento',
+  // Carreras
+  carreras: [
+    '#Ingeniería',
+    '#Administración',
+    '#Derecho',
+    '#Marketing',
+    '#Psicología',
+    '#Enfermería',
+    '#Arquitectura',
+    '#Contabilidad',
+    '#SistemasInformaticos',
+    '#NegociosInternacionales',
   ],
 
-  // Transformaciones
-  transformaciones: [
-    '#antesydespues',
-    '#transformacion',
-    '#progreso',
-    '#fitjourney',
-    '#weightloss',
-    '#musclegain',
-    '#beforeandafter',
-    '#glow up',
+  // Empleabilidad
+  empleabilidad: [
+    '#EmpleoJoven',
+    '#PrimerEmpleo',
+    '#PrimerSueldo',
+    '#CarreraProfesional',
+    '#ÉxitoProfesional',
+    '#TrabajoEnLima',
+    '#EgresadoUPN',
+    '#GraduadoPeru',
   ],
 
-  // Motivacion
+  // Admisión
+  admision: [
+    '#Admisión2026',
+    '#PostularUniversidad',
+    '#BecasUniversitarias',
+    '#BecaPeru',
+    '#FinanciamientoEstudios',
+    '#ExamenAdmision',
+    '#IngresoUniversidad',
+    '#Bachiller',
+  ],
+
+  // Motivación académica
   motivacion: [
-    '#motivation',
-    '#gymlife',
-    '#nopainnogain',
-    '#nevergiveup',
-    '#disciplina',
-    '#constancia',
-    '#lifestyle',
-    '#healthylifestyle',
+    '#SíSePuede',
+    '#Esfuerzo',
+    '#Disciplina',
+    '#Constancia',
+    '#Superación',
+    '#SueñosReales',
+    '#FuturoUPN',
+    '#InversiónEnTiMismo',
   ],
 
   // Competencia (monitoreo)
   competencia: [
-    '#smartfit',
-    '#smartfitperu',
-    '#b2gimnasio',
-    '#kourban',
-    '#biorhythm',
+    '#UTP',
+    '#CésarVallejo',
+    '#USIL',
+    '#UPC',
+    '#SanMartín',
+    '#Universitarios',
   ],
 };
 
 // Combinar todos los hashtags
 export const ALL_HASHTAGS = [
-  ...HASHTAGS_FITZONE.core,
-  ...HASHTAGS_FITZONE.fitness,
-  ...HASHTAGS_FITZONE.local,
-  ...HASHTAGS_FITZONE.disciplinas,
-  ...HASHTAGS_FITZONE.transformaciones,
+  ...HASHTAGS_UPN.core,
+  ...HASHTAGS_UPN.vidaUniversitaria,
+  ...HASHTAGS_UPN.local,
+  ...HASHTAGS_UPN.carreras,
+  ...HASHTAGS_UPN.empleabilidad,
 ];
 
 // Combinar keywords para Google Trends
 export const ALL_KEYWORDS = [
-  ...KEYWORDS_FITZONE.marca,
-  ...KEYWORDS_FITZONE.categoria,
-  ...KEYWORDS_FITZONE.intencion,
-  ...KEYWORDS_FITZONE.servicios,
+  ...KEYWORDS_UPN.marca,
+  ...KEYWORDS_UPN.categoria,
+  ...KEYWORDS_UPN.intencion,
+  ...KEYWORDS_UPN.carreras,
 ];
 
-// Keywords de alta intencion (conversion)
+// Keywords de alta intención (conversión)
 export const HIGH_INTENT_KEYWORDS = [
-  ...KEYWORDS_FITZONE.intencion,
-  'inscripcion gimnasio',
-  'membresia gym',
-  'precio gimnasio',
-  'promocion gimnasio',
-  'gimnasio sin matricula',
-  'prueba gratis gimnasio',
+  ...KEYWORDS_UPN.intencion,
+  'inscripcion universidad 2026',
+  'postular upn',
+  'costo mensualidad upn',
+  'beca upn 2026',
+  'admision directa universidad lima',
+  'charla informativa upn',
 ];
 
-// Configuracion para Google Trends
+// Configuración para Google Trends
 export const GOOGLE_TRENDS_CONFIG = {
   keywords: ALL_KEYWORDS.slice(0, 15),
   region: 'PE',
   geo: {
     lima: 'PE-LIM',
+    trujillo: 'PE-LAL',
+    cajamarca: 'PE-CAJ',
   },
-  category: 44, // Health & Fitness
+  category: 74, // Education
   timeframe: 'now 7-d',
   refreshInterval: 3600000,
 };
 
-// Configuracion para TikTok
+// Configuración para TikTok
 export const TIKTOK_CONFIG = {
   hashtags: [
-    ...HASHTAGS_FITZONE.core,
-    ...HASHTAGS_FITZONE.fitness.slice(0, 5),
-    ...HASHTAGS_FITZONE.local.slice(0, 3),
+    ...HASHTAGS_UPN.core,
+    ...HASHTAGS_UPN.vidaUniversitaria.slice(0, 5),
+    ...HASHTAGS_UPN.local.slice(0, 3),
   ],
   region: 'PE',
   metrics: ['views', 'likes', 'shares', 'comments'],
   trending_threshold: 10000,
   sounds: [
-    { name: 'NEFFEX tracks', category: 'Workout Motivation' },
-    { name: 'Tevvez - Legend', category: 'Gymtok classic' },
-    { name: 'Bad Bunny hits', category: 'Reggaeton workout' },
-    { name: 'Phonk remixes', category: 'Powerlifting' },
-    { name: 'Eminem/2Pac workout', category: 'Hip Hop gym' },
+    { name: 'Bad Bunny — Un Verano Sin Ti', category: 'Vida universitaria / campus' },
+    { name: 'Bizarrap — Shakira #53', category: 'Empoderamiento / logros' },
+    { name: 'Lo-fi Study Beats — Chillhop', category: 'Época de exámenes' },
+    { name: 'Feid — Pantone', category: 'GRWM primer día de clases' },
+    { name: 'Grupo 5 — Cumbia Mix', category: 'Contenido relatable peruano' },
   ],
 };
 
-// Configuracion para Meta (Facebook/Instagram)
+// Configuración para Meta (Facebook/Instagram)
 export const META_CONFIG = {
   hashtags: [
-    ...HASHTAGS_FITZONE.core,
-    ...HASHTAGS_FITZONE.fitness,
-    ...HASHTAGS_FITZONE.local,
+    ...HASHTAGS_UPN.core,
+    ...HASHTAGS_UPN.admision,
+    ...HASHTAGS_UPN.local,
   ],
   pages: [
-    'FitZone Peru',
-    'FitZone Oficial',
-    'Smart Fit Peru',
-    'b2 gimnasio',
+    'UPN Universidad Privada del Norte',
+    'UPN Oficial',
+    'UTP Peru',
+    'Universidad César Vallejo',
   ],
   groups: [
-    'Fitness Peru',
-    'Gym Lima',
-    'Runners Lima',
-    'CrossFit Peru',
+    'Universitarios Peru',
+    'Admisión Universidades Lima',
+    'Becas Peru 2026',
+    'Estudiantes Lima Norte',
   ],
   interests: [
-    'Fitness and wellness',
-    'Gym',
-    'Weight training',
-    'Physical exercise',
-    'Healthy lifestyle',
+    'Educación superior',
+    'Universidad',
+    'Admisión universitaria',
+    'Becas universitarias',
+    'Carreras profesionales',
   ],
 };
 
-// Fuentes de informacion fitness Peru
-export const FITNESS_SOURCES = [
+// Fuentes de información educación superior Perú
+export const EDUCATION_SOURCES = [
   {
-    name: 'Mercado Fitness',
-    url: 'https://mercadofitness.com',
-    type: 'industry',
-    scraping: true,
-  },
-  {
-    name: 'AGP',
-    url: 'https://agpperu.org',
-    type: 'association',
+    name: 'SUNEDU',
+    url: 'https://www.sunedu.gob.pe',
+    type: 'regulatory',
     scraping: false,
   },
   {
-    name: 'El Comercio - Fitness',
-    url: 'https://elcomercio.pe/respuestas/fitness',
+    name: 'El Comercio - Educación',
+    url: 'https://elcomercio.pe/respuestas/educacion',
     type: 'news',
     scraping: true,
   },
   {
-    name: 'Gestion - Negocios Fitness',
-    url: 'https://gestion.pe',
+    name: 'Gestión - Educación',
+    url: 'https://gestion.pe/tendencias/educacion',
     type: 'business',
+    scraping: true,
+  },
+  {
+    name: 'UPN Oficial',
+    url: 'https://www.upn.edu.pe',
+    type: 'brand',
     scraping: true,
   },
 ];
 
-// Sedes FitZone (para monitoreo individual)
-export const SEDES_FITZONE = [
+// Campus UPN (para monitoreo individual)
+export const CAMPUS_UPN = [
   {
     id: 1,
-    nombre: 'FitZone Miraflores',
-    slug: 'miraflores',
-    distrito: 'Miraflores',
-    keywords: ['gimnasio miraflores', 'gym miraflores', 'fitzone miraflores'],
-    hashtags: ['#Miraflores', '#GymMiraflores'],
+    nombre: 'UPN Los Olivos',
+    slug: 'los-olivos',
+    distrito: 'Los Olivos',
+    ciudad: 'Lima',
+    keywords: ['upn los olivos', 'universidad los olivos', 'upn lima norte'],
+    hashtags: ['#LosOlivos', '#UPNLosOlivos', '#LimaNorte'],
   },
   {
     id: 2,
-    nombre: 'FitZone San Isidro',
-    slug: 'san-isidro',
-    distrito: 'San Isidro',
-    keywords: ['gimnasio san isidro', 'gym san isidro', 'fitzone san isidro'],
-    hashtags: ['#SanIsidro', '#GymSanIsidro'],
+    nombre: 'UPN Breña',
+    slug: 'brena',
+    distrito: 'Breña',
+    ciudad: 'Lima',
+    keywords: ['upn breña', 'universidad breña lima', 'upn lima centro'],
+    hashtags: ['#Breña', '#UPNBreña', '#LimaCentro'],
   },
   {
     id: 3,
-    nombre: 'FitZone Surco',
-    slug: 'surco',
-    distrito: 'Surco',
-    keywords: ['gimnasio surco', 'gym surco', 'fitzone surco'],
-    hashtags: ['#Surco', '#GymSurco'],
+    nombre: 'UPN Chorrillos',
+    slug: 'chorrillos',
+    distrito: 'Chorrillos',
+    ciudad: 'Lima',
+    keywords: ['upn chorrillos', 'universidad chorrillos', 'upn lima sur'],
+    hashtags: ['#Chorrillos', '#UPNChorrillos', '#LimaSur'],
   },
   {
     id: 4,
-    nombre: 'FitZone La Molina',
-    slug: 'la-molina',
-    distrito: 'La Molina',
-    keywords: ['gimnasio la molina', 'gym la molina', 'fitzone la molina'],
-    hashtags: ['#LaMolina', '#GymLaMolina'],
+    nombre: 'UPN Comas',
+    slug: 'comas',
+    distrito: 'Comas',
+    ciudad: 'Lima',
+    keywords: ['upn comas', 'universidad comas lima', 'upn lima norte comas'],
+    hashtags: ['#Comas', '#UPNComas'],
   },
   {
     id: 5,
-    nombre: 'FitZone San Borja',
-    slug: 'san-borja',
-    distrito: 'San Borja',
-    keywords: ['gimnasio san borja', 'gym san borja', 'fitzone san borja'],
-    hashtags: ['#SanBorja', '#GymSanBorja'],
+    nombre: 'UPN San Juan de Lurigancho',
+    slug: 'sjl',
+    distrito: 'San Juan de Lurigancho',
+    ciudad: 'Lima',
+    keywords: ['upn sjl', 'universidad san juan de lurigancho', 'upn lima este'],
+    hashtags: ['#SJL', '#SanJuanDeLurigancho', '#UPNLimaEste'],
   },
   {
     id: 6,
-    nombre: 'FitZone Magdalena',
-    slug: 'magdalena',
-    distrito: 'Magdalena',
-    keywords: ['gimnasio magdalena', 'gym magdalena', 'fitzone magdalena'],
-    hashtags: ['#Magdalena', '#GymMagdalena'],
+    nombre: 'UPN San Juan de Miraflores',
+    slug: 'sjm',
+    distrito: 'San Juan de Miraflores',
+    ciudad: 'Lima',
+    keywords: ['upn sjm', 'universidad san juan de miraflores', 'upn lima sur'],
+    hashtags: ['#SJM', '#UPNSurLima'],
   },
   {
     id: 7,
-    nombre: 'FitZone Jesus Maria',
-    slug: 'jesus-maria',
-    distrito: 'Jesus Maria',
-    keywords: ['gimnasio jesus maria', 'gym jesus maria'],
-    hashtags: ['#JesusMaria', '#GymJesusMaria'],
+    nombre: 'UPN Ate',
+    slug: 'ate',
+    distrito: 'Ate',
+    ciudad: 'Lima',
+    keywords: ['upn ate', 'universidad ate lima', 'upn vitarte'],
+    hashtags: ['#Ate', '#Vitarte', '#UPNAte'],
   },
   {
     id: 8,
-    nombre: 'FitZone Lince',
-    slug: 'lince',
-    distrito: 'Lince',
-    keywords: ['gimnasio lince', 'gym lince', 'fitzone lince'],
-    hashtags: ['#Lince', '#GymLince'],
+    nombre: 'UPN Trujillo Norte',
+    slug: 'trujillo-norte',
+    distrito: 'Trujillo Norte',
+    ciudad: 'Trujillo',
+    keywords: ['upn trujillo', 'universidad privada trujillo', 'upn trujillo norte'],
+    hashtags: ['#Trujillo', '#UPNTrujillo', '#LaLibertad'],
   },
   {
     id: 9,
-    nombre: 'FitZone San Miguel',
-    slug: 'san-miguel',
-    distrito: 'San Miguel',
-    keywords: ['gimnasio san miguel', 'gym san miguel', 'fitzone san miguel'],
-    hashtags: ['#SanMiguel', '#GymSanMiguel'],
+    nombre: 'UPN Trujillo Centro',
+    slug: 'trujillo-centro',
+    distrito: 'Trujillo Centro',
+    ciudad: 'Trujillo',
+    keywords: ['upn trujillo centro', 'universidad trujillo centro', 'estudiar trujillo'],
+    hashtags: ['#TrujilloPeru', '#UPNTrujilloCentro'],
   },
   {
     id: 10,
-    nombre: 'FitZone Independencia',
-    slug: 'independencia',
-    distrito: 'Independencia',
-    keywords: ['gimnasio independencia', 'gym lima norte', 'fitzone independencia'],
-    hashtags: ['#Independencia', '#LimaNorte'],
-  },
-  {
-    id: 11,
-    nombre: 'FitZone Los Olivos',
-    slug: 'los-olivos',
-    distrito: 'Los Olivos',
-    keywords: ['gimnasio los olivos', 'gym los olivos', 'fitzone los olivos'],
-    hashtags: ['#LosOlivos', '#GymLosOlivos'],
-  },
-  {
-    id: 12,
-    nombre: 'FitZone Ate',
-    slug: 'ate',
-    distrito: 'Ate',
-    keywords: ['gimnasio ate', 'gym lima este', 'fitzone ate'],
-    hashtags: ['#Ate', '#LimaEste'],
+    nombre: 'UPN Cajamarca',
+    slug: 'cajamarca',
+    distrito: 'Cajamarca',
+    ciudad: 'Cajamarca',
+    keywords: ['upn cajamarca', 'universidad privada cajamarca', 'estudiar cajamarca'],
+    hashtags: ['#Cajamarca', '#UPNCajamarca'],
   },
 ];
 
+// Alias para compatibilidad (renombrado de KEYWORDS_FITZONE → KEYWORDS_UPN)
+export const KEYWORDS_FITZONE = KEYWORDS_UPN;
+export const HASHTAGS_FITZONE = HASHTAGS_UPN;
+export const SEDES_FITZONE = CAMPUS_UPN;
+export const FITNESS_SOURCES = EDUCATION_SOURCES;
+
 export default {
-  KEYWORDS_FITZONE,
-  HASHTAGS_FITZONE,
+  KEYWORDS_UPN,
+  HASHTAGS_UPN,
   ALL_HASHTAGS,
   ALL_KEYWORDS,
   HIGH_INTENT_KEYWORDS,
   GOOGLE_TRENDS_CONFIG,
   TIKTOK_CONFIG,
   META_CONFIG,
-  FITNESS_SOURCES,
+  EDUCATION_SOURCES,
+  CAMPUS_UPN,
+  KEYWORDS_FITZONE,
+  HASHTAGS_FITZONE,
   SEDES_FITZONE,
+  FITNESS_SOURCES,
 };

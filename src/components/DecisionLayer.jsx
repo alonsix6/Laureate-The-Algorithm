@@ -16,36 +16,36 @@ export default function DecisionLayer() {
     {
       priority: 'high',
       category: 'TikTok Ads',
-      action: 'Aumentar budget TikTok 25% - CPL 12% debajo del objetivo, audiencia joven con engagement excepcional',
-      impact: '+150 leads/mes estimados de jóvenes 18-25',
+      action: 'Aumentar budget TikTok 30% - CPL $7.29 supera el objetivo, pico estacional de admisión activo',
+      impact: '+280 leads/mes estimados de bachilleres 17-22',
       confidence: 94
     },
     {
       priority: 'high',
       category: 'Campaña',
-      action: 'Lanzar "Propósito 2026" - Enero es pico máximo de demanda (+85% búsquedas)',
-      impact: '+280 trials estimados primera quincena',
+      action: 'Lanzar "Tu Futuro Empieza Aquí" - Enero-Febrero es ventana crítica de admisión (+92% búsquedas)',
+      impact: '+420 charlas de orientación estimadas primera quincena',
       confidence: 92
     },
     {
       priority: 'medium',
       category: 'Influencers',
-      action: 'Activar micro-influencers fitness (10-50K) - UGC de transformaciones tiene 3x engagement',
-      impact: '+420K alcance orgánico estimado',
+      action: 'Activar micro-influencers universitarios (10-50K) - UGC de egresados tiene 3.8x engagement vs branded',
+      impact: '+680K alcance orgánico estimado en segmento 16-24',
       confidence: 88
     },
     {
       priority: 'medium',
-      category: 'Promoción',
-      action: 'Promoción "Sin Matrícula" primera quincena - Competir con oferta agresiva de Smart Fit',
-      impact: 'Capturar usuarios sensibles al precio',
+      category: 'Becas',
+      action: 'Campaña de becas dirigida a padres (Facebook 35-55) - Segmento sensible al precio en pico decisión',
+      impact: 'Capturar segmento NSE C con alta intención de postular',
       confidence: 85
     },
     {
       priority: 'low',
       category: 'Lima Norte',
-      action: 'Aumentar budget 15% para Los Olivos/Independencia - CPL $8.50 vs promedio $11.20',
-      impact: '+95 leads adicionales/mes en expansión',
+      action: 'Aumentar budget 20% para Los Olivos/Comas - CPL $6.20 vs promedio $7.80 del portfolio',
+      impact: '+120 leads adicionales/mes en Lima Norte',
       confidence: 78
     }
   ];
@@ -102,8 +102,8 @@ export default function DecisionLayer() {
               <Zap className="w-7 h-7 sm:w-8 sm:h-8 lg:w-10 lg:h-10" />
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-bold">FitZone Opportunity Score</h3>
-              <p className="text-white/90 mt-0.5 sm:mt-1 text-xs sm:text-sm">Indice de oportunidad para inversion en adquisicion de miembros</p>
+              <h3 className="text-lg sm:text-xl font-bold">UPN Opportunity Score</h3>
+              <p className="text-white/90 mt-0.5 sm:mt-1 text-xs sm:text-sm">Índice de oportunidad para inversión en captación de estudiantes UPN</p>
             </div>
           </div>
 
@@ -181,7 +181,7 @@ export default function DecisionLayer() {
           </div>
           <div>
             <h3 className="text-sm sm:text-base font-bold text-white">Recomendaciones Estrategicas</h3>
-            <p className="text-xs sm:text-sm text-fitzone-textGray">Acciones prioritarias basadas en senales del mercado fitness</p>
+            <p className="text-xs sm:text-sm text-fitzone-textGray">Acciones prioritarias basadas en señales del mercado universitario</p>
           </div>
         </div>
 
@@ -231,8 +231,8 @@ export default function DecisionLayer() {
             <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </div>
           <div>
-            <h3 className="text-sm sm:text-base font-bold text-white">Audiencias Objetivo FitZone</h3>
-            <p className="text-xs sm:text-sm text-fitzone-textGray">Segmentacion inteligente para adquisicion de miembros 2026</p>
+            <h3 className="text-sm sm:text-base font-bold text-white">Audiencias Objetivo UPN</h3>
+            <p className="text-xs sm:text-sm text-fitzone-textGray">Segmentación inteligente para captación de estudiantes 2026</p>
           </div>
         </div>
 

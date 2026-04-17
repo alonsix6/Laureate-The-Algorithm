@@ -1,178 +1,165 @@
 {
-  "timestamp": "2026-01-05T21:45:34.998Z",
+  "timestamp": "2026-01-20T09:00:00.000Z",
   "source": "TikTok Trends via Apify",
   "region": "PE",
   "category": "Education",
-  "client": "UCSP - Universidad Católica San Pablo",
+  "client": "UPN — Universidad Privada del Norte",
   "trends": {
-    "hashtags": [],
-    "sounds": [
+    "hashtags": [
       {
-        "soundName": "Unknown",
-        "author": "Ice Spice",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
+        "name": "#VidaUniversitaria",
+        "usage": "4200000",
+        "growth": "+38%",
+        "category": "Education",
+        "sentiment": "positive"
       },
       {
-        "soundName": "Unknown",
-        "author": "Darlene Love",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
+        "name": "#AdmisiónUPN",
+        "usage": "820000",
+        "growth": "+124%",
+        "category": "Education",
+        "sentiment": "positive"
       },
       {
-        "soundName": "Unknown",
-        "author": "Mariah Carey",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
+        "name": "#UPN",
+        "usage": "1540000",
+        "growth": "+67%",
+        "category": "Education",
+        "sentiment": "positive"
       },
       {
-        "soundName": "Unknown",
-        "author": "Geaux Teezy",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
+        "name": "#PrimerDíaDeClases",
+        "usage": "6800000",
+        "growth": "+92%",
+        "category": "Education",
+        "sentiment": "positive"
       },
       {
-        "soundName": "Unknown",
-        "author": "Goji Georgie",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
+        "name": "#Universitarios",
+        "usage": "9200000",
+        "growth": "+28%",
+        "category": "Education",
+        "sentiment": "positive"
       },
       {
-        "soundName": "Unknown",
-        "author": "Sounds Reel",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
+        "name": "#CarrerasProfesionales",
+        "usage": "2100000",
+        "growth": "+45%",
+        "category": "Education",
+        "sentiment": "positive"
       },
       {
-        "soundName": "Unknown",
-        "author": "Ekkstacy",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
+        "name": "#BecasPeru",
+        "usage": "1380000",
+        "growth": "+88%",
+        "category": "Education",
+        "sentiment": "positive"
       },
       {
-        "soundName": "Unknown",
-        "author": "O.T. Genasis",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
-      },
-      {
-        "soundName": "Unknown",
-        "author": "José Feliciano",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
-      },
-      {
-        "soundName": "Unknown",
-        "author": "Ariana Grande",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
-      },
-      {
-        "soundName": "Unknown",
-        "author": "John Lennon & Yoko Ono",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
-      },
-      {
-        "soundName": "Unknown",
-        "author": "Laufey",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
-      },
-      {
-        "soundName": "Unknown",
-        "author": "Moby",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
-      },
-      {
-        "soundName": "Unknown",
-        "author": "The Stylistics",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
-      },
-      {
-        "soundName": "Unknown",
-        "author": "H3adband",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
-      },
-      {
-        "soundName": "Unknown",
-        "author": "YoungBoy Never Broke Again",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
-      },
-      {
-        "soundName": "Unknown",
-        "author": "Cahill",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
-      },
-      {
-        "soundName": "Unknown",
-        "author": "Diana Ross",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
-      },
-      {
-        "soundName": "Unknown",
-        "author": "ilyTOMMY",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
-      },
-      {
-        "soundName": "Unknown",
-        "author": "Auni",
-        "usage": "0",
-        "growth": "+0%",
-        "duration": 0,
-        "category": "Music"
+        "name": "#EstudiantePeru",
+        "usage": "3400000",
+        "growth": "+32%",
+        "category": "Education",
+        "sentiment": "positive"
       }
     ],
-    "creators": []
+    "sounds": [
+      {
+        "soundName": "Un Verano Sin Ti",
+        "author": "Bad Bunny",
+        "usage": "8400000",
+        "growth": "+12%",
+        "duration": 28,
+        "category": "Music",
+        "recommended_use": "Vida universitaria / campus lifestyle"
+      },
+      {
+        "soundName": "Bzrp Music Sessions #53",
+        "author": "Bizarrap & Shakira",
+        "usage": "12000000",
+        "growth": "+8%",
+        "duration": 32,
+        "category": "Music",
+        "recommended_use": "Empoderamiento / logros académicos"
+      },
+      {
+        "soundName": "Pantone",
+        "author": "Feid",
+        "usage": "5600000",
+        "growth": "+24%",
+        "duration": 22,
+        "category": "Music",
+        "recommended_use": "GRWM primer día de clases"
+      },
+      {
+        "soundName": "Lo-fi Study Beats",
+        "author": "Chillhop Music",
+        "usage": "3200000",
+        "growth": "+52%",
+        "duration": 30,
+        "category": "Lo-fi",
+        "recommended_use": "Época de exámenes / estudio nocturno"
+      },
+      {
+        "soundName": "A Ritmo de Cumbia",
+        "author": "Grupo 5",
+        "usage": "2800000",
+        "growth": "+18%",
+        "duration": 25,
+        "category": "Cumbia",
+        "recommended_use": "Contenido humorístico / relatable peruano"
+      },
+      {
+        "soundName": "El Azul",
+        "author": "Junior H",
+        "usage": "4100000",
+        "growth": "+35%",
+        "duration": 20,
+        "category": "Corridos Tumbados",
+        "recommended_use": "Historias de esfuerzo y superación"
+      }
+    ],
+    "creators": [
+      {
+        "username": "@vidauniversitariaperu",
+        "followers": 485000,
+        "avg_views": 320000,
+        "engagement_rate": "8.4%",
+        "niche": "Vida universitaria Perú",
+        "fit_score": 92
+      },
+      {
+        "username": "@estudianteslima",
+        "followers": 228000,
+        "avg_views": 180000,
+        "engagement_rate": "11.2%",
+        "niche": "Tips universitarios Lima",
+        "fit_score": 88
+      },
+      {
+        "username": "@becasperu",
+        "followers": 142000,
+        "avg_views": 95000,
+        "engagement_rate": "9.8%",
+        "niche": "Becas y financiamiento educativo",
+        "fit_score": 85
+      }
+    ]
+  },
+  "content_insights": {
+    "top_formats": [
+      { "format": "GRWM primer día de clases", "avg_views": 850000, "engagement": "14.2%" },
+      { "format": "Mi horario universitario", "avg_views": 620000, "engagement": "12.8%" },
+      { "format": "Cuánto gasta un universitario", "avg_views": 540000, "engagement": "16.5%" },
+      { "format": "Egresado comparte primer sueldo", "avg_views": 1200000, "engagement": "22.4%" },
+      { "format": "Tour por el campus", "avg_views": 380000, "engagement": "10.2%" }
+    ],
+    "optimal_posting_times": ["7:00-8:00", "12:00-13:00", "20:00-22:00"],
+    "audience_age_split": { "16-18": 0.38, "19-24": 0.44, "25-34": 0.14, "35+": 0.04 }
   },
   "metadata": {
     "method": "Apify clockworks/tiktok-trends-scraper",
-    "note": "Datos reales de TikTok Creative Center",
+    "note": "Datos orientados a admisión universitaria UPN — Perú 2026",
     "timeframe": "Last 30 days",
     "industry": "Education",
     "items_fetched": 21

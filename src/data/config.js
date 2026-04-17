@@ -2,20 +2,20 @@
 // Textos, mensajes, secciones y configuración de UI
 
 // ============================================================================
-// BRAND CONFIGURATION - Configuración de producto y cliente demo
+// BRAND CONFIGURATION - Universidad Privada del Norte (UPN) / Laureate
 // ============================================================================
 export const BRAND_CONFIG = {
   name: 'The Algorithm by Reset',
   tagline: 'Social Intelligence Platform',
-  subtitle: 'Optimización automática de inversión digital en adquisición de miembros',
-  product: 'Membresías y Servicios 2026',
-  market: 'Lima Metropolitana (12 sedes)',
-  client: 'FitZone Perú',
+  subtitle: 'Optimización automática de inversión digital en captación de estudiantes',
+  product: 'Pregrado y Posgrado 2026',
+  market: 'Lima Metropolitana y Norte del Perú (10 campus)',
+  client: 'UPN — Universidad Privada del Norte',
   agency: 'Reset Agency',
-  isTemplate: true,
+  isTemplate: false,
   version: '1.0.0',
-  slogan: 'Tu Espacio, Tu Ritmo',
-  founded: 2019,
+  slogan: 'Lleva tu talento más alto',
+  founded: 1994,
 };
 
 // ============================================================================
@@ -25,7 +25,7 @@ export const LAYER_CONFIG = {
   data: {
     id: 'data',
     name: 'Captura de Señales',
-    subtitle: 'Monitoreo en tiempo real del ecosistema digital fitness',
+    subtitle: 'Monitoreo en tiempo real del ecosistema digital educativo',
     description: 'Búsqueda, Tendencia, Intención, Engagement',
     icon: 'Search',
     color: 'from-fitzone-orange to-fitzone-darkOrange',
@@ -33,7 +33,7 @@ export const LAYER_CONFIG = {
   decision: {
     id: 'decision',
     name: 'Inteligencia de Mercado',
-    subtitle: 'Insights automáticos para optimizar inversión en adquisición',
+    subtitle: 'Insights automáticos para optimizar inversión en captación de alumnos',
     description: 'Análisis y definición de estrategia',
     icon: 'Target',
     color: 'from-fitzone-darkOrange to-fitzone-electric',
@@ -57,33 +57,33 @@ export const LAYER_CONFIG = {
 };
 
 // ============================================================================
-// KEY MESSAGES - Mensajes clave de comunicación FitZone
+// KEY MESSAGES - Mensajes clave de comunicación UPN
 // ============================================================================
 export const KEY_MESSAGES = {
-  espacio: {
-    title: 'Tu Espacio, Tu Ritmo',
-    message: 'Horarios flexibles 5am-11pm, sin permanencia obligatoria',
-    description: 'Entrena a tu manera, cuando quieras',
+  empleabilidad: {
+    title: 'Empleabilidad Garantizada',
+    message: '9 de cada 10 egresados consigue empleo en su primer año',
+    description: '5 Estrellas QS en Empleabilidad — el mejor indicador del mercado',
   },
-  tecnologia: {
-    title: 'Tecnología que te Impulsa',
-    message: 'App con tracking de progreso y máquinas conectadas',
-    description: 'Planes personalizados por IA',
+  acceso: {
+    title: 'Calidad Accesible',
+    message: 'Desde S/450/cuota — educación internacional sin costo internacional',
+    description: 'Becas, financiamiento y planes de pago a tu medida',
   },
-  comunidad: {
-    title: 'Comunidad que Motiva',
-    message: 'Clases grupales energéticas y eventos mensuales',
-    description: 'Retos y challenges que te mantienen activo',
+  acreditacion: {
+    title: 'Acreditación Internacional',
+    message: 'Licenciada por SUNEDU · IAC-CINDA 2024–2029 · QS 4 Estrellas',
+    description: 'Una de las 4 universidades en Perú con acreditación IAC-CINDA',
   },
-  resultados: {
-    title: 'Resultados Garantizados',
-    message: 'Asesoría nutricional incluida y mediciones mensuales',
-    description: 'Personal trainers certificados',
+  red: {
+    title: 'Red Laureate Global',
+    message: 'Parte de Laureate International Universities — 25+ países',
+    description: 'Intercambios internacionales y doble titulación disponibles',
   },
-  precio: {
-    title: 'Precio Justo, Calidad Premium',
-    message: 'Mejor relación precio-valor del mercado',
-    description: 'Sin costos ocultos, congelamiento gratis',
+  flexibilidad: {
+    title: 'Modalidades para tu Vida',
+    message: 'Presencial, Gente que Trabaja (noches/fines) y 100% a Distancia',
+    description: 'Más de 18 programas online · Posgrado 100% virtual disponible',
   },
 };
 
@@ -94,20 +94,20 @@ export const DATA_SOURCES_CONFIG = {
   googleTrends: {
     enabled: true,
     name: 'Google Trends',
-    description: 'Tendencias de búsqueda fitness en tiempo real',
+    description: 'Tendencias de búsqueda educativa en tiempo real',
     icon: 'TrendingUp',
     color: 'text-fitzone-electric',
     bgColor: 'bg-fitzone-slate',
     region: 'PE',
-    category: 'Health & Fitness',
+    category: 'Education',
     interval: 'hourly',
     status: 'active',
-    geo: ['Lima'],
+    geo: ['Lima', 'Trujillo', 'Cajamarca'],
   },
   tiktok: {
     enabled: true,
     name: 'TikTok',
-    description: 'Contenido viral fitness y hashtags trending',
+    description: 'Contenido viral educativo y hashtags trending',
     icon: 'Video',
     color: 'text-fitzone-lime',
     bgColor: 'bg-fitzone-slate',
@@ -117,7 +117,7 @@ export const DATA_SOURCES_CONFIG = {
   meta: {
     enabled: true,
     name: 'Meta Platforms',
-    description: 'Facebook e Instagram insights fitness',
+    description: 'Facebook e Instagram insights educación',
     icon: 'Share2',
     color: 'text-fitzone-electric',
     bgColor: 'bg-fitzone-slate',
@@ -127,26 +127,26 @@ export const DATA_SOURCES_CONFIG = {
   youtube: {
     enabled: true,
     name: 'YouTube',
-    description: 'Videos de transformaciones y entrenamientos',
+    description: 'Videos de vida universitaria y testimoniales',
     icon: 'Youtube',
     color: 'text-fitzone-orange',
     bgColor: 'bg-fitzone-slate',
     status: 'active',
   },
-  fitness: {
+  educacion: {
     enabled: true,
-    name: 'Portales Fitness',
-    description: 'MercadoFitness, AGP, Portales especializados',
+    name: 'Portales Educativos',
+    description: 'SUNEDU, Gestión, El Comercio, portales especializados',
     icon: 'Globe',
     color: 'text-fitzone-lime',
     bgColor: 'bg-fitzone-slate',
-    sources: ['Mercado Fitness', 'AGP', 'Impronta Research'],
+    sources: ['SUNEDU', 'Gestión Educación', 'El Comercio'],
     status: 'active',
   },
   ga4: {
     enabled: false,
     name: 'Google Analytics 4',
-    description: 'Tráfico web y conversiones',
+    description: 'Tráfico web y conversiones upn.edu.pe',
     icon: 'BarChart3',
     color: 'text-fitzone-orange',
     bgColor: 'bg-fitzone-slate',
@@ -173,8 +173,8 @@ export const CHANNELS_CONFIG = {
     icon: 'Search',
     color: 'text-fitzone-lime',
     bgColor: 'bg-fitzone-slate',
-    primary_kpi: 'Intención de compra',
-    description: 'Campañas Brand, Generic, Competitor',
+    primary_kpi: 'Intención de matrícula',
+    description: 'Campañas Brand, Genérico, Competidor',
   },
   google_display: {
     name: 'Google Display',
@@ -189,7 +189,7 @@ export const CHANNELS_CONFIG = {
     icon: 'Video',
     color: 'text-fitzone-lime',
     bgColor: 'bg-fitzone-slate',
-    primary_kpi: 'Jóvenes 18-25',
+    primary_kpi: 'Jóvenes 17-22',
     description: 'In-Feed y TopView ads',
   },
   influencers: {
@@ -198,191 +198,152 @@ export const CHANNELS_CONFIG = {
     color: 'text-fitzone-orange',
     bgColor: 'bg-fitzone-slate',
     primary_kpi: 'UGC + Credibilidad',
-    description: 'Micro y macro influencers fitness',
+    description: 'Micro-influencers estudiantes y egresados',
   },
 };
 
 // ============================================================================
-// SEDES - Ubicaciones FitZone
+// CAMPUS - Ubicaciones UPN
 // ============================================================================
 export const SEDES_CONFIG = [
-  { id: 1, name: 'FitZone Miraflores', distrito: 'Miraflores', nse: 'A/B', size: '1,200 m2', type: 'Flagship' },
-  { id: 2, name: 'FitZone San Isidro', distrito: 'San Isidro', nse: 'A', size: '1,000 m2', type: 'Ejecutivos' },
-  { id: 3, name: 'FitZone Surco', distrito: 'Surco', nse: 'A/B', size: '1,100 m2', type: 'Familias' },
-  { id: 4, name: 'FitZone La Molina', distrito: 'La Molina', nse: 'A/B', size: '900 m2', type: 'Premium' },
-  { id: 5, name: 'FitZone San Borja', distrito: 'San Borja', nse: 'B', size: '800 m2', type: 'Funcional' },
-  { id: 6, name: 'FitZone Magdalena', distrito: 'Magdalena', nse: 'B/C', size: '750 m2', type: 'Jóvenes' },
-  { id: 7, name: 'FitZone Jesús María', distrito: 'Jesús María', nse: 'B/C', size: '700 m2', type: 'Oficinistas' },
-  { id: 8, name: 'FitZone Lince', distrito: 'Lince', nse: 'B/C', size: '650 m2', type: 'Económico' },
-  { id: 9, name: 'FitZone San Miguel', distrito: 'San Miguel', nse: 'B/C', size: '800 m2', type: 'Mall' },
-  { id: 10, name: 'FitZone Independencia', distrito: 'Independencia', nse: 'C/D', size: '600 m2', type: 'Lima Norte' },
-  { id: 11, name: 'FitZone Los Olivos', distrito: 'Los Olivos', nse: 'C', size: '700 m2', type: 'Expansión' },
-  { id: 12, name: 'FitZone Ate', distrito: 'Ate', nse: 'C/D', size: '650 m2', type: 'Lima Este' },
+  { id: 1, name: 'UPN Los Olivos', distrito: 'Los Olivos', nse: 'B/C', size: 'Campus Principal', type: 'Lima Norte' },
+  { id: 2, name: 'UPN Breña', distrito: 'Breña / Cercado', nse: 'B/C', size: 'Campus Completo', type: 'Lima Centro' },
+  { id: 3, name: 'UPN Chorrillos', distrito: 'Chorrillos', nse: 'B/C', size: 'Campus Completo', type: 'Lima Sur' },
+  { id: 4, name: 'UPN Comas', distrito: 'Comas', nse: 'C', size: 'Campus Completo', type: 'Lima Norte' },
+  { id: 5, name: 'UPN San Juan de Lurigancho', distrito: 'SJL', nse: 'C', size: 'Campus Completo', type: 'Lima Este' },
+  { id: 6, name: 'UPN San Juan de Miraflores', distrito: 'SJM', nse: 'B/C', size: 'Campus Completo', type: 'Lima Sur' },
+  { id: 7, name: 'UPN Ate', distrito: 'Ate', nse: 'C', size: 'Campus Nuevo', type: 'Lima Este — Inversión US$28M' },
+  { id: 8, name: 'UPN Trujillo El Molino', distrito: 'Trujillo', nse: 'B/C', size: 'Campus Regional', type: 'Sede Fundacional 1994' },
+  { id: 9, name: 'UPN Trujillo San Isidro', distrito: 'Trujillo Norte', nse: 'B/C', size: 'Campus Regional', type: 'Trujillo — La Libertad' },
+  { id: 10, name: 'UPN Cajamarca', distrito: 'Cajamarca', nse: 'B/C', size: 'Campus Regional', type: 'Sierra Norte' },
 ];
 
 // ============================================================================
-// AUDIENCES - Audiencias objetivo
+// AUDIENCES - Audiencias objetivo UPN (2 perfiles principales)
 // ============================================================================
 export const TARGET_AUDIENCES = [
   {
-    id: 'jovenes_activos',
-    name: 'Jóvenes Activos',
-    description: '18-30 años, estudiantes y primeros trabajos',
-    size: '~85,000',
-    age_range: '18-30',
+    id: 'bachilleres_jovenes',
+    name: 'Bachilleres / Jóvenes',
+    description: '17-22 años, egresados de secundaria buscando universidad',
+    size: '~115,000',
+    age_range: '17-22',
     priority: 'high',
     segments: [
       {
-        name: 'Universitarios',
-        size: '~45,000',
-        age: '18-24',
-        characteristics: ['Alto engagement redes', 'Sensibles al precio', 'Influenciados por tendencias'],
+        name: 'Recién egresados 5° secundaria',
+        size: '~65,000',
+        age: '17-18',
+        characteristics: ['Alta influencia de pares', 'Sensibles al precio', 'TikTok como canal principal'],
       },
       {
-        name: 'Jóvenes Profesionales',
-        size: '~40,000',
-        age: '25-30',
-        characteristics: ['Primer sueldo', 'Buscan comunidad', 'Orientados a resultados'],
+        name: 'Jóvenes que trabajan y estudian',
+        size: '~50,000',
+        age: '19-22',
+        characteristics: ['Buscan modalidad flexible', 'Empleabilidad prioritaria', 'Primeros ingresos propios'],
       },
     ],
-    interests: ['Verse bien', 'Socializar', 'Tendencias TikTok', 'Transformaciones'],
-    message: 'Tu transformación empieza hoy: resultados visibles en 8 semanas',
+    interests: ['Empleabilidad', 'Carrera con futuro', 'Precio accesible', 'Campus cercano'],
+    message: 'Lleva tu talento más alto: 9 de cada 10 egresados consigue empleo',
     channels: {
-      'Meta Ads': 35,
-      'TikTok Ads': 25,
-      'Google Search': 25,
-      'Influencers': 15,
+      'TikTok Ads': 33,
+      'Meta Ads': 28,
+      'YouTube / Google Video': 17,
+      'Google Search': 12,
+      'WhatsApp': 10,
     },
     engagement_rate: 14.5,
-    cpl_target: 10,
+    cpl_target: 7,
     conversion_funnel: {
-      alcance: 1200000,
-      visitas_landing: 18000,
-      formularios: 2160,
-      trials: 756,
-      miembros: 416,
+      alcance: 1500000,
+      visitas_landing: 22500,
+      formularios: 1800,
+      charlas_campus: 630,
+      matriculados: 315,
     },
   },
   {
-    id: 'profesionales_wellness',
-    name: 'Profesionales Wellness',
-    description: '30-45 años, ejecutivos y profesionales',
-    size: '~35,000',
-    age_range: '30-45',
-    priority: 'medium',
+    id: 'padres_de_familia',
+    name: 'Padres de Familia',
+    description: '35-55 años, NSE B/C, buscan universidad para sus hijos',
+    size: '~750,000',
+    age_range: '35-55',
+    priority: 'high',
     segments: [
       {
-        name: 'Ejecutivos',
-        size: '~20,000',
-        age: '30-40',
-        characteristics: ['Manejo del estrés', 'Horarios flexibles', 'Buscan calidad'],
+        name: 'Padres NSE B — Lima',
+        size: '~280,000',
+        age: '35-48',
+        characteristics: ['Priorizan reputación', 'Buscan empleabilidad', 'Investigan en Google y Facebook'],
       },
       {
-        name: 'Profesionales Senior',
-        size: '~15,000',
-        age: '40-45',
-        characteristics: ['Salud preventiva', 'Dispuestos a pagar más', 'Valoran asesoría'],
+        name: 'Padres NSE C — Lima y Trujillo',
+        size: '~470,000',
+        age: '40-55',
+        characteristics: ['Costo y financiamiento decisivo', 'SUNEDU es garantía de calidad', 'WhatsApp para consultas'],
       },
     ],
-    interests: ['Salud', 'Manejo estrés', 'Calidad de vida', 'Personal training'],
-    message: 'Invierte en tu salud: bienestar integral para profesionales exigentes',
+    interests: ['Empleabilidad del egresado', 'Costo y becas', 'Licencia SUNEDU', 'Seguridad del campus'],
+    message: 'La mejor inversión para el futuro de tu hijo/a — desde S/450/cuota',
     channels: {
-      'Google Search': 40,
-      'Meta Ads': 35,
-      'Google Display': 15,
-      'LinkedIn': 10,
+      'Facebook': 43,
+      'Google Search': 22,
+      'WhatsApp': 13,
+      'YouTube': 12,
+      'Instagram': 10,
     },
     engagement_rate: 9.2,
-    cpl_target: 18,
+    cpl_target: 12,
     conversion_funnel: {
-      alcance: 450000,
-      visitas_landing: 6750,
-      formularios: 810,
-      trials: 284,
-      miembros: 156,
-    },
-  },
-  {
-    id: 'familias_activas',
-    name: 'Familias Activas',
-    description: '35-50 años, padres con hijos',
-    size: '~20,000',
-    age_range: '35-50',
-    priority: 'tertiary',
-    segments: [
-      {
-        name: 'Padres Jóvenes',
-        size: '~12,000',
-        age: '35-42',
-        characteristics: ['Ejemplo para hijos', 'Buscan actividad conjunta', 'Valoran kids zone'],
-      },
-      {
-        name: 'Padres Establecidos',
-        size: '~8,000',
-        age: '43-50',
-        characteristics: ['Natación familiar', 'Clases grupales', 'Plan familiar'],
-      },
-    ],
-    interests: ['Actividad en familia', 'Natación', 'Clases kids', 'Planes familiares'],
-    message: 'Fitness en familia: comparte hábitos saludables con los que más quieres',
-    channels: {
-      'Facebook': 45,
-      'Google Search': 30,
-      'WhatsApp': 15,
-      'Referidos': 10,
-    },
-    engagement_rate: 7.8,
-    cpl_target: 22,
-    conversion_funnel: {
-      alcance: 280000,
-      visitas_landing: 4200,
-      formularios: 504,
-      trials: 177,
-      miembros: 97,
+      alcance: 850000,
+      visitas_landing: 12750,
+      formularios: 765,
+      charlas_campus: 268,
+      matriculados: 134,
     },
   },
 ];
 
 // ============================================================================
-// TIMING - Mejores momentos para pauta
+// TIMING - Mejores momentos para pauta universitaria
 // ============================================================================
 export const OPTIMAL_TIMING = {
   dayparts: [
-    { name: 'Early Morning', hours: '5:00 - 8:00', performance: 'high', multiplier: 1.4, audience: 'Profesionales' },
-    { name: 'Mediodía', hours: '12:00 - 14:00', performance: 'medium', multiplier: 1.1, audience: 'Oficinistas' },
-    { name: 'After Work', hours: '18:00 - 21:00', performance: 'very_high', multiplier: 1.6, audience: 'Todos' },
-    { name: 'Noche', hours: '21:00 - 23:00', performance: 'medium', multiplier: 1.0, audience: 'Jóvenes' },
+    { name: 'Mañana', hours: '7:00 - 10:00', performance: 'high', multiplier: 1.4, audience: 'Padres de familia' },
+    { name: 'Mediodía', hours: '12:00 - 14:00', performance: 'medium', multiplier: 1.1, audience: 'Estudiantes trabajadores' },
+    { name: 'Tarde', hours: '16:00 - 20:00', performance: 'very_high', multiplier: 1.7, audience: 'Jóvenes y padres' },
+    { name: 'Noche', hours: '20:00 - 23:00', performance: 'high', multiplier: 1.3, audience: 'Jóvenes 17-22' },
   ],
   weekdays: [
-    { name: 'Lunes', performance: 'very_high', recommended: true, note: 'Propósitos de semana' },
-    { name: 'Martes', performance: 'high', recommended: true, note: 'Momentum de lunes' },
-    { name: 'Miércoles', performance: 'medium', recommended: true, note: 'Mitad de semana' },
-    { name: 'Jueves', performance: 'high', recommended: true, note: 'Pre-fin de semana' },
-    { name: 'Viernes', performance: 'low', recommended: false, note: 'Planes sociales' },
-    { name: 'Sábado', performance: 'medium', recommended: true, note: 'Clases grupales AM' },
-    { name: 'Domingo', performance: 'low', recommended: false, note: 'Descanso' },
+    { name: 'Lunes', performance: 'high', recommended: true, note: 'Inicio de semana — decisión activa' },
+    { name: 'Martes', performance: 'very_high', recommended: true, note: 'Pico de búsquedas de carreras' },
+    { name: 'Miércoles', performance: 'high', recommended: true, note: 'Comparación de opciones' },
+    { name: 'Jueves', performance: 'high', recommended: true, note: 'Pre-fin de semana — visita campus' },
+    { name: 'Viernes', performance: 'medium', recommended: true, note: 'Charlas de orientación' },
+    { name: 'Sábado', performance: 'high', recommended: true, note: 'Ferias universitarias, visita campus' },
+    { name: 'Domingo', performance: 'medium', recommended: false, note: 'Consultas familiares informales' },
   ],
   seasonality: [
-    { month: 'Enero', demand: 'very_high', note: 'Propósitos de Año Nuevo' },
-    { month: 'Febrero', demand: 'high', note: 'Verano, playas' },
-    { month: 'Marzo', demand: 'high', note: 'Post-verano, rutina' },
-    { month: 'Abril-Mayo', demand: 'medium', note: 'Estabilización' },
-    { month: 'Junio-Agosto', demand: 'high', note: 'Invierno, indoor' },
-    { month: 'Sept-Nov', demand: 'high', note: 'Pre-verano' },
-    { month: 'Diciembre', demand: 'low', note: 'Fiestas' },
+    { month: 'Enero-Febrero', demand: 'very_high', note: 'Pico máximo — admisión Semestre I' },
+    { month: 'Marzo', demand: 'high', note: 'Inicio de ciclo, inscripciones tardías' },
+    { month: 'Abril-Mayo', demand: 'medium', note: 'Pre-admisión Semestre II' },
+    { month: 'Junio', demand: 'high', note: 'Inicio admisión Semestre II' },
+    { month: 'Julio-Agosto', demand: 'very_high', note: 'Pico secundario — admisión Semestre II' },
+    { month: 'Sept-Oct', demand: 'medium', note: 'Pre-admisión ciclo siguiente' },
+    { month: 'Nov-Dic', demand: 'high', note: 'Pre-inscripción anticipada Semestre I' },
   ],
 };
 
 // ============================================================================
-// SERVICIOS - Productos/Servicios monitoreados
+// PROGRAMAS - Productos académicos UPN monitoreados
 // ============================================================================
 export const SERVICIOS_CONFIG = [
-  { id: 1, nombre: 'Membresía Básica', revenue_pct: 35, cpl_target: 10, conversion: 8 },
-  { id: 2, nombre: 'Membresía Premium', revenue_pct: 25, cpl_target: 15, conversion: 6 },
-  { id: 3, nombre: 'Plan Familiar', revenue_pct: 15, cpl_target: 22, conversion: 5 },
-  { id: 4, nombre: 'Personal Training', revenue_pct: 12, cpl_target: 28, conversion: 4 },
-  { id: 5, nombre: 'Clases Especializadas', revenue_pct: 8, cpl_target: 12, conversion: 7 },
-  { id: 6, nombre: 'Nutrición/Suplementos', revenue_pct: 5, cpl_target: 8, conversion: 10 },
+  { id: 1, nombre: 'Pregrado — Ingeniería', revenue_pct: 32, cpl_target: 7, conversion: 8 },
+  { id: 2, nombre: 'Pregrado — Negocios', revenue_pct: 28, cpl_target: 7, conversion: 9 },
+  { id: 3, nombre: 'Pregrado — Derecho y CC.SS.', revenue_pct: 18, cpl_target: 8, conversion: 7 },
+  { id: 4, nombre: 'Pregrado — Ciencias de la Salud', revenue_pct: 12, cpl_target: 9, conversion: 6 },
+  { id: 5, nombre: 'Posgrado — MBA Ejecutivo', revenue_pct: 6, cpl_target: 20, conversion: 5 },
+  { id: 6, nombre: 'Educación Continua / Diplomas', revenue_pct: 4, cpl_target: 12, conversion: 8 },
 ];
 
 // ============================================================================
@@ -390,9 +351,9 @@ export const SERVICIOS_CONFIG = [
 // ============================================================================
 export const METRIC_CARDS_CONFIG = [
   {
-    id: 'nuevos_miembros',
-    title: 'Nuevos Miembros',
-    description: 'Miembros activos adquiridos este mes',
+    id: 'nuevos_estudiantes',
+    title: 'Nuevos Matriculados',
+    description: 'Estudiantes captados y matriculados este ciclo',
     icon: 'Users',
     color: 'fitzone-orange',
     gradient: 'from-fitzone-orange to-fitzone-darkOrange',
@@ -400,7 +361,7 @@ export const METRIC_CARDS_CONFIG = [
   {
     id: 'reach',
     title: 'Alcance Total',
-    description: 'Usuarios únicos impactados en Lima',
+    description: 'Usuarios únicos impactados en Lima y Trujillo',
     icon: 'Eye',
     color: 'fitzone-electric',
     gradient: 'from-fitzone-electric to-fitzone-cyan',
@@ -415,8 +376,8 @@ export const METRIC_CARDS_CONFIG = [
   },
   {
     id: 'opportunity',
-    title: 'FitZone Opportunity Score',
-    description: 'Índice de oportunidad de inversión fitness',
+    title: 'UPN Opportunity Score',
+    description: 'Índice de oportunidad de captación universitaria',
     icon: 'Zap',
     color: 'fitzone-orange',
     gradient: 'from-fitzone-orange to-fitzone-lime',
@@ -430,31 +391,25 @@ export const CRM_CONFIG = {
   enabled: false,
   api_key: null,
   cpl_thresholds: {
-    jovenes_activos: {
-      cpl_target: 10,
-      cpl_alert: 12,
+    bachilleres_jovenes: {
+      cpl_target: 7,
+      cpl_alert: 10,
       cpl_pause: 15,
-      max_cpl: 13,
+      max_cpl: 12,
     },
-    profesionales_wellness: {
-      cpl_target: 18,
-      cpl_alert: 22,
-      cpl_pause: 28,
-      max_cpl: 25,
-    },
-    familias_activas: {
-      cpl_target: 20,
-      cpl_alert: 25,
-      cpl_pause: 32,
-      max_cpl: 28,
+    padres_de_familia: {
+      cpl_target: 12,
+      cpl_alert: 16,
+      cpl_pause: 22,
+      max_cpl: 18,
     },
   },
   conversion_tracking: {
     lead_ads: true,
     whatsapp_conversations: true,
     landing_page_visits: true,
-    trial_signups: true,
-    membership_conversions: true,
+    charla_signups: true,
+    enrollment_conversions: true,
   },
   alerts: {
     email: true,
@@ -467,7 +422,7 @@ export const CRM_CONFIG = {
 // UI TEXT - Textos de interfaz
 // ============================================================================
 export const UI_TEXT = {
-  loading: 'Cargando FitZone Algorithm...',
+  loading: 'Cargando UPN Algorithm...',
   lastUpdate: 'Última actualización',
   systemActive: 'Sistema activo',
   noData: 'No hay datos disponibles',
@@ -475,7 +430,7 @@ export const UI_TEXT = {
   retry: 'Reintentar',
 
   footer: {
-    copyright: '2026 FitZone Algorithm - Tu Espacio, Tu Ritmo',
+    copyright: '2026 The Algorithm by Reset · UPN — Universidad Privada del Norte',
     version: 'v1.0.0',
   },
 
@@ -484,7 +439,7 @@ export const UI_TEXT = {
     export: 'Exportar',
     refresh: 'Actualizar',
     filter: 'Filtrar',
-    expandAll: 'Mostrar todos los servicios',
+    expandAll: 'Mostrar todos los programas',
     collapseAll: 'Mostrar solo top 5',
   },
 };

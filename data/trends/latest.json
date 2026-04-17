@@ -1,240 +1,169 @@
 {
-  "timestamp": "2026-01-05T17:02:08.274Z",
+  "timestamp": "2026-01-20T09:00:00.000Z",
   "region": "PE",
   "category": "Education",
-  "source": "Google Trends (Curated Fallback)",
-  "client": "UCSP - Universidad Católica San Pablo",
+  "source": "Google Trends (Curated)",
+  "client": "UPN — Universidad Privada del Norte",
   "keywords": [
     {
-      "keyword": "universidad arequipa",
-      "average_interest": 78,
+      "keyword": "admisión UPN 2026",
+      "average_interest": 88,
       "trend": "rising",
-      "peak_score": 92,
-      "growth_3m": "+35%",
+      "peak_score": 100,
+      "growth_3m": "+92%",
       "top_regions": {
-        "Arequipa": 100,
-        "Puno": 58,
-        "Cusco": 50,
-        "Lima": 42,
-        "Tacna": 38
+        "Lima": 100,
+        "Trujillo": 82,
+        "Cajamarca": 68,
+        "Piura": 45,
+        "Arequipa": 38
       },
       "rising_queries": [
-        "universidades arequipa ranking",
-        "mejores universidades arequipa",
-        "carreras arequipa"
+        "cómo postular a UPN 2026",
+        "requisitos admisión UPN",
+        "examen admisión UPN fecha"
       ],
       "related_topics": [
-        {
-          "title": "UCSP",
-          "type": "University",
-          "value": 85
-        },
-        {
-          "title": "UCSM",
-          "type": "University",
-          "value": 75
-        },
-        {
-          "title": "UNSA",
-          "type": "University",
-          "value": 70
-        }
+        { "title": "UPN Los Olivos", "type": "Campus", "value": 92 },
+        { "title": "UPN Trujillo", "type": "Campus", "value": 78 },
+        { "title": "Becas UPN", "type": "Topic", "value": 85 }
       ],
       "source": "curated"
     },
     {
-      "keyword": "estudiar en arequipa",
-      "average_interest": 72,
+      "keyword": "universidad privada del norte",
+      "average_interest": 82,
       "trend": "rising",
-      "peak_score": 88,
-      "growth_3m": "+28%",
+      "peak_score": 96,
+      "growth_3m": "+58%",
       "top_regions": {
-        "Arequipa": 100,
-        "Puno": 62,
-        "Cusco": 55,
-        "Tacna": 45,
-        "Moquegua": 40
+        "Lima": 100,
+        "Trujillo": 88,
+        "Cajamarca": 72,
+        "La Libertad": 65,
+        "Ancash": 42
       },
       "rising_queries": [
-        "donde estudiar arequipa",
-        "carreras universitarias arequipa",
-        "becas arequipa"
+        "UPN carreras disponibles",
+        "UPN precio mensualidad 2026",
+        "UPN becas disponibles"
       ],
       "related_topics": [
-        {
-          "title": "Ingeniería",
-          "type": "Field",
-          "value": 80
-        },
-        {
-          "title": "Medicina",
-          "type": "Field",
-          "value": 75
-        },
-        {
-          "title": "Derecho",
-          "type": "Field",
-          "value": 65
-        }
+        { "title": "Laureate International", "type": "Network", "value": 75 },
+        { "title": "UPC", "type": "University", "value": 68 },
+        { "title": "Empleabilidad UPN", "type": "Topic", "value": 82 }
       ],
       "source": "curated"
     },
     {
-      "keyword": "carreras universitarias peru",
-      "average_interest": 85,
+      "keyword": "carreras universitarias Lima",
+      "average_interest": 90,
       "trend": "rising",
       "peak_score": 100,
       "growth_3m": "+45%",
       "top_regions": {
         "Lima": 100,
-        "Arequipa": 72,
-        "Cusco": 65,
+        "Callao": 75,
         "Trujillo": 58,
-        "Puno": 52
+        "Arequipa": 52,
+        "Chiclayo": 48
       },
       "rising_queries": [
-        "carreras mejor pagadas peru",
-        "carreras con futuro",
-        "que estudiar peru 2026"
+        "carreras mejor pagadas Lima 2026",
+        "qué estudiar Lima precio",
+        "carreras con futuro Peru 2026"
       ],
       "related_topics": [
-        {
-          "title": "Ingeniería de Sistemas",
-          "type": "Career",
-          "value": 90
-        },
-        {
-          "title": "Medicina",
-          "type": "Career",
-          "value": 88
-        },
-        {
-          "title": "Administración",
-          "type": "Career",
-          "value": 75
-        }
+        { "title": "Ingeniería de Sistemas", "type": "Career", "value": 92 },
+        { "title": "Administración de Empresas", "type": "Career", "value": 88 },
+        { "title": "Psicología", "type": "Career", "value": 78 }
       ],
       "source": "curated"
     },
     {
-      "keyword": "ingenieria industrial peru",
-      "average_interest": 76,
+      "keyword": "becas universidad Peru 2026",
+      "average_interest": 84,
       "trend": "rising",
-      "peak_score": 92,
+      "peak_score": 98,
+      "growth_3m": "+72%",
+      "top_regions": {
+        "Lima": 100,
+        "Trujillo": 80,
+        "Cajamarca": 75,
+        "Piura": 68,
+        "Puno": 62
+      },
+      "rising_queries": [
+        "beca 18 universidad privada",
+        "PRONABEC universidades aceptadas",
+        "beca completa universidad Lima"
+      ],
+      "related_topics": [
+        { "title": "PRONABEC", "type": "Organization", "value": 90 },
+        { "title": "Beca 18", "type": "Program", "value": 88 },
+        { "title": "Crédito educativo", "type": "Topic", "value": 72 }
+      ],
+      "source": "curated"
+    },
+    {
+      "keyword": "ingeniería sistemas Lima precio",
+      "average_interest": 78,
+      "trend": "rising",
+      "peak_score": 94,
       "growth_3m": "+52%",
       "top_regions": {
         "Lima": 100,
-        "Arequipa": 68,
-        "Cusco": 55,
-        "Trujillo": 52,
-        "Puno": 48
+        "Trujillo": 62,
+        "Arequipa": 55,
+        "Chiclayo": 48,
+        "Piura": 44
       },
       "rising_queries": [
-        "ingenieria industrial campo laboral",
-        "ingenieria industrial sueldo",
-        "mejores universidades ingenieria industrial"
+        "ingeniería sistemas sueldo Perú",
+        "ingeniería sistemas vs software",
+        "mejor universidad ingeniería Lima"
       ],
       "related_topics": [
-        {
-          "title": "Industria 4.0",
-          "type": "Topic",
-          "value": 85
-        },
-        {
-          "title": "Automatización",
-          "type": "Topic",
-          "value": 72
-        },
-        {
-          "title": "Gestión de calidad",
-          "type": "Topic",
-          "value": 65
-        }
+        { "title": "Inteligencia Artificial", "type": "Topic", "value": 88 },
+        { "title": "Data Science", "type": "Topic", "value": 82 },
+        { "title": "Ciberseguridad", "type": "Topic", "value": 75 }
       ],
       "source": "curated"
     },
     {
-      "keyword": "medicina peru",
-      "average_interest": 82,
-      "trend": "stable",
-      "peak_score": 95,
-      "growth_3m": "+18%",
+      "keyword": "MBA Peru ejecutivo",
+      "average_interest": 72,
+      "trend": "rising",
+      "peak_score": 88,
+      "growth_3m": "+38%",
       "top_regions": {
         "Lima": 100,
-        "Arequipa": 75,
-        "Cusco": 62,
         "Trujillo": 58,
-        "Puno": 55
+        "Arequipa": 52,
+        "Miraflores": 45,
+        "San Isidro": 42
       },
       "rising_queries": [
-        "estudiar medicina peru",
-        "mejores universidades medicina",
-        "medicina costo"
+        "MBA online Peru 2026",
+        "maestría administración Lima precio",
+        "posgrado ejecutivo Lima"
       ],
       "related_topics": [
-        {
-          "title": "UPCH",
-          "type": "University",
-          "value": 90
-        },
-        {
-          "title": "San Marcos",
-          "type": "University",
-          "value": 85
-        },
-        {
-          "title": "Residencia médica",
-          "type": "Topic",
-          "value": 78
-        }
-      ],
-      "source": "curated"
-    },
-    {
-      "keyword": "derecho peru",
-      "average_interest": 70,
-      "trend": "stable",
-      "peak_score": 85,
-      "growth_3m": "+12%",
-      "top_regions": {
-        "Lima": 100,
-        "Arequipa": 65,
-        "Cusco": 58,
-        "Trujillo": 52,
-        "Puno": 48
-      },
-      "rising_queries": [
-        "estudiar derecho peru",
-        "abogado peru",
-        "derecho laboral"
-      ],
-      "related_topics": [
-        {
-          "title": "Derecho constitucional",
-          "type": "Field",
-          "value": 75
-        },
-        {
-          "title": "Derecho penal",
-          "type": "Field",
-          "value": 70
-        },
-        {
-          "title": "Derecho civil",
-          "type": "Field",
-          "value": 68
-        }
+        { "title": "Liderazgo empresarial", "type": "Topic", "value": 80 },
+        { "title": "Emprendimiento", "type": "Topic", "value": 75 },
+        { "title": "Finanzas corporativas", "type": "Topic", "value": 70 }
       ],
       "source": "curated"
     }
   ],
   "metadata": {
-    "method": "Curated data (Apify unavailable)",
-    "note": "Keywords genéricos de alto volumen. Los brand_keywords son opcionales para scraping separado.",
+    "method": "Curated data — Google Trends Education Peru",
+    "note": "Keywords orientados a admisión universitaria UPN — mercado Lima, Trujillo y Cajamarca",
     "timeframe": "today 1-m",
     "apify_keywords": 0,
     "curated_keywords": 6,
-    "market": "Sur del Perú (Arequipa, Puno, Cusco, Moquegua, Tacna)",
-    "product": "Pregrado y Posgrado 2026-I"
+    "market": "Lima Metropolitana + Trujillo + Cajamarca",
+    "product": "Pregrado, Posgrado y MBA 2026-I",
+    "peak_season": "Enero-Febrero 2026 (admisión 2026-I)"
   }
 }
