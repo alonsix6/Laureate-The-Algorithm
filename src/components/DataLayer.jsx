@@ -97,7 +97,7 @@ export default function DataLayer() {
     return iconMap[type] || Lightbulb;
   };
 
-  // Calculate scores for fitness metrics
+  // Calculate scores for university admission metrics
   const calculateScores = () => {
     if (mlData?.scores?.individual) {
       return {
@@ -111,7 +111,7 @@ export default function DataLayer() {
       };
     }
 
-    // Mock fitness scores
+    // Mock university admission scores
     return {
       overall: '8.2',
       search: '8.5',
@@ -124,29 +124,28 @@ export default function DataLayer() {
 
   const scores = calculateScores();
 
-  // Generate fitness insights - exactly 4 sources: Google Trends, TikTok, Meta, GA4
+  // Generate insights - exactly 4 sources: Google Trends, TikTok, Meta, GA4
   const generateInsights = () => {
-    // Always return exactly 4 insights, one per source
     return [
       {
         source: 'Google Trends',
         IconComponent: Search,
-        text: '"Gimnasio Lima" lidera búsquedas con 92/100 de interés y +85% de crecimiento. 5 keywords en tendencia explosiva en los últimos 3 meses.',
+        text: '"Admisión UPN 2026" lidera búsquedas con 100/100 de interés y +92% de crecimiento. 6 keywords en tendencia explosiva durante pico de admisión enero.',
       },
       {
         source: 'TikTok',
         IconComponent: Video,
-        text: '#gymtok alcanza 2.5B views globales. #propósito2026 crece +180% en LATAM. Contenido de transformación tiene engagement 9.2/10.',
+        text: '#VidaUniversitaria alcanza 4.2M de usos. #AdmisiónUPN creció +124% en las últimas 4 semanas. Contenido "primer sueldo egresado" tiene engagement 22.4%.',
       },
       {
         source: 'Meta',
         IconComponent: Share2,
-        text: 'Sentimiento social muy positivo. 60% de los topics tienen sentimiento positivo. "Propósitos Año Nuevo" genera 52K menciones.',
+        text: 'Sentimiento social positivo en 92% de menciones. "Vida Universitaria UPN" lidera con 6,420 menciones. "Admisión 2026-I" creció +124% en el mes.',
       },
       {
         source: 'GA4',
         IconComponent: BarChart3,
-        text: '68,500 usuarios generaron 1,850 trials (2.7% conversión). Página "/trial-gratis" lidera con 5.47% de tasa de conversión.',
+        text: '74,200 usuarios generaron 1,240 charlas de orientación (1.67% conversión). Página "/admision" lidera con 8.2% de tasa de conversión.',
       },
     ];
   };
@@ -155,64 +154,64 @@ export default function DataLayer() {
   const multiSourceInsight = {
     source: 'Análisis Multi-Fuente',
     IconComponent: Layers,
-    text: 'Las 4 fuentes confirman alta demanda estacional (Enero). La combinación de búsquedas rising (+85%), engagement social alto (8.5/10), contenido viral en TikTok y conversiones web en aumento indica momento óptimo para inversión. Oportunidad de capturar usuarios insatisfechos con masificación de Smart Fit mediante posicionamiento mid-premium.',
-    recommendation: 'Recomendación: Incrementar presupuesto Meta Ads 20% y lanzar campaña "Propósito 2026" con influencers micro.'
+    text: 'Las 4 fuentes confirman alta demanda estacional (Enero-Febrero). La combinación de búsquedas rising (+92%), engagement social alto (9.2/10), contenido viral de egresados UPN en TikTok y conversiones web en aumento indica momento óptimo para inversión. Ventana crítica de 6 semanas para captación de bachilleres 2026-I.',
+    recommendation: 'Recomendación: Incrementar presupuesto TikTok 30% y activar campaña de becas dirigida a padres en Facebook para capturar ambos segmentos.'
   };
 
   const insights = generateInsights();
 
-  // Expanded GA4 pages data
+  // Expanded GA4 pages data — UPN upn.edu.pe
   const ga4Pages = [
-    { page: '/membresías', title: 'Membresías FitZone', views: 18500, sessions: 15200, avgTime: '4:12', bounceRate: 28, conversions: 425, convRate: 2.80 },
-    { page: '/promociones', title: 'Promociones Enero 2026', views: 15600, sessions: 12800, avgTime: '2:58', bounceRate: 25, conversions: 380, convRate: 2.97 },
-    { page: '/sedes/miraflores', title: 'FitZone Miraflores', views: 12200, sessions: 9800, avgTime: '3:45', bounceRate: 32, conversions: 185, convRate: 1.89 },
-    { page: '/trial-gratis', title: 'Prueba Gratis 7 Días', views: 11200, sessions: 9500, avgTime: '3:38', bounceRate: 22, conversions: 520, convRate: 5.47 },
-    { page: '/clases', title: 'Clases Grupales', views: 9800, sessions: 8200, avgTime: '3:22', bounceRate: 35, conversions: 142, convRate: 1.73 },
-    { page: '/horarios', title: 'Horarios por Sede', views: 8900, sessions: 7500, avgTime: '2:15', bounceRate: 42, conversions: 85, convRate: 1.13 },
-    { page: '/personal-training', title: 'Personal Training', views: 7200, sessions: 5800, avgTime: '4:05', bounceRate: 38, conversions: 68, convRate: 1.17 },
-    { page: '/nutrición', title: 'Asesoría Nutricional', views: 5400, sessions: 4200, avgTime: '4:25', bounceRate: 35, conversions: 45, convRate: 1.07 },
-    { page: '/blog/transformaciones', title: 'Blog: Transformaciones', views: 4800, sessions: 4100, avgTime: '5:32', bounceRate: 28, conversions: 32, convRate: 0.78 },
-    { page: '/app', title: 'App FitZone', views: 3200, sessions: 2800, avgTime: '2:45', bounceRate: 45, conversions: 28, convRate: 1.00 },
+    { page: '/admision', title: 'Admisión UPN 2026', views: 22400, sessions: 18200, avgTime: '5:12', bounceRate: 18, conversions: 840, convRate: 4.62 },
+    { page: '/carreras', title: 'Carreras Universitarias', views: 18600, sessions: 14800, avgTime: '4:48', bounceRate: 22, conversions: 620, convRate: 4.19 },
+    { page: '/becas', title: 'Becas y Financiamiento', views: 14800, sessions: 11500, avgTime: '3:55', bounceRate: 28, conversions: 480, convRate: 4.17 },
+    { page: '/carreras/ingenieria', title: 'Ingeniería UPN', views: 11200, sessions: 8900, avgTime: '4:22', bounceRate: 24, conversions: 385, convRate: 4.33 },
+    { page: '/carreras/negocios', title: 'Negocios y Administración', views: 9500, sessions: 7600, avgTime: '4:05', bounceRate: 26, conversions: 298, convRate: 3.92 },
+    { page: '/campus', title: 'Nuestros Campus', views: 8200, sessions: 6500, avgTime: '3:38', bounceRate: 30, conversions: 195, convRate: 3.00 },
+    { page: '/carreras/derecho', title: 'Derecho UPN', views: 7400, sessions: 5800, avgTime: '3:55', bounceRate: 28, conversions: 168, convRate: 2.90 },
+    { page: '/charla-informativa', title: 'Charla de Orientación', views: 6800, sessions: 5400, avgTime: '2:48', bounceRate: 20, conversions: 620, convRate: 11.48 },
+    { page: '/blog/egresados', title: 'Blog: Historias de Egresados', views: 5200, sessions: 4400, avgTime: '5:18', bounceRate: 22, conversions: 85, convRate: 1.93 },
+    { page: '/mba', title: 'MBA y Posgrado UPN', views: 4100, sessions: 3200, avgTime: '4:52', bounceRate: 25, conversions: 58, convRate: 1.81 },
   ];
 
-  // Expanded TikTok hashtags data
+  // Expanded TikTok hashtags data — UPN educación
   const tiktokHashtags = [
-    { hashtag: '#gymtok', views: '2.5B', posts: '4.2M', growth: '+45%', region: 'Global', engagement: 8.5 },
-    { hashtag: '#transformación', views: '890M', posts: '1.8M', growth: '+62%', region: 'LATAM', engagement: 9.2 },
-    { hashtag: '#fitnessperu', views: '125M', posts: '280K', growth: '+38%', region: 'Perú', engagement: 7.8 },
-    { hashtag: '#legday', views: '1.2B', posts: '2.8M', growth: '+28%', region: 'Global', engagement: 8.0 },
-    { hashtag: '#gymmotivation', views: '950M', posts: '2.1M', growth: '+35%', region: 'Global', engagement: 8.3 },
-    { hashtag: '#propósito2026', views: '45M', posts: '95K', growth: '+180%', region: 'LATAM', engagement: 9.5 },
-    { hashtag: '#antesdespués', views: '320M', posts: '680K', growth: '+52%', region: 'LATAM', engagement: 9.0 },
-    { hashtag: '#gimnasiolima', views: '28M', posts: '62K', growth: '+42%', region: 'Perú', engagement: 7.5 },
+    { hashtag: '#Universitarios', views: '9.2B', posts: '12.8M', growth: '+28%', region: 'Global', engagement: 8.2 },
+    { hashtag: '#VidaUniversitaria', views: '4.2B', posts: '6.8M', growth: '+38%', region: 'LATAM', engagement: 9.0 },
+    { hashtag: '#PrimerDíaDeClases', views: '6.8B', posts: '9.2M', growth: '+92%', region: 'LATAM', engagement: 9.4 },
+    { hashtag: '#UPN', views: '1.5B', posts: '2.1M', growth: '+67%', region: 'Perú', engagement: 8.8 },
+    { hashtag: '#AdmisiónUPN', views: '820M', posts: '1.1M', growth: '+124%', region: 'Perú', engagement: 9.6 },
+    { hashtag: '#BecasPeru', views: '1.38B', posts: '1.9M', growth: '+88%', region: 'Perú', engagement: 9.1 },
+    { hashtag: '#CarrerasProfesionales', views: '2.1B', posts: '3.2M', growth: '+45%', region: 'LATAM', engagement: 8.5 },
+    { hashtag: '#EstudiantePeru', views: '3.4B', posts: '5.1M', growth: '+32%', region: 'Perú', engagement: 8.3 },
   ];
 
-  // Expanded TikTok sounds
+  // Expanded TikTok sounds — educación
   const tiktokSounds = [
-    { name: 'NEFFEX - Grateful', type: 'Motivación', usage: '2.1M', trend: '+85%' },
-    { name: 'Tevvez - Legend', type: 'Épico', usage: '1.8M', trend: '+72%' },
-    { name: 'Bad Bunny - Monaco', type: 'Reggaetón', usage: '3.2M', trend: '+45%' },
-    { name: 'Eminem - Lose Yourself', type: 'Hip Hop', usage: '980K', trend: '+38%' },
-    { name: 'Phonk - Murder in My Mind', type: 'Phonk', usage: '1.5M', trend: '+95%' },
-    { name: 'Grupo 5 - Mix Gym', type: 'Cumbia', usage: '420K', trend: '+120%' },
+    { name: 'Bad Bunny - Un Verano Sin Ti', type: 'Reggaetón', usage: '8.4M', trend: '+12%' },
+    { name: 'Bizarrap & Shakira #53', type: 'Latin Pop', usage: '12M', trend: '+8%' },
+    { name: 'Feid - Pantone', type: 'Urbano', usage: '5.6M', trend: '+24%' },
+    { name: 'Chillhop - Lo-fi Study Beats', type: 'Lo-fi', usage: '3.2M', trend: '+52%' },
+    { name: 'Junior H - El Azul', type: 'Corridos', usage: '4.1M', trend: '+35%' },
+    { name: 'Grupo 5 - A Ritmo de Cumbia', type: 'Cumbia', usage: '2.8M', trend: '+18%' },
   ];
 
-  // Expanded Meta topics data
+  // Expanded Meta topics data — UPN universidad
   const metaTopics = [
-    { topic: 'Gimnasios Lima', mentions: 45000, engagement: 8.5, sentiment: 72, growth: '+18%', brands: 'Smart Fit, b2, FitZone' },
-    { topic: 'Transformaciones Fitness', mentions: 32000, engagement: 9.2, sentiment: 92, growth: '+45%', brands: 'KO Urban, CrossFit' },
-    { topic: 'Clases Grupales', mentions: 28000, engagement: 7.8, sentiment: 78, growth: '+12%', brands: 'b2, Sportlife' },
-    { topic: 'Personal Training', mentions: 18000, engagement: 8.0, sentiment: 85, growth: '+22%', brands: 'Independientes' },
-    { topic: 'Propósitos Año Nuevo', mentions: 52000, engagement: 8.8, sentiment: 88, growth: '+185%', brands: 'Todas' },
-    { topic: 'Nutrición Deportiva', mentions: 15000, engagement: 7.5, sentiment: 75, growth: '+15%', brands: 'GNC, Herbalife' },
+    { topic: 'Vida Universitaria UPN', mentions: 6420, engagement: 9.2, sentiment: 92, growth: '+95%', brands: 'UPN, Campus UPN' },
+    { topic: 'Carreras Universitarias', mentions: 5680, engagement: 8.5, sentiment: 85, growth: '+72%', brands: 'Ingeniería, Administración' },
+    { topic: 'Admisión 2026-I', mentions: 4820, engagement: 8.8, sentiment: 88, growth: '+124%', brands: 'UPN, UTP, UPC' },
+    { topic: 'Becas y Financiamiento', mentions: 3240, engagement: 8.2, sentiment: 82, growth: '+88%', brands: 'PRONABEC, Beca 18' },
+    { topic: 'Empleabilidad y Egresados', mentions: 2850, engagement: 7.8, sentiment: 78, growth: '+62%', brands: 'Laureate Network' },
+    { topic: 'MBA y Posgrado', mentions: 1420, engagement: 7.5, sentiment: 80, growth: '+38%', brands: 'UPN, PUCP, ESAN' },
   ];
 
-  // Meta ad performance
+  // Meta ad performance — UPN admisión
   const metaAdPerformance = [
-    { campaign: 'Propósito 2026 - Jóvenes', platform: 'Instagram', reach: 850000, clicks: 12500, ctr: 1.47, cpl: 10.80, status: 'Activo' },
-    { campaign: 'Membresía Premium', platform: 'Facebook', reach: 420000, clicks: 5800, ctr: 1.38, cpl: 18.20, status: 'Activo' },
-    { campaign: 'Trial Gratis', platform: 'Instagram', reach: 680000, clicks: 15200, ctr: 2.24, cpl: 8.50, status: 'Activo' },
-    { campaign: 'Plan Familiar', platform: 'Facebook', reach: 280000, clicks: 3200, ctr: 1.14, cpl: 22.10, status: 'Pausado' },
+    { campaign: 'Admisión 2026-I — Bachilleres Lima', platform: 'Instagram', reach: 920000, clicks: 18400, ctr: 2.00, cpl: 8.62, status: 'Activo' },
+    { campaign: 'Becas UPN — Padres de Familia', platform: 'Facebook', reach: 480000, clicks: 7200, ctr: 1.50, cpl: 10.54, status: 'Activo' },
+    { campaign: 'Charla Virtual Gratuita', platform: 'Instagram', reach: 650000, clicks: 14800, ctr: 2.28, cpl: 7.20, status: 'Activo' },
+    { campaign: 'MBA Ejecutivo UPN', platform: 'Facebook', reach: 220000, clicks: 2800, ctr: 1.27, cpl: 18.50, status: 'Activo' },
   ];
 
   return (
@@ -230,7 +229,7 @@ export default function DataLayer() {
                   Capa de Data - Captura de Señales
                 </h2>
                 <p className="text-fitzone-textGray text-xs sm:text-base">
-                  Monitoreo en tiempo real del ecosistema digital fitness en Lima
+                  Monitoreo en tiempo real del ecosistema digital universitario — UPN Perú
                 </p>
               </div>
             </div>
@@ -375,7 +374,7 @@ export default function DataLayer() {
             <Search className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
             <div className="text-left min-w-0">
               <h3 className="text-sm sm:text-base font-bold">Google Trends</h3>
-              <p className="text-[10px] sm:text-xs text-white/80">Keywords fitness - Score: {scores.search}/10</p>
+              <p className="text-[10px] sm:text-xs text-white/80">Keywords admisión universitaria - Score: {scores.search}/10</p>
             </div>
           </div>
           {expandedSections.trends ? <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" /> : <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />}
@@ -387,7 +386,7 @@ export default function DataLayer() {
               <Info className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-cyan flex-shrink-0 mt-0.5" />
               <div className="text-xs sm:text-sm text-fitzone-lightGray">
                 <p className="font-semibold mb-1 text-fitzone-cyan">Cómo se calcula el score:</p>
-                <p>Promedio del "interés de búsqueda" (0-100) de keywords fitness monitoreadas en Perú.</p>
+                <p>Promedio del "interés de búsqueda" (0-100) de keywords de admisión universitaria monitoreadas en Perú.</p>
                 <p className="mt-2 text-[10px] sm:text-xs text-fitzone-textGray hidden sm:block">
                   <strong>Fuente:</strong> Google Trends API (Perú) - <strong>Actualización:</strong> Semanal
                 </p>
@@ -406,14 +405,14 @@ export default function DataLayer() {
                 </thead>
                 <tbody className="divide-y divide-fitzone-slate">
                   {[
-                    { keyword: 'gimnasio lima', interest: 82, growth: '+18%', trend: 'rising' },
-                    { keyword: 'gym cerca de mí', interest: 78, growth: '+25%', trend: 'rising' },
-                    { keyword: 'membresía gimnasio', interest: 65, growth: '+32%', trend: 'rising' },
-                    { keyword: 'gimnasio miraflores', interest: 58, growth: '+12%', trend: 'stable' },
-                    { keyword: 'crossfit lima', interest: 52, growth: '+8%', trend: 'stable' },
-                    { keyword: 'personal trainer lima', interest: 45, growth: '+15%', trend: 'rising' },
-                    { keyword: 'gimnasio surco', interest: 42, growth: '+22%', trend: 'rising' },
-                    { keyword: 'clases de spinning', interest: 38, growth: '+10%', trend: 'stable' },
+                    { keyword: 'admisión UPN 2026', interest: 100, growth: '+92%', trend: 'rising' },
+                    { keyword: 'universidad privada del norte', interest: 96, growth: '+58%', trend: 'rising' },
+                    { keyword: 'carreras universitarias Lima', interest: 90, growth: '+45%', trend: 'rising' },
+                    { keyword: 'becas universidad Peru 2026', interest: 84, growth: '+72%', trend: 'rising' },
+                    { keyword: 'ingeniería sistemas Lima precio', interest: 78, growth: '+52%', trend: 'rising' },
+                    { keyword: 'MBA Peru ejecutivo', interest: 72, growth: '+38%', trend: 'rising' },
+                    { keyword: 'UPN Los Olivos admisión', interest: 65, growth: '+44%', trend: 'rising' },
+                    { keyword: 'universidad lima norte precio', interest: 58, growth: '+28%', trend: 'stable' },
                   ].map((kw, idx) => (
                     <tr key={idx} className="hover:bg-fitzone-slate/50 transition">
                       <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-white">{kw.keyword}</td>
@@ -461,7 +460,7 @@ export default function DataLayer() {
               <Info className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-emerald flex-shrink-0 mt-0.5" />
               <div className="text-xs sm:text-sm text-fitzone-lightGray">
                 <p className="font-semibold mb-1 text-fitzone-emerald">Cómo se calcula el score:</p>
-                <p>Promedio del "relevance score" (0-100) de hashtags fitness virales.</p>
+                <p>Promedio del "relevance score" (0-100) de hashtags de educación universitaria virales.</p>
               </div>
             </div>
 
@@ -469,7 +468,7 @@ export default function DataLayer() {
             <div>
               <h4 className="text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 flex items-center gap-2">
                 <TrendingUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-emerald" />
-                Hashtags Trending Fitness
+                Hashtags Trending Educación y Admisión
               </h4>
               <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
                 <table className="w-full min-w-[450px]">
@@ -565,7 +564,7 @@ export default function DataLayer() {
               <Info className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-lightPurple flex-shrink-0 mt-0.5" />
               <div className="text-xs sm:text-sm text-fitzone-lightGray">
                 <p className="font-semibold mb-1 text-fitzone-lightPurple">Cómo se calcula el score:</p>
-                <p>Promedio del "engagement score" (0-10) de temas fitness en Facebook e Instagram.</p>
+                <p>Promedio del "engagement score" (0-10) de temas universitarios en Facebook e Instagram.</p>
               </div>
             </div>
 
@@ -709,18 +708,18 @@ export default function DataLayer() {
               <div className="bg-fitzone-slate rounded-lg p-3 sm:p-4">
                 <div className="flex items-center gap-1.5 sm:gap-2 mb-1 sm:mb-2">
                   <Target className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-textGray" />
-                  <p className="text-[10px] sm:text-xs text-fitzone-textGray">Trials</p>
+                  <p className="text-[10px] sm:text-xs text-fitzone-textGray">Charlas</p>
                 </div>
-                <p className="text-lg sm:text-xl font-bold text-fitzone-purple">1,850</p>
-                <p className="text-[10px] sm:text-xs text-fitzone-emerald">+45%</p>
+                <p className="text-lg sm:text-xl font-bold text-fitzone-purple">1,240</p>
+                <p className="text-[10px] sm:text-xs text-fitzone-emerald">+38%</p>
               </div>
               <div className="bg-fitzone-slate rounded-lg p-3 sm:p-4">
                 <div className="flex items-center gap-1.5 sm:gap-2 mb-1 sm:mb-2">
                   <TrendingUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-textGray" />
                   <p className="text-[10px] sm:text-xs text-fitzone-textGray">Conv.</p>
                 </div>
-                <p className="text-lg sm:text-xl font-bold text-fitzone-emerald">2.7%</p>
-                <p className="text-[10px] sm:text-xs text-fitzone-textGray">Meta: 2.5%</p>
+                <p className="text-lg sm:text-xl font-bold text-fitzone-emerald">1.67%</p>
+                <p className="text-[10px] sm:text-xs text-fitzone-textGray">Meta: 1.5%</p>
               </div>
             </div>
 
@@ -796,7 +795,7 @@ export default function DataLayer() {
             <div>
               <h4 className="text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 flex items-center gap-2">
                 <Globe className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-amber" />
-                Páginas del Sitio Web FitZone
+                Páginas del Sitio Web UPN
               </h4>
               <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
                 <table className="w-full min-w-[550px]">
@@ -848,29 +847,29 @@ export default function DataLayer() {
       <div className="bg-fitzone-purple rounded-xl p-4 sm:p-6 text-white">
         <h3 className="text-sm sm:text-base font-bold mb-3 sm:mb-4 flex items-center gap-2">
           <Dumbbell className="w-5 h-5 sm:w-6 sm:h-6" />
-          Keywords Monitoreadas - FitZone Perú
+          Keywords Monitoreadas - UPN Perú
         </h3>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
           <div>
-            <p className="text-xs sm:text-sm text-white/70 mb-1.5 sm:mb-2 font-semibold">Marca FitZone:</p>
+            <p className="text-xs sm:text-sm text-white/70 mb-1.5 sm:mb-2 font-semibold">Marca UPN:</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">FitZone</span>
-              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">FitZone Perú</span>
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">UPN</span>
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">Admisión UPN</span>
             </div>
           </div>
           <div>
-            <p className="text-xs sm:text-sm text-white/70 mb-1.5 sm:mb-2 font-semibold">Mercado Fitness:</p>
+            <p className="text-xs sm:text-sm text-white/70 mb-1.5 sm:mb-2 font-semibold">Mercado Universitario:</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">Gimnasio Lima</span>
-              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">Membresía gym</span>
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">Carreras Lima</span>
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">Becas 2026</span>
             </div>
           </div>
           <div>
             <p className="text-xs sm:text-sm text-white/70 mb-1.5 sm:mb-2 font-semibold">Competencia:</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">Smart Fit</span>
-              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">b2 gimnasio</span>
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">UTP</span>
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">César Vallejo</span>
             </div>
           </div>
         </div>

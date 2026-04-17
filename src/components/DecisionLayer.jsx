@@ -1,4 +1,4 @@
-import { Target, Users, MessageSquare, TrendingUp, Lightbulb, Zap, AlertCircle, Dumbbell, Flame, BarChart3, CheckCircle, FlaskConical, Calendar } from 'lucide-react';
+import { Target, Users, MessageSquare, TrendingUp, Lightbulb, Zap, AlertCircle, Dumbbell, Flame, BarChart3, CheckCircle, FlaskConical, Calendar, Award } from 'lucide-react';
 import { OPPORTUNITY_SCORE } from '../data/mockData';
 import { LAYER_CONFIG, KEY_MESSAGES, TARGET_AUDIENCES } from '../data/config';
 
@@ -16,36 +16,36 @@ export default function DecisionLayer() {
     {
       priority: 'high',
       category: 'TikTok Ads',
-      action: 'Aumentar budget TikTok 25% - CPL 12% debajo del objetivo, audiencia joven con engagement excepcional',
-      impact: '+150 leads/mes estimados de jóvenes 18-25',
+      action: 'Aumentar budget TikTok 30% - CPL $7.29 supera el objetivo, pico estacional de admisión activo',
+      impact: '+280 leads/mes estimados de bachilleres 17-22',
       confidence: 94
     },
     {
       priority: 'high',
       category: 'Campaña',
-      action: 'Lanzar "Propósito 2026" - Enero es pico máximo de demanda (+85% búsquedas)',
-      impact: '+280 trials estimados primera quincena',
+      action: 'Lanzar "Tu Futuro Empieza Aquí" - Enero-Febrero es ventana crítica de admisión (+92% búsquedas)',
+      impact: '+420 charlas de orientación estimadas primera quincena',
       confidence: 92
     },
     {
       priority: 'medium',
       category: 'Influencers',
-      action: 'Activar micro-influencers fitness (10-50K) - UGC de transformaciones tiene 3x engagement',
-      impact: '+420K alcance orgánico estimado',
+      action: 'Activar micro-influencers universitarios (10-50K) - UGC de egresados tiene 3.8x engagement vs branded',
+      impact: '+680K alcance orgánico estimado en segmento 16-24',
       confidence: 88
     },
     {
       priority: 'medium',
-      category: 'Promoción',
-      action: 'Promoción "Sin Matrícula" primera quincena - Competir con oferta agresiva de Smart Fit',
-      impact: 'Capturar usuarios sensibles al precio',
+      category: 'Becas',
+      action: 'Campaña de becas dirigida a padres (Facebook 35-55) - Segmento sensible al precio en pico decisión',
+      impact: 'Capturar segmento NSE C con alta intención de postular',
       confidence: 85
     },
     {
       priority: 'low',
       category: 'Lima Norte',
-      action: 'Aumentar budget 15% para Los Olivos/Independencia - CPL $8.50 vs promedio $11.20',
-      impact: '+95 leads adicionales/mes en expansión',
+      action: 'Aumentar budget 20% para Los Olivos/Comas - CPL $6.20 vs promedio $7.80 del portfolio',
+      impact: '+120 leads adicionales/mes en Lima Norte',
       confidence: 78
     }
   ];
@@ -94,7 +94,7 @@ export default function DecisionLayer() {
         </div>
       </div>
 
-      {/* FitZone Opportunity Score */}
+      {/* UPN Opportunity Score */}
       <div className="bg-fitzone-purple text-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8">
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 sm:gap-6 mb-4 sm:mb-6 lg:mb-8">
           <div className="flex items-center gap-3 sm:gap-4">
@@ -102,8 +102,8 @@ export default function DecisionLayer() {
               <Zap className="w-7 h-7 sm:w-8 sm:h-8 lg:w-10 lg:h-10" />
             </div>
             <div>
-              <h3 className="text-lg sm:text-xl font-bold">FitZone Opportunity Score</h3>
-              <p className="text-white/90 mt-0.5 sm:mt-1 text-xs sm:text-sm">Indice de oportunidad para inversion en adquisicion de miembros</p>
+              <h3 className="text-lg sm:text-xl font-bold">UPN Opportunity Score</h3>
+              <p className="text-white/90 mt-0.5 sm:mt-1 text-xs sm:text-sm">Índice de oportunidad para inversión en captación de estudiantes UPN</p>
             </div>
           </div>
 
@@ -181,7 +181,7 @@ export default function DecisionLayer() {
           </div>
           <div>
             <h3 className="text-sm sm:text-base font-bold text-white">Recomendaciones Estrategicas</h3>
-            <p className="text-xs sm:text-sm text-fitzone-textGray">Acciones prioritarias basadas en senales del mercado fitness</p>
+            <p className="text-xs sm:text-sm text-fitzone-textGray">Acciones prioritarias basadas en señales del mercado universitario</p>
           </div>
         </div>
 
@@ -231,8 +231,8 @@ export default function DecisionLayer() {
             <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </div>
           <div>
-            <h3 className="text-sm sm:text-base font-bold text-white">Audiencias Objetivo FitZone</h3>
-            <p className="text-xs sm:text-sm text-fitzone-textGray">Segmentacion inteligente para adquisicion de miembros 2026</p>
+            <h3 className="text-sm sm:text-base font-bold text-white">Audiencias Objetivo UPN</h3>
+            <p className="text-xs sm:text-sm text-fitzone-textGray">Segmentación inteligente para captación de estudiantes 2026</p>
           </div>
         </div>
 
@@ -287,67 +287,67 @@ export default function DecisionLayer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
           <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
-              <Dumbbell className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 1: {KEY_MESSAGES.espacio.title}</p>
+              <Award className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
+              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 1: {KEY_MESSAGES.empleabilidad.title}</p>
             </div>
-            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.espacio.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.espacio.description}</p>
+            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.empleabilidad.message}"</p>
+            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.empleabilidad.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Horarios flexibles</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Libertad</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Egresados empleados</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Primer sueldo</span>
             </div>
           </div>
 
           <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 2: {KEY_MESSAGES.tecnologia.title}</p>
+              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 2: {KEY_MESSAGES.acceso.title}</p>
             </div>
-            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.tecnologia.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.tecnologia.description}</p>
+            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.acceso.message}"</p>
+            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.acceso.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">App</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">IA</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Becas</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Financiamiento</span>
             </div>
           </div>
 
           <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Users className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 3: {KEY_MESSAGES.comunidad.title}</p>
+              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 3: {KEY_MESSAGES.acreditacion.title}</p>
             </div>
-            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.comunidad.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.comunidad.description}</p>
+            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.acreditacion.message}"</p>
+            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.acreditacion.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Clases grupales</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Challenges</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">SUNEDU</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Acreditada</span>
             </div>
           </div>
 
           <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Target className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 4: {KEY_MESSAGES.resultados.title}</p>
+              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 4: {KEY_MESSAGES.red.title}</p>
             </div>
-            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.resultados.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.resultados.description}</p>
+            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.red.message}"</p>
+            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.red.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Transformaciones</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Nutricion</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Laureate</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Red global</span>
             </div>
           </div>
 
           <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20 sm:col-span-2">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 5: {KEY_MESSAGES.precio.title}</p>
+              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 5: {KEY_MESSAGES.flexibilidad.title}</p>
             </div>
-            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.precio.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.precio.description}</p>
+            <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.flexibilidad.message}"</p>
+            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.flexibilidad.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Precio justo</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Sin costos ocultos</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Congelamiento gratis</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Modalidad virtual</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Horarios noche</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Trabajo + estudio</span>
             </div>
           </div>
         </div>

@@ -63,7 +63,7 @@ export default function ExecutionLayer() {
               <DollarSign className="w-7 h-7 sm:w-8 sm:h-8 lg:w-10 lg:h-10" />
             </div>
             <div>
-              <h3 className="text-base sm:text-lg lg:text-xl font-bold">Presupuesto Mensual FitZone</h3>
+              <h3 className="text-base sm:text-lg lg:text-xl font-bold">Presupuesto Mensual UPN</h3>
               <p className="text-white/90 mt-0.5 sm:mt-1 text-xs sm:text-sm">Distribución inteligente por canal digital</p>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function ExecutionLayer() {
           </div>
           <div>
             <h3 className="text-sm sm:text-base font-bold text-white">Distribución por Canal Digital</h3>
-            <p className="text-xs sm:text-sm text-fitzone-textGray">Performance y asignación para adquisición de miembros</p>
+            <p className="text-xs sm:text-sm text-fitzone-textGray">Performance y asignación para captación de estudiantes UPN</p>
           </div>
         </div>
 
@@ -233,8 +233,8 @@ export default function ExecutionLayer() {
               <Dumbbell className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
             <div>
-              <h3 className="text-sm sm:text-base font-bold text-white">Performance por Servicio</h3>
-              <p className="text-xs sm:text-sm text-fitzone-textGray">Rendimiento de campaña por tipo de membresía</p>
+              <h3 className="text-sm sm:text-base font-bold text-white">Performance por Programa Académico</h3>
+              <p className="text-xs sm:text-sm text-fitzone-textGray">Rendimiento de campaña por programa universitario</p>
             </div>
           </div>
           <button
@@ -375,9 +375,9 @@ export default function ExecutionLayer() {
 
         <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-white/20 rounded-lg sm:rounded-xl">
           <p className="text-xs sm:text-sm font-semibold mb-1.5 sm:mb-2 flex items-center gap-1.5 sm:gap-2">
-            <Lightbulb className="w-3 h-3 sm:w-4 sm:h-4" /> Estacionalidad FitZone:
+            <Lightbulb className="w-3 h-3 sm:w-4 sm:h-4" /> Estacionalidad UPN — Admisión:
           </p>
-          <p className="text-xs sm:text-sm">Enero (pico máximo - propósitos), Feb-Mar (verano), Sep-Nov (pre-verano). Diciembre es el mes más bajo - reducir budget 20%.</p>
+          <p className="text-xs sm:text-sm">Ene-Feb (pico máximo — admisión 2026-I), Jul-Ago (pico secundario — admisión 2026-II), Nov-Dic (pre-campaña). Marzo-Junio es temporada baja — reducir budget 25%.</p>
         </div>
       </div>
     </div>
