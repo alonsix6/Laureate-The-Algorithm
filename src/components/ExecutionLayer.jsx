@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { DollarSign, TrendingUp, Target, Zap, Calendar, PlayCircle, AlertTriangle, Dumbbell, ChevronDown, ChevronUp, MessageCircle, Rocket, CheckCircle, ArrowRight, AlertCircle, FileText, Globe, Star, Lightbulb, CalendarDays } from 'lucide-react';
+import { DollarSign, TrendingUp, Target, Zap, Calendar, PlayCircle, AlertTriangle, BookOpen, ChevronDown, ChevronUp, MessageCircle, Rocket, CheckCircle, ArrowRight, AlertCircle, FileText, Globe, Star, Lightbulb, CalendarDays } from 'lucide-react';
 import { BUDGET_ALLOCATION, SERVICIOS_PERFORMANCE, SEDES_PERFORMANCE } from '../data/mockData';
 import { LAYER_CONFIG } from '../data/config';
 
@@ -35,7 +35,7 @@ export default function ExecutionLayer() {
       <div className="bg-fitzone-slate rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-5 lg:p-6 border border-fitzone-purple/10">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 sm:gap-4">
           <div>
-            <h2 className="text-base sm:text-lg font-bold text-white mb-1 sm:mb-2">
+            <h2 className="text-base sm:text-lg font-bold text-fitzone-navy mb-1 sm:mb-2">
               {LAYER_CONFIG.execution.name}
             </h2>
             <p className="text-xs sm:text-sm text-fitzone-textGray">
@@ -47,7 +47,7 @@ export default function ExecutionLayer() {
               <CalendarDays className="w-3 h-3 sm:w-4 sm:h-4" />
               <span className="text-xs sm:text-sm font-medium">{monthlyPeriod}</span>
             </div>
-            <span className="px-2 sm:px-3 py-1 bg-fitzone-emerald text-fitzone-charcoal rounded-full text-xs sm:text-sm font-medium flex items-center gap-1">
+            <span className="px-2 sm:px-3 py-1 bg-fitzone-emerald text-upn-navy rounded-full text-xs sm:text-sm font-medium flex items-center gap-1">
               <PlayCircle className="w-3 h-3 sm:w-4 sm:h-4" />
               Live
             </span>
@@ -99,7 +99,7 @@ export default function ExecutionLayer() {
             <Target className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </div>
           <div>
-            <h3 className="text-sm sm:text-base font-bold text-white">Distribución por Canal Digital</h3>
+            <h3 className="text-sm sm:text-base font-bold text-fitzone-navy">Distribución por Canal Digital</h3>
             <p className="text-xs sm:text-sm text-fitzone-textGray">Performance y asignación para captación de estudiantes UPN</p>
           </div>
         </div>
@@ -112,7 +112,7 @@ export default function ExecutionLayer() {
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 sm:gap-4">
                   <div className="flex-1 min-w-0">
                     <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-2">
-                      <h4 className="font-bold text-white text-sm sm:text-base">
+                      <h4 className="font-bold text-fitzone-navy text-sm sm:text-base">
                         {key === 'meta_ads' ? 'Meta Ads (FB + IG)' :
                          key === 'google_search' ? 'Google Search' :
                          key === 'tiktok_ads' ? 'TikTok Ads' :
@@ -129,7 +129,7 @@ export default function ExecutionLayer() {
                     <div className="grid grid-cols-2 gap-2 sm:gap-3 text-xs sm:text-sm">
                       <div>
                         <p className="text-fitzone-textGray">Target</p>
-                        <p className="font-semibold text-white">{channel.target}</p>
+                        <p className="font-semibold text-fitzone-navy">{channel.target}</p>
                       </div>
                       <div>
                         <p className="text-fitzone-textGray">Performance Actual</p>
@@ -141,7 +141,7 @@ export default function ExecutionLayer() {
                   <div className="text-left sm:text-center lg:text-right lg:min-w-[180px] pt-2 sm:pt-0 border-t sm:border-t-0 border-white/10 lg:border-none">
                     <div className="flex lg:flex-col items-center lg:items-end gap-2 lg:gap-0">
                       <div className="lg:mb-2">
-                        <span className="text-lg sm:text-xl lg:text-2xl font-bold text-white">{channel.percentage}%</span>
+                        <span className="text-lg sm:text-xl lg:text-2xl font-bold text-fitzone-navy">{channel.percentage}%</span>
                       </div>
                       <div className="text-base sm:text-lg lg:text-xl font-bold text-fitzone-purple lg:mb-1">
                         ${channel.amount.toLocaleString()}
@@ -153,7 +153,7 @@ export default function ExecutionLayer() {
 
                 {/* Progress bar */}
                 <div className="mt-3 sm:mt-4">
-                  <div className="w-full h-1.5 sm:h-2 bg-fitzone-charcoal rounded-full overflow-hidden">
+                  <div className="w-full h-1.5 sm:h-2 bg-slate-200 rounded-full overflow-hidden">
                     <div
                       className={`h-full ${
                         channel.status === 'overperforming' ? 'bg-fitzone-emerald' :
@@ -177,7 +177,7 @@ export default function ExecutionLayer() {
             <AlertTriangle className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </div>
           <div>
-            <h3 className="text-sm sm:text-base font-bold text-white">Recomendaciones de Optimización</h3>
+            <h3 className="text-sm sm:text-base font-bold text-fitzone-navy">Recomendaciones de Optimización</h3>
             <p className="text-xs sm:text-sm text-fitzone-textGray">Ajustes sugeridos basados en performance</p>
           </div>
         </div>
@@ -199,7 +199,7 @@ export default function ExecutionLayer() {
                     {rec.type === 'increase' ? 'AUMENTAR' :
                      rec.type === 'decrease' ? 'REDUCIR' : 'MANTENER'}
                   </span>
-                  <span className="text-xs sm:text-sm font-semibold text-white uppercase">
+                  <span className="text-xs sm:text-sm font-semibold text-fitzone-navy uppercase">
                     {rec.channel === 'tiktok_ads' ? 'TikTok Ads' :
                      rec.channel === 'meta_ads' ? 'Meta Ads' :
                      rec.channel === 'google_display' ? 'Google Display' : rec.channel}
@@ -208,12 +208,12 @@ export default function ExecutionLayer() {
                 {rec.from && rec.to && (
                   <div className="text-left sm:text-right">
                     <span className="text-[10px] sm:text-xs text-fitzone-textGray">Cambio</span>
-                    <p className="font-bold text-white text-sm sm:text-base">{rec.from}% → {rec.to}%</p>
+                    <p className="font-bold text-fitzone-navy text-sm sm:text-base">{rec.from}% → {rec.to}%</p>
                   </div>
                 )}
               </div>
 
-              <p className="text-white font-medium text-xs sm:text-sm lg:text-base mb-2">{rec.reason}</p>
+              <p className="text-fitzone-navy font-medium text-xs sm:text-sm lg:text-base mb-2">{rec.reason}</p>
               {rec.impact && (
                 <p className="text-xs sm:text-sm text-fitzone-emerald font-semibold flex items-center gap-1">
                   <TrendingUp className="w-3 h-3 sm:w-4 sm:h-4" />
@@ -230,10 +230,10 @@ export default function ExecutionLayer() {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 sm:w-12 sm:h-12 bg-fitzone-purple rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
-              <Dumbbell className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+              <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
             <div>
-              <h3 className="text-sm sm:text-base font-bold text-white">Performance por Programa Académico</h3>
+              <h3 className="text-sm sm:text-base font-bold text-fitzone-navy">Performance por Programa Académico</h3>
               <p className="text-xs sm:text-sm text-fitzone-textGray">Rendimiento de campaña por programa universitario</p>
             </div>
           </div>
@@ -261,10 +261,10 @@ export default function ExecutionLayer() {
             .map((servicio, idx) => {
             return (
               <div key={servicio.id} className={`p-3 sm:p-4 lg:p-5 rounded-lg sm:rounded-xl border-2 ${
-                idx < 2 ? 'bg-fitzone-purple/5 border-fitzone-purple/30' : 'bg-fitzone-charcoal border-fitzone-slate'
+                idx < 2 ? 'bg-fitzone-purple/5 border-fitzone-purple/30' : 'bg-fitzone-darkSlate border-fitzone-border'
               }`}>
                 <div className="flex items-center justify-between mb-2 sm:mb-3">
-                  <h4 className="font-bold text-white text-sm sm:text-base">{servicio.nombre}</h4>
+                  <h4 className="font-bold text-fitzone-navy text-sm sm:text-base">{servicio.nombre}</h4>
                   {idx < 2 && (
                     <span className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold bg-fitzone-purple/20 text-fitzone-purple flex items-center gap-1">
                       <Star className="w-2.5 h-2.5 sm:w-3 sm:h-3" /> TOP
@@ -275,7 +275,7 @@ export default function ExecutionLayer() {
                 <div className="space-y-2 sm:space-y-3 mb-3 sm:mb-4">
                   <div className="flex justify-between text-xs sm:text-sm">
                     <span className="text-fitzone-textGray">Leads</span>
-                    <span className="font-semibold text-white">{servicio.leads}</span>
+                    <span className="font-semibold text-fitzone-navy">{servicio.leads}</span>
                   </div>
                   <div className="flex justify-between text-xs sm:text-sm">
                     <span className="text-fitzone-textGray">Conversiones</span>
@@ -288,14 +288,14 @@ export default function ExecutionLayer() {
                 </div>
 
                 {/* Lead Ads Metrics */}
-                <div className="pt-2 sm:pt-3 border-t border-fitzone-slate mb-2 sm:mb-3">
+                <div className="pt-2 sm:pt-3 border-t border-fitzone-border mb-2 sm:mb-3">
                   <p className="text-[10px] sm:text-xs font-semibold text-fitzone-textGray mb-1.5 sm:mb-2 flex items-center gap-1">
                     <FileText className="w-2.5 h-2.5 sm:w-3 sm:h-3" /> Lead Ads (Meta)
                   </p>
                   <div className="grid grid-cols-2 gap-2 text-[10px] sm:text-xs">
                     <div>
                       <p className="text-fitzone-textGray">Formularios</p>
-                      <p className="font-semibold text-white">{servicio.leadAds.formularios}</p>
+                      <p className="font-semibold text-fitzone-navy">{servicio.leadAds.formularios}</p>
                     </div>
                     <div>
                       <p className="text-fitzone-textGray">Conv. Rate</p>
@@ -305,7 +305,7 @@ export default function ExecutionLayer() {
                 </div>
 
                 {/* WhatsApp Metrics */}
-                <div className="pt-2 sm:pt-3 border-t border-fitzone-slate">
+                <div className="pt-2 sm:pt-3 border-t border-fitzone-border">
                   <p className="text-[10px] sm:text-xs font-semibold text-fitzone-textGray mb-1.5 sm:mb-2 flex items-center gap-1">
                     <MessageCircle className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-fitzone-emerald" />
                     WhatsApp
@@ -313,7 +313,7 @@ export default function ExecutionLayer() {
                   <div className="grid grid-cols-2 gap-2 text-[10px] sm:text-xs">
                     <div>
                       <p className="text-fitzone-textGray">Conversaciones</p>
-                      <p className="font-semibold text-white">{servicio.whatsapp.conversaciones}</p>
+                      <p className="font-semibold text-fitzone-navy">{servicio.whatsapp.conversaciones}</p>
                     </div>
                     <div>
                       <p className="text-fitzone-textGray">Tasa Respuesta</p>

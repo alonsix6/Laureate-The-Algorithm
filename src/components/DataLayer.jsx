@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Search, TrendingUp, Video, Share2, Dumbbell, RefreshCw, ChevronDown, ChevronUp, BarChart3, Info, Music, Target, DollarSign, Layers, Lightbulb, Users, Globe, MapPin, Eye, Clock, MousePointer, Smartphone, Monitor, ExternalLink, Calendar } from 'lucide-react';
+import { Search, TrendingUp, Video, Share2, GraduationCap, RefreshCw, ChevronDown, ChevronUp, BarChart3, Info, Music, Target, DollarSign, Layers, Lightbulb, Users, Globe, MapPin, Eye, Clock, MousePointer, Smartphone, Monitor, ExternalLink, Calendar } from 'lucide-react';
 
 export default function DataLayer() {
   // Helper function to get current week info
@@ -217,12 +217,12 @@ export default function DataLayer() {
   return (
     <div className="space-y-4 sm:space-y-6">
       {/* Header & Score Summary */}
-      <div className="bg-fitzone-charcoal rounded-2xl shadow-fitzone-lg p-4 sm:p-6 lg:p-8 text-white border border-fitzone-purple/20">
+      <div className="bg-upn-navy rounded-2xl shadow-fitzone-lg p-4 sm:p-6 lg:p-8 text-white border border-fitzone-purple/20">
         <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-4 sm:mb-6">
           <div className="flex-1">
             <div className="flex items-center gap-3 sm:gap-4 mb-4">
               <div className="w-10 h-10 sm:w-14 sm:h-14 bg-fitzone-purple rounded-xl flex items-center justify-center flex-shrink-0">
-                <Dumbbell className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+                <GraduationCap className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
               </div>
               <div className="min-w-0">
                 <h2 className="text-base sm:text-xl font-bold mb-1">
@@ -258,24 +258,24 @@ export default function DataLayer() {
 
         {/* Data Sources Status */}
         <div className="flex flex-wrap gap-2 sm:gap-3">
-          <div className="flex items-center gap-1.5 sm:gap-2 bg-fitzone-slate rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-white/15 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-fitzone-emerald rounded-full"></div>
             <span className="text-[10px] sm:text-xs text-fitzone-textGray">Trends</span>
           </div>
-          <div className="flex items-center gap-1.5 sm:gap-2 bg-fitzone-slate rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-white/15 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-fitzone-emerald rounded-full"></div>
             <span className="text-[10px] sm:text-xs text-fitzone-textGray">TikTok</span>
           </div>
-          <div className="flex items-center gap-1.5 sm:gap-2 bg-fitzone-slate rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-white/15 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-fitzone-emerald rounded-full"></div>
             <span className="text-[10px] sm:text-xs text-fitzone-textGray">Meta</span>
           </div>
-          <div className="flex items-center gap-1.5 sm:gap-2 bg-fitzone-slate rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-white/15 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-fitzone-emerald rounded-full"></div>
             <span className="text-[10px] sm:text-xs text-fitzone-textGray">GA4</span>
           </div>
           {lastRefresh && (
-            <div className="flex items-center gap-1.5 sm:gap-2 bg-fitzone-slate rounded-lg px-2 sm:px-3 py-1.5 sm:py-2 ml-auto">
+            <div className="flex items-center gap-1.5 sm:gap-2 bg-white/15 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2 ml-auto">
               <span className="text-[10px] sm:text-xs text-fitzone-textGray">
                 {lastRefresh.toLocaleTimeString('es-PE', { hour: '2-digit', minute: '2-digit' })}
               </span>
@@ -291,7 +291,7 @@ export default function DataLayer() {
             <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </div>
           <div className="min-w-0">
-            <h3 className="text-sm sm:text-lg font-bold text-white">Insights Clave del Mercado Fitness</h3>
+            <h3 className="text-sm sm:text-lg font-bold text-fitzone-navy">Insights Clave del Mercado Fitness</h3>
             <p className="text-xs sm:text-sm text-fitzone-textGray">Análisis automático multi-fuente</p>
           </div>
         </div>
@@ -301,7 +301,7 @@ export default function DataLayer() {
           {insights.map((insight, idx) => {
             const colorScheme =
               insight.source === 'Google Trends' ? { bg: 'bg-fitzone-cyan/10', text: 'text-fitzone-cyan', icon: 'bg-fitzone-cyan', badge: 'bg-fitzone-cyan/20 text-fitzone-cyan' } :
-              insight.source === 'TikTok' ? { bg: 'bg-fitzone-emerald/10', text: 'text-fitzone-emerald', icon: 'bg-fitzone-emerald', badge: 'bg-fitzone-emerald/20 text-fitzone-charcoal' } :
+              insight.source === 'TikTok' ? { bg: 'bg-fitzone-emerald/10', text: 'text-fitzone-emerald', icon: 'bg-fitzone-emerald', badge: 'bg-fitzone-emerald/20 text-fitzone-emerald' } :
               insight.source === 'Meta' ? { bg: 'bg-fitzone-purple/10', text: 'text-fitzone-lightPurple', icon: 'bg-fitzone-purple', badge: 'bg-fitzone-purple/20 text-fitzone-lightPurple' } :
               insight.source === 'GA4' ? { bg: 'bg-fitzone-amber/10', text: 'text-fitzone-amber', icon: 'bg-fitzone-amber', badge: 'bg-fitzone-amber/20 text-fitzone-amber' } :
               { bg: 'bg-fitzone-cyan/10', text: 'text-fitzone-cyan', icon: 'bg-fitzone-cyan', badge: 'bg-fitzone-cyan/20 text-fitzone-cyan' };
@@ -315,7 +315,7 @@ export default function DataLayer() {
             const InsightIcon = insight.IconComponent || Lightbulb;
 
             return (
-              <div key={idx} className={`relative ${colorScheme.bg} rounded-xl p-3 sm:p-5 border border-fitzone-slate hover:border-fitzone-purple/30 transition-all duration-300`}>
+              <div key={idx} className={`relative ${colorScheme.bg} rounded-xl p-3 sm:p-5 border border-fitzone-border hover:border-fitzone-purple/30 transition-all duration-300`}>
                 <div className="flex items-start gap-2 sm:gap-4">
                   <div className={`w-9 h-9 sm:w-12 sm:h-12 ${colorScheme.icon} rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0`}>
                     <InsightIcon className="w-4 h-4 sm:w-6 sm:h-6 text-white" />
@@ -352,7 +352,7 @@ export default function DataLayer() {
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-fitzone-lightGray leading-relaxed mb-2 sm:mb-3">{multiSourceInsight.text}</p>
-              <div className="bg-fitzone-charcoal/50 rounded-lg p-2 sm:p-3 border border-fitzone-purple/20">
+              <div className="bg-upn-navy/80 rounded-lg p-2 sm:p-3 border border-fitzone-purple/20">
                 <p className="text-xs sm:text-sm text-fitzone-emerald font-semibold flex items-start sm:items-center gap-1.5 sm:gap-2">
                   <Lightbulb className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 mt-0.5 sm:mt-0" />
                   <span>{multiSourceInsight.recommendation}</span>
@@ -395,7 +395,7 @@ export default function DataLayer() {
 
             <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
               <table className="w-full min-w-[400px]">
-                <thead className="bg-fitzone-slate border-b border-fitzone-purple/20">
+                <thead className="bg-fitzone-darkSlate border-b border-fitzone-border">
                   <tr>
                     <th className="px-2 sm:px-4 py-2 sm:py-3 text-left text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Keyword</th>
                     <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Interés</th>
@@ -403,7 +403,7 @@ export default function DataLayer() {
                     <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Trend</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-fitzone-slate">
+                <tbody className="divide-y divide-slate-200">
                   {[
                     { keyword: 'admisión UPN 2026', interest: 100, growth: '+92%', trend: 'rising' },
                     { keyword: 'universidad privada del norte', interest: 96, growth: '+58%', trend: 'rising' },
@@ -414,8 +414,8 @@ export default function DataLayer() {
                     { keyword: 'UPN Los Olivos admisión', interest: 65, growth: '+44%', trend: 'rising' },
                     { keyword: 'universidad lima norte precio', interest: 58, growth: '+28%', trend: 'stable' },
                   ].map((kw, idx) => (
-                    <tr key={idx} className="hover:bg-fitzone-slate/50 transition">
-                      <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-white">{kw.keyword}</td>
+                    <tr key={idx} className="hover:bg-fitzone-darkSlate transition">
+                      <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-fitzone-navy">{kw.keyword}</td>
                       <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
                         <span className="text-xs sm:text-sm font-bold text-fitzone-cyan">{kw.interest}/100</span>
                       </td>
@@ -442,13 +442,13 @@ export default function DataLayer() {
       <div className="bg-fitzone-slate rounded-xl shadow-lg overflow-hidden border border-fitzone-purple/10">
         <button
           onClick={() => toggleSection('tiktok')}
-          className="w-full bg-fitzone-emerald text-fitzone-charcoal p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
+          className="w-full bg-fitzone-emerald text-upn-navy p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
         >
           <div className="flex items-center gap-2 sm:gap-3">
             <Video className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
             <div className="text-left min-w-0">
               <h3 className="text-sm sm:text-base font-bold">TikTok Creative Center</h3>
-              <p className="text-[10px] sm:text-xs text-fitzone-charcoal/80">Hashtags virales - Score: {scores.trend}/10</p>
+              <p className="text-[10px] sm:text-xs text-upn-navy/80">Hashtags virales - Score: {scores.trend}/10</p>
             </div>
           </div>
           {expandedSections.tiktok ? <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" /> : <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />}
@@ -466,13 +466,13 @@ export default function DataLayer() {
 
             {/* Hashtags Table */}
             <div>
-              <h4 className="text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 flex items-center gap-2">
+              <h4 className="text-xs sm:text-sm font-semibold text-fitzone-navy mb-2 sm:mb-3 flex items-center gap-2">
                 <TrendingUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-emerald" />
                 Hashtags Trending Educación y Admisión
               </h4>
               <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
                 <table className="w-full min-w-[450px]">
-                  <thead className="bg-fitzone-slate border-b border-fitzone-purple/20">
+                  <thead className="bg-fitzone-darkSlate border-b border-fitzone-border">
                     <tr>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-left text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Hashtag</th>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Views</th>
@@ -481,10 +481,10 @@ export default function DataLayer() {
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Región</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-fitzone-slate">
+                  <tbody className="divide-y divide-slate-200">
                     {tiktokHashtags.map((tag, idx) => (
-                      <tr key={idx} className="hover:bg-fitzone-slate/50 transition">
-                        <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-white">{tag.hashtag}</td>
+                      <tr key={idx} className="hover:bg-fitzone-darkSlate transition">
+                        <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-fitzone-navy">{tag.hashtag}</td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
                           <span className="text-xs sm:text-sm font-bold text-fitzone-emerald">{tag.views}</span>
                         </td>
@@ -514,7 +514,7 @@ export default function DataLayer() {
 
             {/* Trending Sounds */}
             <div>
-              <h4 className="text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 flex items-center gap-2">
+              <h4 className="text-xs sm:text-sm font-semibold text-fitzone-navy mb-2 sm:mb-3 flex items-center gap-2">
                 <Music className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-emerald" />
                 Sonidos Trending para Gym Content
               </h4>
@@ -523,10 +523,10 @@ export default function DataLayer() {
                   <div key={idx} className="bg-fitzone-slate rounded-xl p-3 sm:p-4 border border-fitzone-emerald/20 hover:border-fitzone-emerald/40 transition">
                     <div className="flex items-start gap-2 sm:gap-3">
                       <div className="w-8 h-8 sm:w-10 sm:h-10 bg-fitzone-emerald rounded-lg flex items-center justify-center flex-shrink-0">
-                        <Music className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-charcoal" />
+                        <Music className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
                       </div>
                       <div className="flex-1 min-w-0">
-                        <h5 className="text-xs sm:text-sm font-semibold text-white truncate">{sound.name}</h5>
+                        <h5 className="text-xs sm:text-sm font-semibold text-fitzone-navy truncate">{sound.name}</h5>
                         <p className="text-[10px] sm:text-xs text-fitzone-textGray">{sound.type}</p>
                         <div className="flex items-center gap-1.5 sm:gap-2 mt-0.5 sm:mt-1">
                           <span className="text-[10px] sm:text-xs font-medium text-fitzone-emerald">{sound.usage}</span>
@@ -570,13 +570,13 @@ export default function DataLayer() {
 
             {/* Topics Table */}
             <div>
-              <h4 className="text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 flex items-center gap-2">
+              <h4 className="text-xs sm:text-sm font-semibold text-fitzone-navy mb-2 sm:mb-3 flex items-center gap-2">
                 <TrendingUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-lightPurple" />
                 Temas Trending en Redes Sociales
               </h4>
               <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
                 <table className="w-full min-w-[500px]">
-                  <thead className="bg-fitzone-slate border-b border-fitzone-purple/20">
+                  <thead className="bg-fitzone-darkSlate border-b border-fitzone-border">
                     <tr>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-left text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Tema</th>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Menc.</th>
@@ -586,15 +586,15 @@ export default function DataLayer() {
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-left text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase hidden lg:table-cell">Marcas</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-fitzone-slate">
+                  <tbody className="divide-y divide-slate-200">
                     {metaTopics.map((topic, idx) => (
-                      <tr key={idx} className="hover:bg-fitzone-slate/50 transition">
-                        <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-white">{topic.topic}</td>
+                      <tr key={idx} className="hover:bg-fitzone-darkSlate transition">
+                        <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-fitzone-navy">{topic.topic}</td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
                           <span className="text-xs sm:text-sm font-bold text-fitzone-lightPurple">{(topic.mentions / 1000).toFixed(0)}K</span>
                         </td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
-                          <span className="text-xs sm:text-sm font-bold text-white">{topic.engagement}</span>
+                          <span className="text-xs sm:text-sm font-bold text-fitzone-navy">{topic.engagement}</span>
                         </td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
                           <span className={`px-1.5 sm:px-2 py-0.5 sm:py-1 text-[10px] sm:text-xs font-semibold rounded-full ${
@@ -618,13 +618,13 @@ export default function DataLayer() {
 
             {/* Ad Performance */}
             <div>
-              <h4 className="text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 flex items-center gap-2">
+              <h4 className="text-xs sm:text-sm font-semibold text-fitzone-navy mb-2 sm:mb-3 flex items-center gap-2">
                 <DollarSign className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-lightPurple" />
                 Rendimiento de Campañas Meta Ads
               </h4>
               <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
                 <table className="w-full min-w-[500px]">
-                  <thead className="bg-fitzone-slate border-b border-fitzone-purple/20">
+                  <thead className="bg-fitzone-darkSlate border-b border-fitzone-border">
                     <tr>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-left text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Campaña</th>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase hidden sm:table-cell">Platf.</th>
@@ -635,16 +635,16 @@ export default function DataLayer() {
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Estado</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-fitzone-slate">
+                  <tbody className="divide-y divide-slate-200">
                     {metaAdPerformance.map((ad, idx) => (
-                      <tr key={idx} className="hover:bg-fitzone-slate/50 transition">
-                        <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-white">{ad.campaign}</td>
+                      <tr key={idx} className="hover:bg-fitzone-darkSlate transition">
+                        <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-fitzone-navy">{ad.campaign}</td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center text-xs sm:text-sm text-fitzone-textGray hidden sm:table-cell">{ad.platform}</td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
-                          <span className="text-xs sm:text-sm text-white">{(ad.reach / 1000).toFixed(0)}K</span>
+                          <span className="text-xs sm:text-sm text-fitzone-navy">{(ad.reach / 1000).toFixed(0)}K</span>
                         </td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center hidden sm:table-cell">
-                          <span className="text-xs sm:text-sm text-white">{ad.clicks.toLocaleString()}</span>
+                          <span className="text-xs sm:text-sm text-fitzone-navy">{ad.clicks.toLocaleString()}</span>
                         </td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
                           <span className={`text-xs sm:text-sm font-bold ${ad.ctr >= 1.5 ? 'text-fitzone-emerald' : 'text-fitzone-amber'}`}>{ad.ctr}%</span>
@@ -694,7 +694,7 @@ export default function DataLayer() {
                   <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-textGray" />
                   <p className="text-[10px] sm:text-xs text-fitzone-textGray">Usuarios</p>
                 </div>
-                <p className="text-lg sm:text-xl font-bold text-white">68.5K</p>
+                <p className="text-lg sm:text-xl font-bold text-fitzone-navy">68.5K</p>
                 <p className="text-[10px] sm:text-xs text-fitzone-emerald">+28%</p>
               </div>
               <div className="bg-fitzone-slate rounded-lg p-3 sm:p-4">
@@ -702,7 +702,7 @@ export default function DataLayer() {
                   <Eye className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-textGray" />
                   <p className="text-[10px] sm:text-xs text-fitzone-textGray">Sesiones</p>
                 </div>
-                <p className="text-lg sm:text-xl font-bold text-white">85.2K</p>
+                <p className="text-lg sm:text-xl font-bold text-fitzone-navy">85.2K</p>
                 <p className="text-[10px] sm:text-xs text-fitzone-emerald">+32%</p>
               </div>
               <div className="bg-fitzone-slate rounded-lg p-3 sm:p-4">
@@ -726,7 +726,7 @@ export default function DataLayer() {
             {/* Device & Traffic Source */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
               <div className="bg-fitzone-slate rounded-lg p-3 sm:p-4">
-                <h4 className="text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 flex items-center gap-2">
+                <h4 className="text-xs sm:text-sm font-semibold text-fitzone-navy mb-2 sm:mb-3 flex items-center gap-2">
                   <Smartphone className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-amber" />
                   Dispositivos
                 </h4>
@@ -734,35 +734,35 @@ export default function DataLayer() {
                   <div className="flex items-center justify-between">
                     <span className="text-xs sm:text-sm text-fitzone-textGray">Mobile</span>
                     <div className="flex items-center gap-1.5 sm:gap-2">
-                      <div className="w-20 sm:w-32 h-1.5 sm:h-2 bg-fitzone-charcoal rounded-full overflow-hidden">
+                      <div className="w-20 sm:w-32 h-1.5 sm:h-2 bg-slate-200 rounded-full overflow-hidden">
                         <div className="h-full bg-fitzone-purple rounded-full" style={{ width: '78%' }}></div>
                       </div>
-                      <span className="text-xs sm:text-sm font-bold text-white w-8 text-right">78%</span>
+                      <span className="text-xs sm:text-sm font-bold text-fitzone-navy w-8 text-right">78%</span>
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs sm:text-sm text-fitzone-textGray">Desktop</span>
                     <div className="flex items-center gap-1.5 sm:gap-2">
-                      <div className="w-20 sm:w-32 h-1.5 sm:h-2 bg-fitzone-charcoal rounded-full overflow-hidden">
+                      <div className="w-20 sm:w-32 h-1.5 sm:h-2 bg-slate-200 rounded-full overflow-hidden">
                         <div className="h-full bg-fitzone-cyan rounded-full" style={{ width: '18%' }}></div>
                       </div>
-                      <span className="text-xs sm:text-sm font-bold text-white w-8 text-right">18%</span>
+                      <span className="text-xs sm:text-sm font-bold text-fitzone-navy w-8 text-right">18%</span>
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs sm:text-sm text-fitzone-textGray">Tablet</span>
                     <div className="flex items-center gap-1.5 sm:gap-2">
-                      <div className="w-20 sm:w-32 h-1.5 sm:h-2 bg-fitzone-charcoal rounded-full overflow-hidden">
+                      <div className="w-20 sm:w-32 h-1.5 sm:h-2 bg-slate-200 rounded-full overflow-hidden">
                         <div className="h-full bg-fitzone-emerald rounded-full" style={{ width: '4%' }}></div>
                       </div>
-                      <span className="text-xs sm:text-sm font-bold text-white w-8 text-right">4%</span>
+                      <span className="text-xs sm:text-sm font-bold text-fitzone-navy w-8 text-right">4%</span>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="bg-fitzone-slate rounded-lg p-3 sm:p-4">
-                <h4 className="text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 flex items-center gap-2">
+                <h4 className="text-xs sm:text-sm font-semibold text-fitzone-navy mb-2 sm:mb-3 flex items-center gap-2">
                   <ExternalLink className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-amber" />
                   Fuentes de Tráfico
                 </h4>
@@ -773,19 +773,19 @@ export default function DataLayer() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs sm:text-sm text-fitzone-textGray">Orgánico</span>
-                    <span className="text-xs sm:text-sm font-bold text-white">28%</span>
+                    <span className="text-xs sm:text-sm font-bold text-fitzone-navy">28%</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs sm:text-sm text-fitzone-textGray">Paid</span>
-                    <span className="text-xs sm:text-sm font-bold text-white">25%</span>
+                    <span className="text-xs sm:text-sm font-bold text-fitzone-navy">25%</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs sm:text-sm text-fitzone-textGray">Directo</span>
-                    <span className="text-xs sm:text-sm font-bold text-white">8%</span>
+                    <span className="text-xs sm:text-sm font-bold text-fitzone-navy">8%</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs sm:text-sm text-fitzone-textGray">Referencia</span>
-                    <span className="text-xs sm:text-sm font-bold text-white">4%</span>
+                    <span className="text-xs sm:text-sm font-bold text-fitzone-navy">4%</span>
                   </div>
                 </div>
               </div>
@@ -793,13 +793,13 @@ export default function DataLayer() {
 
             {/* Pages Table */}
             <div>
-              <h4 className="text-xs sm:text-sm font-semibold text-white mb-2 sm:mb-3 flex items-center gap-2">
+              <h4 className="text-xs sm:text-sm font-semibold text-fitzone-navy mb-2 sm:mb-3 flex items-center gap-2">
                 <Globe className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-amber" />
                 Páginas del Sitio Web UPN
               </h4>
               <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
                 <table className="w-full min-w-[550px]">
-                  <thead className="bg-fitzone-slate border-b border-fitzone-purple/20">
+                  <thead className="bg-fitzone-darkSlate border-b border-fitzone-border">
                     <tr>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-left text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Página</th>
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Vistas</th>
@@ -809,20 +809,20 @@ export default function DataLayer() {
                       <th className="px-2 sm:px-4 py-2 sm:py-3 text-center text-[10px] sm:text-xs font-semibold text-fitzone-textGray uppercase">Tasa</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-fitzone-slate">
+                  <tbody className="divide-y divide-slate-200">
                     {ga4Pages.slice(0, 6).map((page, idx) => (
-                      <tr key={idx} className="hover:bg-fitzone-slate/50 transition">
+                      <tr key={idx} className="hover:bg-fitzone-darkSlate transition">
                         <td className="px-2 sm:px-4 py-2 sm:py-3">
                           <div>
-                            <p className="text-xs sm:text-sm font-medium text-white truncate max-w-[120px] sm:max-w-none">{page.title}</p>
+                            <p className="text-xs sm:text-sm font-medium text-fitzone-navy truncate max-w-[120px] sm:max-w-none">{page.title}</p>
                             <p className="text-[10px] sm:text-xs text-fitzone-textGray hidden sm:block">{page.page}</p>
                           </div>
                         </td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
-                          <span className="text-xs sm:text-sm text-white">{(page.views / 1000).toFixed(1)}K</span>
+                          <span className="text-xs sm:text-sm text-fitzone-navy">{(page.views / 1000).toFixed(1)}K</span>
                         </td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center hidden sm:table-cell">
-                          <span className="text-xs sm:text-sm text-white">{page.avgTime}</span>
+                          <span className="text-xs sm:text-sm text-fitzone-navy">{page.avgTime}</span>
                         </td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center hidden lg:table-cell">
                           <span className={`text-xs sm:text-sm ${page.bounceRate <= 30 ? 'text-fitzone-emerald' : page.bounceRate <= 40 ? 'text-fitzone-amber' : 'text-red-400'}`}>{page.bounceRate}%</span>
@@ -831,7 +831,7 @@ export default function DataLayer() {
                           <span className="text-xs sm:text-sm font-bold text-fitzone-purple">{page.conversions}</span>
                         </td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
-                          <span className={`text-xs sm:text-sm font-bold ${page.convRate >= 2.5 ? 'text-fitzone-emerald' : 'text-white'}`}>{page.convRate}%</span>
+                          <span className={`text-xs sm:text-sm font-bold ${page.convRate >= 2.5 ? 'text-fitzone-emerald' : 'text-fitzone-navy'}`}>{page.convRate}%</span>
                         </td>
                       </tr>
                     ))}
@@ -846,7 +846,7 @@ export default function DataLayer() {
       {/* Keywords Reference */}
       <div className="bg-fitzone-purple rounded-xl p-4 sm:p-6 text-white">
         <h3 className="text-sm sm:text-base font-bold mb-3 sm:mb-4 flex items-center gap-2">
-          <Dumbbell className="w-5 h-5 sm:w-6 sm:h-6" />
+          <GraduationCap className="w-5 h-5 sm:w-6 sm:h-6" />
           Keywords Monitoreadas - UPN Perú
         </h3>
 

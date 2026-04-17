@@ -1,4 +1,4 @@
-import { Target, Users, MessageSquare, TrendingUp, Lightbulb, Zap, AlertCircle, Dumbbell, Flame, BarChart3, CheckCircle, FlaskConical, Calendar, Award } from 'lucide-react';
+import { Target, Users, MessageSquare, TrendingUp, Lightbulb, Zap, AlertCircle, Flame, BarChart3, CheckCircle, FlaskConical, Calendar, Award } from 'lucide-react';
 import { OPPORTUNITY_SCORE } from '../data/mockData';
 import { LAYER_CONFIG, KEY_MESSAGES, TARGET_AUDIENCES } from '../data/config';
 
@@ -75,7 +75,7 @@ export default function DecisionLayer() {
       <div className="bg-fitzone-slate rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-fitzone-purple/10">
         <div className="flex flex-col sm:flex-row items-start justify-between gap-3 sm:gap-4">
           <div>
-            <h2 className="text-base sm:text-lg font-bold text-white mb-1 sm:mb-2">
+            <h2 className="text-base sm:text-lg font-bold text-fitzone-navy mb-1 sm:mb-2">
               {LAYER_CONFIG.decision.name}
             </h2>
             <p className="text-sm sm:text-base text-fitzone-textGray">
@@ -114,7 +114,7 @@ export default function DecisionLayer() {
             </div>
             <div className="flex flex-wrap items-center justify-start sm:justify-center lg:justify-end gap-2 sm:gap-3 mt-2">
               <span className={`px-2 sm:px-3 lg:px-4 py-1 sm:py-1.5 lg:py-2 rounded-lg text-sm sm:text-base font-bold ${
-                OPPORTUNITY_SCORE.current_score >= 75 ? 'bg-fitzone-emerald text-fitzone-charcoal' :
+                OPPORTUNITY_SCORE.current_score >= 75 ? 'bg-fitzone-emerald text-upn-navy' :
                 OPPORTUNITY_SCORE.current_score >= 60 ? 'bg-yellow-500' : 'bg-red-500'
               }`}>
                 Grado {getScoreGrade(OPPORTUNITY_SCORE.current_score)}
@@ -180,7 +180,7 @@ export default function DecisionLayer() {
             <TrendingUp className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </div>
           <div>
-            <h3 className="text-sm sm:text-base font-bold text-white">Recomendaciones Estrategicas</h3>
+            <h3 className="text-sm sm:text-base font-bold text-fitzone-navy">Recomendaciones Estrategicas</h3>
             <p className="text-xs sm:text-sm text-fitzone-textGray">Acciones prioritarias basadas en señales del mercado universitario</p>
           </div>
         </div>
@@ -210,11 +210,11 @@ export default function DecisionLayer() {
                 </div>
                 <div className="text-left sm:text-right flex sm:flex-col items-center sm:items-end gap-2 sm:gap-0">
                   <p className="text-xs text-fitzone-textGray">Confianza</p>
-                  <p className="text-sm sm:text-base font-bold text-white">{rec.confidence}%</p>
+                  <p className="text-sm sm:text-base font-bold text-fitzone-navy">{rec.confidence}%</p>
                 </div>
               </div>
 
-              <p className="text-sm sm:text-base text-white font-medium mb-1 sm:mb-2">{rec.action}</p>
+              <p className="text-sm sm:text-base text-fitzone-navy font-medium mb-1 sm:mb-2">{rec.action}</p>
               <p className="text-xs sm:text-sm text-fitzone-emerald font-semibold flex items-center gap-1">
                 <Target className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                 {rec.impact}
@@ -231,18 +231,18 @@ export default function DecisionLayer() {
             <Users className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </div>
           <div>
-            <h3 className="text-sm sm:text-base font-bold text-white">Audiencias Objetivo UPN</h3>
+            <h3 className="text-sm sm:text-base font-bold text-fitzone-navy">Audiencias Objetivo UPN</h3>
             <p className="text-xs sm:text-sm text-fitzone-textGray">Segmentación inteligente para captación de estudiantes 2026</p>
           </div>
         </div>
 
         <div className="grid gap-3 sm:gap-4">
           {audiences.map((aud, idx) => (
-            <div key={idx} className="p-3 sm:p-4 lg:p-5 bg-fitzone-charcoal rounded-lg sm:rounded-xl border border-fitzone-slate hover:border-fitzone-purple/30 transition-colors">
+            <div key={idx} className="p-3 sm:p-4 lg:p-5 bg-fitzone-darkSlate rounded-lg sm:rounded-xl border border-fitzone-border hover:border-fitzone-purple/30 transition-colors">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 sm:gap-3 mb-2 sm:mb-3">
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-wrap items-center gap-2 sm:gap-3 mb-1 sm:mb-2">
-                    <h4 className="font-bold text-white text-sm sm:text-base">{aud.name}</h4>
+                    <h4 className="font-bold text-fitzone-navy text-sm sm:text-base">{aud.name}</h4>
                     <span className={`px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-bold flex items-center gap-1 ${
                       aud.status === 'active' ? 'bg-fitzone-emerald/20 text-fitzone-emerald' : 'bg-yellow-500/20 text-yellow-400'
                     }`}>
@@ -253,10 +253,10 @@ export default function DecisionLayer() {
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-3 sm:gap-4 lg:gap-6 mt-3 sm:mt-4 pb-3 sm:pb-4 border-b border-fitzone-slate">
+              <div className="flex flex-wrap gap-3 sm:gap-4 lg:gap-6 mt-3 sm:mt-4 pb-3 sm:pb-4 border-b border-fitzone-border">
                 <div>
                   <p className="text-xs text-fitzone-textGray">Tamano Potencial</p>
-                  <p className="text-lg sm:text-xl font-bold text-white">{aud.size}</p>
+                  <p className="text-lg sm:text-xl font-bold text-fitzone-navy">{aud.size}</p>
                 </div>
                 <div>
                   <p className="text-xs text-fitzone-textGray">Engagement Rate</p>
@@ -268,9 +268,9 @@ export default function DecisionLayer() {
                 </div>
               </div>
 
-              <div className="mt-3 sm:mt-4 p-2 sm:p-3 bg-fitzone-slate/50 rounded-lg">
+              <div className="mt-3 sm:mt-4 p-2 sm:p-3 bg-white rounded-lg border border-fitzone-border">
                 <p className="text-xs text-fitzone-textGray mb-0.5 sm:mb-1">Mensaje recomendado:</p>
-                <p className="text-xs sm:text-sm font-semibold text-white">{aud.message}</p>
+                <p className="text-xs sm:text-sm font-semibold text-fitzone-navy">{aud.message}</p>
               </div>
             </div>
           ))}
@@ -278,14 +278,14 @@ export default function DecisionLayer() {
       </div>
 
       {/* Content Pillars */}
-      <div className="bg-fitzone-charcoal text-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 border border-fitzone-purple/20">
+      <div className="bg-upn-navy text-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8 border border-fitzone-purple/20">
         <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
           <MessageSquare className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-fitzone-purple" />
           <h3 className="text-base sm:text-lg font-bold">Pilares de Contenido Sugeridos</h3>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-          <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20">
+          <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-white/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Award className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
               <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 1: {KEY_MESSAGES.empleabilidad.title}</p>
@@ -298,7 +298,7 @@ export default function DecisionLayer() {
             </div>
           </div>
 
-          <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20">
+          <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-white/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
               <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 2: {KEY_MESSAGES.acceso.title}</p>
@@ -311,7 +311,7 @@ export default function DecisionLayer() {
             </div>
           </div>
 
-          <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20">
+          <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-white/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Users className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
               <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 3: {KEY_MESSAGES.acreditacion.title}</p>
@@ -324,7 +324,7 @@ export default function DecisionLayer() {
             </div>
           </div>
 
-          <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20">
+          <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-white/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Target className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
               <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 4: {KEY_MESSAGES.red.title}</p>
@@ -337,7 +337,7 @@ export default function DecisionLayer() {
             </div>
           </div>
 
-          <div className="bg-fitzone-slate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-purple/20 sm:col-span-2">
+          <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-white/20 sm:col-span-2">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
               <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 5: {KEY_MESSAGES.flexibilidad.title}</p>
