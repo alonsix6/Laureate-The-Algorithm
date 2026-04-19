@@ -47,7 +47,7 @@ export default function ExecutionLayer() {
               <CalendarDays className="w-3 h-3 sm:w-4 sm:h-4" />
               <span className="text-xs sm:text-sm font-medium">{monthlyPeriod}</span>
             </div>
-            <span className="px-2 sm:px-3 py-1 bg-fitzone-emerald text-upn-navy rounded-full text-xs sm:text-sm font-medium flex items-center gap-1">
+            <span className="px-2 sm:px-3 py-1 bg-fitzone-emerald text-white rounded-full text-xs sm:text-sm font-medium flex items-center gap-1">
               <PlayCircle className="w-3 h-3 sm:w-4 sm:h-4" />
               Live
             </span>
