@@ -377,9 +377,9 @@ export default function ExecutionLayer() {
 
         <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-fitzone-cyan/8 border border-fitzone-cyan/20 rounded-lg sm:rounded-xl">
           <p className="text-xs sm:text-sm font-semibold mb-1.5 sm:mb-2 flex items-center gap-1.5 sm:gap-2 text-fitzone-cyan">
-            <Lightbulb className="w-3 h-3 sm:w-4 sm:h-4" /> Estacionalidad UPN — Admisión:
+            <Lightbulb className="w-3 h-3 sm:w-4 sm:h-4" /> Estacionalidad UPN - Admisión:
           </p>
-          <p className="text-xs sm:text-sm text-fitzone-lightGray">Ene-Feb (pico máximo — admisión 2026-I), Jul-Ago (pico secundario — admisión 2026-II), Nov-Dic (pre-campaña). Marzo-Junio es temporada baja — reducir budget 25%.</p>
+          <p className="text-xs sm:text-sm text-fitzone-lightGray">Ene-Feb (pico máximo - admisión 2026-I), Jul-Ago (pico secundario - admisión 2026-II), Nov-Dic (pre-campaña). Marzo-Junio es temporada baja - reducir budget 25%.</p>
         </div>
       </div>
     </div>

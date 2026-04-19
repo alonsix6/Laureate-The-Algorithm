@@ -3,10 +3,10 @@
   "source": "Meta/Facebook Social Listening",
   "region": "PE",
   "category": "Social Listening",
-  "client": "UPN — Universidad Privada del Norte",
+  "client": "UPN - Universidad Privada del Norte",
   "pages": [
     {
-      "name": "UPN Oficial — Páginas Públicas",
+      "name": "UPN Oficial - Páginas Públicas",
       "source": "Facebook Public Pages",
       "period": "Last 30 days",
       "topics": [
@@ -154,7 +154,7 @@
   "metadata": {
     "method": "Apify Social Listening Actor",
     "actor": "social-listening-meta",
-    "note": "Datos reales de Facebook/Instagram via scraping — cliente UPN",
+    "note": "Datos reales de Facebook/Instagram via scraping - cliente UPN",
     "timeframe": "Last 30 days",
     "posts_analyzed": 248,
     "comments_analyzed": 4820,

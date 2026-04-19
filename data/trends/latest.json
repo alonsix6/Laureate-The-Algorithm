@@ -3,7 +3,7 @@
   "region": "PE",
   "category": "Education",
   "source": "Google Trends (Curated)",
-  "client": "UPN — Universidad Privada del Norte",
+  "client": "UPN - Universidad Privada del Norte",
   "keywords": [
     {
       "keyword": "admisión UPN 2026",
@@ -157,8 +157,8 @@
     }
   ],
   "metadata": {
-    "method": "Curated data — Google Trends Education Peru",
-    "note": "Keywords orientados a admisión universitaria UPN — mercado Lima, Trujillo y Cajamarca",
+    "method": "Curated data - Google Trends Education Peru",
+    "note": "Keywords orientados a admisión universitaria UPN - mercado Lima, Trujillo y Cajamarca",
     "timeframe": "today 1-m",
     "apify_keywords": 0,
     "curated_keywords": 6,

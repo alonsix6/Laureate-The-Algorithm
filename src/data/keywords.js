@@ -1,5 +1,5 @@
-// Keywords y hashtags para UPN — Universidad Privada del Norte
-// Configuración completa para búsquedas y monitoreo social — Admisión 2026
+// Keywords y hashtags para UPN - Universidad Privada del Norte
+// Configuración completa para búsquedas y monitoreo social - Admisión 2026
 
 export const KEYWORDS_UPN = {
   // Marca UPN
@@ -277,11 +277,11 @@ export const TIKTOK_CONFIG = {
   metrics: ['views', 'likes', 'shares', 'comments'],
   trending_threshold: 10000,
   sounds: [
-    { name: 'Bad Bunny — Un Verano Sin Ti', category: 'Vida universitaria / campus' },
-    { name: 'Bizarrap — Shakira #53', category: 'Empoderamiento / logros' },
-    { name: 'Lo-fi Study Beats — Chillhop', category: 'Época de exámenes' },
-    { name: 'Feid — Pantone', category: 'GRWM primer día de clases' },
-    { name: 'Grupo 5 — Cumbia Mix', category: 'Contenido relatable peruano' },
+    { name: 'Bad Bunny - Un Verano Sin Ti', category: 'Vida universitaria / campus' },
+    { name: 'Bizarrap - Shakira #53', category: 'Empoderamiento / logros' },
+    { name: 'Lo-fi Study Beats - Chillhop', category: 'Época de exámenes' },
+    { name: 'Feid - Pantone', category: 'GRWM primer día de clases' },
+    { name: 'Grupo 5 - Cumbia Mix', category: 'Contenido relatable peruano' },
   ],
 };
 

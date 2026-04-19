@@ -146,7 +146,7 @@ export default function DataLayer() {
       {
         source: 'GA4',
         IconComponent: GoogleAnalyticsIcon,
-        text: '74,200 usuarios generaron 1,240 charlas de orientación (1.67% conversión). Página "/admision" lidera con 8.2% de tasa de conversión.',
+        text: '74.200 usuarios generaron 1.240 charlas de orientación (1,67% de conversión). La página "/admision" lidera con 8,2% de tasa de conversión.',
       },
     ];
   };
@@ -161,7 +161,7 @@ export default function DataLayer() {
 
   const insights = generateInsights();
 
-  // Expanded GA4 pages data — UPN upn.edu.pe
+  // Expanded GA4 pages data - UPN upn.edu.pe
   const ga4Pages = [
     { page: '/admision', title: 'Admisión UPN 2026', views: 22400, sessions: 18200, avgTime: '5:12', bounceRate: 18, conversions: 840, convRate: 4.62 },
     { page: '/carreras', title: 'Carreras Universitarias', views: 18600, sessions: 14800, avgTime: '4:48', bounceRate: 22, conversions: 620, convRate: 4.19 },
@@ -175,7 +175,7 @@ export default function DataLayer() {
     { page: '/mba', title: 'MBA y Posgrado UPN', views: 4100, sessions: 3200, avgTime: '4:52', bounceRate: 25, conversions: 58, convRate: 1.81 },
   ];
 
-  // Expanded TikTok hashtags data — UPN educación
+  // Expanded TikTok hashtags data - UPN educación
   const tiktokHashtags = [
     { hashtag: '#Universitarios', views: '9.2B', posts: '12.8M', growth: '+28%', region: 'Global', engagement: 8.2 },
     { hashtag: '#VidaUniversitaria', views: '4.2B', posts: '6.8M', growth: '+38%', region: 'LATAM', engagement: 9.0 },
@@ -187,7 +187,7 @@ export default function DataLayer() {
     { hashtag: '#EstudiantePeru', views: '3.4B', posts: '5.1M', growth: '+32%', region: 'Perú', engagement: 8.3 },
   ];
 
-  // Expanded TikTok sounds — educación
+  // Expanded TikTok sounds - educación
   const tiktokSounds = [
     { name: 'Bad Bunny - Un Verano Sin Ti', type: 'Reggaetón', usage: '8.4M', trend: '+12%' },
     { name: 'Bizarrap & Shakira #53', type: 'Latin Pop', usage: '12M', trend: '+8%' },
@@ -197,7 +197,7 @@ export default function DataLayer() {
     { name: 'Grupo 5 - A Ritmo de Cumbia', type: 'Cumbia', usage: '2.8M', trend: '+18%' },
   ];
 
-  // Expanded Meta topics data — UPN universidad
+  // Expanded Meta topics data - UPN universidad
   const metaTopics = [
     { topic: 'Vida Universitaria UPN', mentions: 6420, engagement: 9.2, sentiment: 92, growth: '+95%', brands: 'UPN, Campus UPN' },
     { topic: 'Carreras Universitarias', mentions: 5680, engagement: 8.5, sentiment: 85, growth: '+72%', brands: 'Ingeniería, Administración' },
@@ -207,10 +207,10 @@ export default function DataLayer() {
     { topic: 'MBA y Posgrado', mentions: 1420, engagement: 7.5, sentiment: 80, growth: '+38%', brands: 'UPN, PUCP, ESAN' },
   ];
 
-  // Meta ad performance — UPN admisión
+  // Meta ad performance - UPN admisión
   const metaAdPerformance = [
-    { campaign: 'Admisión 2026-I — Bachilleres Lima', platform: 'Instagram', reach: 920000, clicks: 18400, ctr: 2.00, cpl: 8.62, status: 'Activo' },
-    { campaign: 'Becas UPN — Padres de Familia', platform: 'Facebook', reach: 480000, clicks: 7200, ctr: 1.50, cpl: 10.54, status: 'Activo' },
+    { campaign: 'Admisión 2026-I - Bachilleres Lima', platform: 'Instagram', reach: 920000, clicks: 18400, ctr: 2.00, cpl: 8.62, status: 'Activo' },
+    { campaign: 'Becas UPN - Padres de Familia', platform: 'Facebook', reach: 480000, clicks: 7200, ctr: 1.50, cpl: 10.54, status: 'Activo' },
     { campaign: 'Charla Virtual Gratuita', platform: 'Instagram', reach: 650000, clicks: 14800, ctr: 2.28, cpl: 7.20, status: 'Activo' },
     { campaign: 'MBA Ejecutivo UPN', platform: 'Facebook', reach: 220000, clicks: 2800, ctr: 1.27, cpl: 18.50, status: 'Activo' },
   ];
@@ -230,7 +230,7 @@ export default function DataLayer() {
                   Capa de Data - Captura de Señales
                 </h2>
                 <p className="text-fitzone-textGray text-xs sm:text-base">
-                  Monitoreo en tiempo real del ecosistema digital universitario — UPN Perú
+                  Monitoreo en tiempo real del ecosistema digital universitario - UPN Perú
                 </p>
               </div>
             </div>
@@ -292,7 +292,7 @@ export default function DataLayer() {
             <Layers className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </div>
           <div className="min-w-0">
-            <h3 className="text-sm sm:text-lg font-bold text-fitzone-navy">Insights Clave del Mercado Fitness</h3>
+            <h3 className="text-sm sm:text-lg font-bold text-fitzone-navy">Insights Clave del Mercado Universitario</h3>
             <p className="text-xs sm:text-sm text-fitzone-textGray">Análisis automático multi-fuente</p>
           </div>
         </div>
@@ -386,7 +386,7 @@ export default function DataLayer() {
             <div className="bg-fitzone-cyan/10 border border-fitzone-cyan/30 rounded-lg p-3 sm:p-4 flex gap-2 sm:gap-3">
               <Info className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-cyan flex-shrink-0 mt-0.5" />
               <div className="text-xs sm:text-sm text-fitzone-lightGray">
-                <p className="font-semibold mb-1 text-fitzone-cyan">Cómo se calcula el score:</p>
+                <p className="font-semibold mb-1 text-fitzone-cyan">¿Cómo se calcula el score?</p>
                 <p>Promedio del "interés de búsqueda" (0-100) de keywords de admisión universitaria monitoreadas en Perú.</p>
                 <p className="mt-2 text-[10px] sm:text-xs text-fitzone-textGray hidden sm:block">
                   <strong>Fuente:</strong> Google Trends API (Perú) - <strong>Actualización:</strong> Semanal
@@ -460,7 +460,7 @@ export default function DataLayer() {
             <div className="bg-fitzone-emerald/10 border border-fitzone-emerald/30 rounded-lg p-3 sm:p-4 flex gap-2 sm:gap-3">
               <Info className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-emerald flex-shrink-0 mt-0.5" />
               <div className="text-xs sm:text-sm text-fitzone-lightGray">
-                <p className="font-semibold mb-1 text-fitzone-emerald">Cómo se calcula el score:</p>
+                <p className="font-semibold mb-1 text-fitzone-emerald">¿Cómo se calcula el score?</p>
                 <p>Promedio del "relevance score" (0-100) de hashtags de educación universitaria virales.</p>
               </div>
             </div>
@@ -517,7 +517,7 @@ export default function DataLayer() {
             <div>
               <h4 className="text-xs sm:text-sm font-semibold text-fitzone-navy mb-2 sm:mb-3 flex items-center gap-2">
                 <Music className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-emerald" />
-                Sonidos Trending para Gym Content
+                Sonidos Trending para Contenido Universitario
               </h4>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">
                 {tiktokSounds.map((sound, idx) => (
@@ -564,7 +564,7 @@ export default function DataLayer() {
             <div className="bg-fitzone-purple/10 border border-fitzone-purple/30 rounded-lg p-3 sm:p-4 flex gap-2 sm:gap-3">
               <Info className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple flex-shrink-0 mt-0.5" />
               <div className="text-xs sm:text-sm text-fitzone-lightGray">
-                <p className="font-semibold mb-1 text-fitzone-purple">Cómo se calcula el score:</p>
+                <p className="font-semibold mb-1 text-fitzone-purple">¿Cómo se calcula el score?</p>
                 <p>Promedio del "engagement score" (0-10) de temas universitarios en Facebook e Instagram.</p>
               </div>
             </div>
@@ -711,7 +711,7 @@ export default function DataLayer() {
                   <Target className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-textGray" />
                   <p className="text-[10px] sm:text-xs text-fitzone-textGray">Charlas</p>
                 </div>
-                <p className="text-lg sm:text-xl font-bold text-fitzone-purple">1,240</p>
+                <p className="text-lg sm:text-xl font-bold text-fitzone-purple">1.240</p>
                 <p className="text-[10px] sm:text-xs text-fitzone-emerald">+38%</p>
               </div>
               <div className="bg-fitzone-slate rounded-lg p-3 sm:p-4">
@@ -719,8 +719,8 @@ export default function DataLayer() {
                   <TrendingUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-textGray" />
                   <p className="text-[10px] sm:text-xs text-fitzone-textGray">Conv.</p>
                 </div>
-                <p className="text-lg sm:text-xl font-bold text-fitzone-emerald">1.67%</p>
-                <p className="text-[10px] sm:text-xs text-fitzone-textGray">Meta: 1.5%</p>
+                <p className="text-lg sm:text-xl font-bold text-fitzone-emerald">1,67%</p>
+                <p className="text-[10px] sm:text-xs text-fitzone-textGray">Meta: 1,5%</p>
               </div>
             </div>
 

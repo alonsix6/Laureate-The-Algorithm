@@ -104,7 +104,7 @@ export default function OptimizationLayer() {
               {PERFORMANCE_KPIS.reach.trend}
             </span>
           </div>
-          <h3 className="text-xs sm:text-sm font-medium text-white/80 mb-0.5 sm:mb-1">Alcance Unico</h3>
+          <h3 className="text-xs sm:text-sm font-medium text-white/80 mb-0.5 sm:mb-1">Alcance Único</h3>
           <p className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">{(PERFORMANCE_KPIS.reach.unique_reach / 1000000).toFixed(1)}M</p>
           <div className="flex items-baseline gap-2">
             <span className="text-xs sm:text-sm text-white/70">Impresiones: {(PERFORMANCE_KPIS.reach.impressions / 1000000).toFixed(1)}M</span>
@@ -167,8 +167,8 @@ export default function OptimizationLayer() {
       <div className="bg-fitzone-slate rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-fitzone-purple/20">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4 mb-4 sm:mb-6">
           <div>
-            <h3 className="text-sm sm:text-base font-bold text-fitzone-navy">Performance Ultimos 7 Dias</h3>
-            <p className="text-xs sm:text-sm text-fitzone-textGray">Evolucion de metricas clave</p>
+            <h3 className="text-sm sm:text-base font-bold text-fitzone-navy">Performance Últimos 7 Días</h3>
+            <p className="text-xs sm:text-sm text-fitzone-textGray">Evolución de métricas clave</p>
           </div>
           <div className="flex gap-3 sm:gap-4 text-xs sm:text-sm">
             <div className="flex items-center gap-1.5 sm:gap-2">
@@ -253,7 +253,7 @@ export default function OptimizationLayer() {
 
       {/* Funnel de Conversion - Responsive */}
       <div className="bg-fitzone-slate rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6 border border-fitzone-purple/20">
-        <h3 className="text-sm sm:text-base font-bold text-fitzone-navy mb-4 sm:mb-6">Funnel de Conversión UPN — Admisión 2026</h3>
+        <h3 className="text-sm sm:text-base font-bold text-fitzone-navy mb-4 sm:mb-6">Funnel de Conversión UPN - Admisión 2026</h3>
 
         {/* Mobile: Vertical Stack, Desktop: Horizontal Flow */}
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 sm:gap-3 lg:gap-3 overflow-x-auto pb-2 lg:pb-4">
@@ -306,7 +306,7 @@ export default function OptimizationLayer() {
             </div>
             <div className="bg-fitzone-cyan/10 rounded-lg p-3 border border-fitzone-cyan/20">
               <p className="text-xs text-fitzone-textGray mb-0.5 sm:mb-1">Tasa Conversión Web</p>
-              <p className="text-lg sm:text-xl font-bold text-fitzone-cyan">1.67%</p>
+              <p className="text-lg sm:text-xl font-bold text-fitzone-cyan">1,67%</p>
               <p className="text-xs text-fitzone-textGray">Visita → Charla/Lead</p>
             </div>
           </div>
@@ -398,7 +398,7 @@ export default function OptimizationLayer() {
         <div className="mt-3 sm:mt-4 p-2 sm:p-3 bg-white/20 rounded-lg">
           <p className="text-xs flex items-start sm:items-center gap-1">
             <Lightbulb className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 mt-0.5 sm:mt-0" />
-            <span><strong>Nota:</strong> Sistema de alertas automaticas configurado para notificacion en tiempo real cuando CPL supera umbrales.</span>
+            <span><strong>Nota:</strong> Sistema de alertas automáticas configurado para notificación en tiempo real cuando el CPL supera los umbrales definidos.</span>
           </p>
         </div>
       </div>
@@ -488,7 +488,7 @@ export default function OptimizationLayer() {
             <div className="flex-1">
               <h4 className="font-bold text-sm sm:text-base mb-1 flex items-center gap-1.5 sm:gap-2">
                 <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5" />
-                UPN — Universidad Privada del Norte
+                UPN - Universidad Privada del Norte
               </h4>
               <p className="text-xs text-white/90 mb-2">Red Laureate · Value Premium · Mejor empleabilidad vs precio en el segmento</p>
               <div className="flex flex-wrap gap-4 sm:gap-6">
