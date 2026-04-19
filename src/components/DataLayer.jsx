@@ -302,7 +302,7 @@ export default function DataLayer() {
             const colorScheme =
               insight.source === 'Google Trends' ? { bg: 'bg-fitzone-cyan/10', text: 'text-fitzone-cyan', icon: 'bg-fitzone-cyan', badge: 'bg-fitzone-cyan/20 text-fitzone-cyan' } :
               insight.source === 'TikTok' ? { bg: 'bg-fitzone-emerald/10', text: 'text-fitzone-emerald', icon: 'bg-fitzone-emerald', badge: 'bg-fitzone-emerald/20 text-fitzone-emerald' } :
-              insight.source === 'Meta' ? { bg: 'bg-fitzone-purple/10', text: 'text-fitzone-lightPurple', icon: 'bg-fitzone-purple', badge: 'bg-fitzone-purple/20 text-fitzone-lightPurple' } :
+              insight.source === 'Meta' ? { bg: 'bg-fitzone-purple/10', text: 'text-fitzone-purple', icon: 'bg-fitzone-purple', badge: 'bg-fitzone-purple/20 text-fitzone-purple' } :
               insight.source === 'GA4' ? { bg: 'bg-fitzone-amber/10', text: 'text-fitzone-amber', icon: 'bg-fitzone-amber', badge: 'bg-fitzone-amber/20 text-fitzone-amber' } :
               { bg: 'bg-fitzone-cyan/10', text: 'text-fitzone-cyan', icon: 'bg-fitzone-cyan', badge: 'bg-fitzone-cyan/20 text-fitzone-cyan' };
 
@@ -346,8 +346,8 @@ export default function DataLayer() {
             </div>
             <div className="flex-1 min-w-0">
               <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
-                <p className="text-xs sm:text-sm font-bold text-fitzone-lightPurple uppercase tracking-wider">{multiSourceInsight.source}</p>
-                <span className="bg-fitzone-purple/30 text-fitzone-lightPurple px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold">
+                <p className="text-xs sm:text-sm font-bold text-fitzone-purple uppercase tracking-wider">{multiSourceInsight.source}</p>
+                <span className="bg-fitzone-purple/30 text-fitzone-purple px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold">
                   Consolidado
                 </span>
               </div>
@@ -442,7 +442,7 @@ export default function DataLayer() {
       <div className="bg-fitzone-slate rounded-xl shadow-lg overflow-hidden border border-fitzone-purple/10">
         <button
           onClick={() => toggleSection('tiktok')}
-          className="w-full bg-fitzone-emerald text-upn-navy p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
+          className="w-full bg-fitzone-emerald text-white p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
         >
           <div className="flex items-center gap-2 sm:gap-3">
             <Video className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
@@ -497,7 +497,7 @@ export default function DataLayer() {
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
                           <span className={`inline-flex items-center gap-0.5 sm:gap-1 px-1.5 sm:px-2 py-0.5 sm:py-1 text-[10px] sm:text-xs font-semibold rounded-full ${
                             tag.region === 'Perú' ? 'bg-fitzone-emerald/20 text-fitzone-emerald' :
-                            tag.region === 'LATAM' ? 'bg-fitzone-purple/20 text-fitzone-lightPurple' :
+                            tag.region === 'LATAM' ? 'bg-fitzone-purple/20 text-fitzone-purple' :
                             'bg-fitzone-slate text-fitzone-textGray'
                           }`}>
                             <Globe className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
@@ -561,9 +561,9 @@ export default function DataLayer() {
         {expandedSections.meta && (
           <div className="p-3 sm:p-6 space-y-4 sm:space-y-6 bg-fitzone-charcoal">
             <div className="bg-fitzone-purple/10 border border-fitzone-purple/30 rounded-lg p-3 sm:p-4 flex gap-2 sm:gap-3">
-              <Info className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-lightPurple flex-shrink-0 mt-0.5" />
+              <Info className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple flex-shrink-0 mt-0.5" />
               <div className="text-xs sm:text-sm text-fitzone-lightGray">
-                <p className="font-semibold mb-1 text-fitzone-lightPurple">Cómo se calcula el score:</p>
+                <p className="font-semibold mb-1 text-fitzone-purple">Cómo se calcula el score:</p>
                 <p>Promedio del "engagement score" (0-10) de temas universitarios en Facebook e Instagram.</p>
               </div>
             </div>
@@ -571,7 +571,7 @@ export default function DataLayer() {
             {/* Topics Table */}
             <div>
               <h4 className="text-xs sm:text-sm font-semibold text-fitzone-navy mb-2 sm:mb-3 flex items-center gap-2">
-                <TrendingUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-lightPurple" />
+                <TrendingUp className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-purple" />
                 Temas Trending en Redes Sociales
               </h4>
               <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">
@@ -591,7 +591,7 @@ export default function DataLayer() {
                       <tr key={idx} className="hover:bg-fitzone-darkSlate transition">
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium text-fitzone-navy">{topic.topic}</td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
-                          <span className="text-xs sm:text-sm font-bold text-fitzone-lightPurple">{(topic.mentions / 1000).toFixed(0)}K</span>
+                          <span className="text-xs sm:text-sm font-bold text-fitzone-purple">{(topic.mentions / 1000).toFixed(0)}K</span>
                         </td>
                         <td className="px-2 sm:px-4 py-2 sm:py-3 text-center">
                           <span className="text-xs sm:text-sm font-bold text-fitzone-navy">{topic.engagement}</span>
@@ -619,7 +619,7 @@ export default function DataLayer() {
             {/* Ad Performance */}
             <div>
               <h4 className="text-xs sm:text-sm font-semibold text-fitzone-navy mb-2 sm:mb-3 flex items-center gap-2">
-                <DollarSign className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-lightPurple" />
+                <DollarSign className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-fitzone-purple" />
                 Rendimiento de Campañas Meta Ads
               </h4>
               <div className="overflow-x-auto -mx-3 sm:mx-0 px-3 sm:px-0">

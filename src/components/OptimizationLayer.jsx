@@ -76,7 +76,7 @@ export default function OptimizationLayer() {
           <div className="flex items-center justify-between mb-2 sm:mb-3">
             <UserPlus className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
             <span className={`px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-bold ${
-              PERFORMANCE_KPIS.leads.trend_value > 0 ? 'bg-fitzone-emerald text-upn-navy' : 'bg-red-400'
+              PERFORMANCE_KPIS.leads.trend_value > 0 ? 'bg-fitzone-emerald text-white' : 'bg-red-400 text-white'
             }`}>
               {PERFORMANCE_KPIS.leads.trend}
             </span>
@@ -99,7 +99,7 @@ export default function OptimizationLayer() {
           <div className="flex items-center justify-between mb-2 sm:mb-3">
             <Users className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
             <span className={`px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-bold ${
-              PERFORMANCE_KPIS.reach.trend_value > 0 ? 'bg-fitzone-emerald text-upn-navy' : 'bg-red-400'
+              PERFORMANCE_KPIS.reach.trend_value > 0 ? 'bg-fitzone-emerald text-white' : 'bg-red-400 text-white'
             }`}>
               {PERFORMANCE_KPIS.reach.trend}
             </span>
@@ -118,24 +118,24 @@ export default function OptimizationLayer() {
         </div>
 
         {/* Engagement */}
-        <div className="bg-fitzone-emerald text-upn-navy rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 shadow-lg">
+        <div className="bg-fitzone-emerald text-white rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 shadow-lg">
           <div className="flex items-center justify-between mb-2 sm:mb-3">
             <Heart className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
             <span className={`px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-bold ${
-              PERFORMANCE_KPIS.engagement.trend_value > 0 ? 'bg-upn-navy/20 text-upn-navy' : 'bg-red-400 text-white'
+              PERFORMANCE_KPIS.engagement.trend_value > 0 ? 'bg-white/20 text-white' : 'bg-red-400 text-white'
             }`}>
               {PERFORMANCE_KPIS.engagement.trend}
             </span>
           </div>
-          <h3 className="text-xs sm:text-sm font-medium text-upn-navy/80 mb-0.5 sm:mb-1">Interacciones Totales</h3>
+          <h3 className="text-xs sm:text-sm font-medium text-white/80 mb-0.5 sm:mb-1">Interacciones Totales</h3>
           <p className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">{(PERFORMANCE_KPIS.engagement.total_interactions / 1000).toFixed(1)}K</p>
           <div className="flex items-baseline gap-1 sm:gap-2 flex-wrap">
-            <span className="text-xs sm:text-sm text-upn-navy/70">Engagement Rate</span>
-            <span className="text-xs bg-upn-navy/10 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded">{PERFORMANCE_KPIS.engagement.engagement_rate}%</span>
+            <span className="text-xs sm:text-sm text-white/70">Engagement Rate</span>
+            <span className="text-xs bg-white/10 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded">{PERFORMANCE_KPIS.engagement.engagement_rate}%</span>
           </div>
-          <div className="mt-2 sm:mt-3 pt-2 sm:pt-3 border-t border-upn-navy/20">
+          <div className="mt-2 sm:mt-3 pt-2 sm:pt-3 border-t border-white/20">
             <div className="flex justify-between text-xs">
-              <span className="text-upn-navy/70">Shares</span>
+              <span className="text-white/70">Shares</span>
               <span className="font-bold">{(PERFORMANCE_KPIS.engagement.shares / 1000).toFixed(1)}K</span>
             </div>
           </div>
@@ -145,7 +145,7 @@ export default function OptimizationLayer() {
         <div className="bg-fitzone-slate text-fitzone-navy rounded-xl sm:rounded-2xl p-4 sm:p-5 lg:p-6 shadow-card border border-fitzone-purple/30">
           <div className="flex items-center justify-between mb-2 sm:mb-3">
             <Award className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-fitzone-purple" />
-            <span className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-bold bg-fitzone-emerald text-upn-navy">
+            <span className="px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-xs font-bold bg-fitzone-emerald text-white">
               {PERFORMANCE_KPIS.budget.spent_percentage.toFixed(0)}%
             </span>
           </div>

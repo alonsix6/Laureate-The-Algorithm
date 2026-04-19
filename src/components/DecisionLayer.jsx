@@ -83,7 +83,7 @@ export default function DecisionLayer() {
             </p>
           </div>
           <div className="flex flex-wrap gap-2 items-center">
-            <div className="flex items-center gap-1.5 sm:gap-2 bg-fitzone-purple/20 text-fitzone-lightPurple px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg">
+            <div className="flex items-center gap-1.5 sm:gap-2 bg-fitzone-purple/20 text-fitzone-purple px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg">
               <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span className="text-xs sm:text-sm font-medium">{monthlyPeriod}</span>
             </div>
@@ -114,7 +114,7 @@ export default function DecisionLayer() {
             </div>
             <div className="flex flex-wrap items-center justify-start sm:justify-center lg:justify-end gap-2 sm:gap-3 mt-2">
               <span className={`px-2 sm:px-3 lg:px-4 py-1 sm:py-1.5 lg:py-2 rounded-lg text-sm sm:text-base font-bold ${
-                OPPORTUNITY_SCORE.current_score >= 75 ? 'bg-fitzone-emerald text-upn-navy' :
+                OPPORTUNITY_SCORE.current_score >= 75 ? 'bg-fitzone-emerald text-white' :
                 OPPORTUNITY_SCORE.current_score >= 60 ? 'bg-yellow-500' : 'bg-red-500'
               }`}>
                 Grado {getScoreGrade(OPPORTUNITY_SCORE.current_score)}

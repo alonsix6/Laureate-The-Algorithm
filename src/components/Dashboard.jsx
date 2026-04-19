@@ -86,7 +86,7 @@ export default function Dashboard() {
               </div>
               <div className="min-w-0">
                 <h1 className="text-xl sm:text-2xl font-bold tracking-tight">{BRAND_CONFIG.name}</h1>
-                <p className="text-fitzone-lightPurple text-xs sm:text-sm mt-0.5 font-medium">
+                <p className="text-white/80 text-xs sm:text-sm mt-0.5 font-medium">
                   {BRAND_CONFIG.tagline}
                 </p>
               </div>
