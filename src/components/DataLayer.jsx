@@ -90,7 +90,7 @@ export default function DataLayer() {
     const iconMap = {
       trend: TrendingUp,
       social: Users,
-      tiktok: Video,
+      tiktok: TikTokIcon,
       intent: Target,
       budget: DollarSign,
       multi_source: Layers
@@ -130,22 +130,22 @@ export default function DataLayer() {
     return [
       {
         source: 'Google Trends',
-        IconComponent: Search,
+        IconComponent: GoogleIcon,
         text: '"Admisión UPN 2026" lidera búsquedas con 100/100 de interés y +92% de crecimiento. 6 keywords en tendencia explosiva durante pico de admisión enero.',
       },
       {
         source: 'TikTok',
-        IconComponent: Video,
+        IconComponent: TikTokIcon,
         text: '#VidaUniversitaria alcanza 4.2M de usos. #AdmisiónUPN creció +124% en las últimas 4 semanas. Contenido "primer sueldo egresado" tiene engagement 22.4%.',
       },
       {
         source: 'Meta',
-        IconComponent: Share2,
+        IconComponent: MetaIcon,
         text: 'Sentimiento social positivo en 92% de menciones. "Vida Universitaria UPN" lidera con 6,420 menciones. "Admisión 2026-I" creció +124% en el mes.',
       },
       {
         source: 'GA4',
-        IconComponent: BarChart3,
+        IconComponent: GoogleAnalyticsIcon,
         text: '74,200 usuarios generaron 1,240 charlas de orientación (1.67% conversión). Página "/admision" lidera con 8.2% de tasa de conversión.',
       },
     ];
@@ -236,7 +236,7 @@ export default function DataLayer() {
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-            <div className="flex items-center gap-2 bg-fitzone-cyan/20 text-fitzone-cyan px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg">
+            <div className="flex items-center gap-2 bg-white/20 text-white px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg">
               <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span className="text-xs sm:text-sm font-semibold">Sem {weekPeriod.weekNumber}</span>
               <span className="text-[10px] sm:text-xs opacity-80 hidden xs:inline">| {weekPeriod.range}</span>
@@ -249,7 +249,7 @@ export default function DataLayer() {
             <button
               onClick={loadData}
               disabled={isRefreshing}
-              className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-fitzone-purple/20 text-fitzone-purple rounded-lg hover:bg-fitzone-purple/30 transition disabled:opacity-50 text-sm"
+              className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1.5 sm:py-2 bg-fitzone-purple text-white rounded-lg hover:bg-fitzone-darkPurple transition disabled:opacity-50 text-sm font-semibold"
             >
               <RefreshCw className={`w-3.5 h-3.5 sm:w-4 sm:h-4 ${isRefreshing ? 'animate-spin' : ''}`} />
               <span className="hidden sm:inline">Actualizar</span>
@@ -259,21 +259,21 @@ export default function DataLayer() {
 
         {/* Data Sources Status */}
         <div className="flex flex-wrap gap-2 sm:gap-3">
-          <div className="flex items-center gap-1.5 sm:gap-2 bg-white/15 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-white/20 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-fitzone-emerald rounded-full"></div>
-            <span className="text-[10px] sm:text-xs text-fitzone-textGray">Trends</span>
+            <span className="text-[10px] sm:text-xs text-white font-medium">Trends</span>
           </div>
-          <div className="flex items-center gap-1.5 sm:gap-2 bg-white/15 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-white/20 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-fitzone-emerald rounded-full"></div>
-            <span className="text-[10px] sm:text-xs text-fitzone-textGray">TikTok</span>
+            <span className="text-[10px] sm:text-xs text-white font-medium">TikTok</span>
           </div>
-          <div className="flex items-center gap-1.5 sm:gap-2 bg-white/15 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-white/20 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-fitzone-emerald rounded-full"></div>
-            <span className="text-[10px] sm:text-xs text-fitzone-textGray">Meta</span>
+            <span className="text-[10px] sm:text-xs text-white font-medium">Meta</span>
           </div>
-          <div className="flex items-center gap-1.5 sm:gap-2 bg-white/15 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 bg-white/20 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2">
             <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-fitzone-emerald rounded-full"></div>
-            <span className="text-[10px] sm:text-xs text-fitzone-textGray">GA4</span>
+            <span className="text-[10px] sm:text-xs text-white font-medium">GA4</span>
           </div>
           {lastRefresh && (
             <div className="flex items-center gap-1.5 sm:gap-2 bg-white/15 rounded-lg px-2 sm:px-3 py-1.5 sm:py-2 ml-auto">
@@ -289,7 +289,7 @@ export default function DataLayer() {
       <div className="bg-fitzone-slate rounded-2xl shadow-fitzone-lg p-4 sm:p-6 lg:p-8 border border-fitzone-purple/10">
         <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
           <div className="w-10 h-10 sm:w-12 sm:h-12 bg-fitzone-purple rounded-xl flex items-center justify-center flex-shrink-0">
-            <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+            <Layers className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
           </div>
           <div className="min-w-0">
             <h3 className="text-sm sm:text-lg font-bold text-fitzone-navy">Insights Clave del Mercado Fitness</h3>

@@ -7,37 +7,37 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Paleta C — "Amber & Ink" — UPN/Laureate
+        // Paleta — "Laureate Orange & Warm Ink"
         fitzone: {
-          // Accent principal — Amber-700 (AA con blanco: 4.95:1 ✅)
-          purple: '#B45309',        // Amber-700 — accent principal (AA con white)
-          darkPurple: '#92400E',    // Amber-800 — hover state
-          lightPurple: '#FEF3C7',   // Amber-100 — solo sobre fondos oscuros
+          // Accent principal — Laureate Orange
+          purple: '#F15A22',        // Laureate Orange — accent principal
+          darkPurple: '#C94A18',    // Hover / dark variant (4.5:1 AA ✅ sobre blanco)
+          lightPurple: '#FEE9E0',   // Tint cálido — solo sobre fondos oscuros
 
-          // Superficies — cálido, editorial
-          charcoal: '#FAFAF8',      // Fondo de página (warm off-white)
-          slate: '#FFFFFF',         // Cards / superficies blancas
-          darkSlate: '#F5F4F0',     // Superficie alternativa cálida
-          surface: '#EEECEA',       // Superficie terciaria
+          // Superficies — warm white (no pure #fff)
+          charcoal: '#FBF7F5',      // Fondo de página (warm off-white)
+          slate: '#FFF9F7',         // Cards (warm white)
+          darkSlate: '#F5EDE8',     // Superficie alternativa cálida
+          surface: '#EDE4DF',       // Superficie terciaria
 
-          // Texto
-          navy: '#1A1A2E',          // Texto principal near-black (15.5:1 AAA ✅)
-          darkText: '#1C2B4A',      // Ink navy — nav/header
+          // Texto — warm neutral (sin azul frío)
+          navy: '#1C1410',          // Texto principal warm near-black (16:1 AAA ✅)
+          darkText: '#1C1410',
 
-          // Bordes
-          border: '#E4E4E7',        // Zinc-200 — borde suave
+          // Bordes — warm
+          border: '#E8DDD9',        // Warm border suave
 
           // Datos / info
-          cyan: '#0284C7',          // Sky-600 — datos (4.68:1 AA ✅, más vibrante)
+          cyan: '#0284C7',          // Sky-600 — datos (4.68:1 AA ✅)
           electric: '#0EA5E9',      // Sky-500 — datos secundarios
 
           // Aliases
-          orange: '#B45309',
-          darkOrange: '#92400E',
+          orange: '#F15A22',
+          darkOrange: '#C94A18',
           lime: '#0284C7',
 
           // Éxito
-          emerald: '#16A34A',       // Green-600 — positivo (3.59:1 AA large ✅, más vibrante)
+          emerald: '#16A34A',       // Green-600 — positivo
           green: '#22C55E',         // Green-500 — secundario
 
           // Alerta
@@ -45,10 +45,10 @@ export default {
           amber: '#D97706',         // Amber-600 — advertencia
 
           // Neutros
-          white: '#FFFFFF',
-          lightGray: '#3F3F46',     // Zinc-700 — body text (10.7:1 AAA ✅)
-          textGray: '#52525B',      // Zinc-600 — texto muted (5.9:1 AA ✅)
-          mediumGray: '#71717A',    // Zinc-500
+          white: '#FFF9F7',         // Warm white
+          lightGray: '#3D3530',     // Warm body text (12:1 AAA ✅)
+          textGray: '#6B5E58',      // Warm muted text (5.2:1 AA ✅)
+          mediumGray: '#9C8F89',    // Warm medium
         },
         // Platform brand colors (Simple Icons official)
         platform: {
@@ -57,13 +57,13 @@ export default {
           meta: '#1877F2',     // Meta Blue (4.17:1 AA ✅)
           ga4: '#E37400',      // Google Analytics Orange (large text ✅)
         },
-        // UPN Brand — Ink Navy header
+        // Laureate/Reset Brand — Warm Charcoal header (reemplaza navy azul frío)
         upn: {
-          navy: '#1C2B4A',          // Ink navy — header/nav
-          amber: '#F59E0B',         // UPN lúcuma claro (solo sobre fondos oscuros)
-          darkNavy: '#0F1D35',      // Sub-nav más profundo
-          lightNavy: '#2E4170',     // Hover en nav
-          deepNavy: '#0A1527',      // Footer
+          navy: '#1A1410',          // Warm charcoal — header/nav
+          amber: '#F59E0B',         // Acento lúcuma (sobre fondos oscuros)
+          darkNavy: '#120E0A',      // Sub-nav profundo
+          lightNavy: '#2C2018',     // Hover en nav
+          deepNavy: '#0E0B08',      // Footer
         },
         // Semantic
         success: '#166534',
