@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Search, TrendingUp, Video, Share2, GraduationCap, RefreshCw, ChevronDown, ChevronUp, BarChart3, Info, Music, Target, DollarSign, Layers, Lightbulb, Users, Globe, MapPin, Eye, Clock, MousePointer, Smartphone, Monitor, ExternalLink, Calendar } from 'lucide-react';
+import { TrendingUp, GraduationCap, RefreshCw, ChevronDown, ChevronUp, Info, Music, Target, DollarSign, Layers, Lightbulb, Users, Globe, MapPin, Eye, Clock, MousePointer, Smartphone, Monitor, ExternalLink, Calendar } from 'lucide-react';
+import { GoogleIcon, TikTokIcon, MetaIcon, GoogleAnalyticsIcon } from './PlatformIcons';
 
 export default function DataLayer() {
   // Helper function to get current week info
@@ -300,11 +301,11 @@ export default function DataLayer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 mb-3 sm:mb-4">
           {insights.map((insight, idx) => {
             const colorScheme =
-              insight.source === 'Google Trends' ? { bg: 'bg-fitzone-cyan/10', text: 'text-fitzone-cyan', icon: 'bg-fitzone-cyan', badge: 'bg-fitzone-cyan/20 text-fitzone-cyan' } :
-              insight.source === 'TikTok' ? { bg: 'bg-fitzone-emerald/10', text: 'text-fitzone-emerald', icon: 'bg-fitzone-emerald', badge: 'bg-fitzone-emerald/20 text-fitzone-emerald' } :
-              insight.source === 'Meta' ? { bg: 'bg-fitzone-purple/10', text: 'text-fitzone-purple', icon: 'bg-fitzone-purple', badge: 'bg-fitzone-purple/20 text-fitzone-purple' } :
-              insight.source === 'GA4' ? { bg: 'bg-fitzone-amber/10', text: 'text-fitzone-amber', icon: 'bg-fitzone-amber', badge: 'bg-fitzone-amber/20 text-fitzone-amber' } :
-              { bg: 'bg-fitzone-cyan/10', text: 'text-fitzone-cyan', icon: 'bg-fitzone-cyan', badge: 'bg-fitzone-cyan/20 text-fitzone-cyan' };
+              insight.source === 'Google Trends' ? { bg: 'bg-platform-google/10', text: 'text-platform-google', icon: 'bg-platform-google', badge: 'bg-platform-google/15 text-platform-google' } :
+              insight.source === 'TikTok' ? { bg: 'bg-platform-tiktok/8', text: 'text-platform-tiktok', icon: 'bg-platform-tiktok', badge: 'bg-platform-tiktok/10 text-platform-tiktok' } :
+              insight.source === 'Meta' ? { bg: 'bg-platform-meta/10', text: 'text-platform-meta', icon: 'bg-platform-meta', badge: 'bg-platform-meta/15 text-platform-meta' } :
+              insight.source === 'GA4' ? { bg: 'bg-platform-ga4/10', text: 'text-platform-ga4', icon: 'bg-platform-ga4', badge: 'bg-platform-ga4/15 text-platform-ga4' } :
+              { bg: 'bg-platform-google/10', text: 'text-platform-google', icon: 'bg-platform-google', badge: 'bg-platform-google/15 text-platform-google' };
 
             const sourceScore =
               insight.source === 'Google Trends' ? scores.search :
@@ -368,10 +369,10 @@ export default function DataLayer() {
       <div className="bg-fitzone-slate rounded-xl shadow-lg overflow-hidden border border-fitzone-purple/10">
         <button
           onClick={() => toggleSection('trends')}
-          className="w-full bg-fitzone-cyan text-white p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
+          className="w-full bg-platform-google text-white p-3 sm:p-4 flex items-center justify-between hover:brightness-105 transition"
         >
           <div className="flex items-center gap-2 sm:gap-3">
-            <Search className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+            <GoogleIcon className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
             <div className="text-left min-w-0">
               <h3 className="text-sm sm:text-base font-bold">Google Trends</h3>
               <p className="text-[10px] sm:text-xs text-white/90">Keywords admisión universitaria - Score: {scores.search}/10</p>
@@ -442,10 +443,10 @@ export default function DataLayer() {
       <div className="bg-fitzone-slate rounded-xl shadow-lg overflow-hidden border border-fitzone-purple/10">
         <button
           onClick={() => toggleSection('tiktok')}
-          className="w-full bg-fitzone-emerald text-white p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
+          className="w-full bg-platform-tiktok text-white p-3 sm:p-4 flex items-center justify-between hover:bg-gray-900 transition"
         >
           <div className="flex items-center gap-2 sm:gap-3">
-            <Video className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+            <TikTokIcon className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
             <div className="text-left min-w-0">
               <h3 className="text-sm sm:text-base font-bold">TikTok Creative Center</h3>
               <p className="text-[10px] sm:text-xs text-white/90">Hashtags virales - Score: {scores.trend}/10</p>
@@ -546,10 +547,10 @@ export default function DataLayer() {
       <div className="bg-fitzone-slate rounded-xl shadow-lg overflow-hidden border border-fitzone-purple/10">
         <button
           onClick={() => toggleSection('meta')}
-          className="w-full bg-fitzone-purple text-white p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
+          className="w-full bg-platform-meta text-white p-3 sm:p-4 flex items-center justify-between hover:brightness-105 transition"
         >
           <div className="flex items-center gap-2 sm:gap-3">
-            <Share2 className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+            <MetaIcon className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
             <div className="text-left min-w-0">
               <h3 className="text-sm sm:text-base font-bold">Meta/Facebook Trends</h3>
               <p className="text-[10px] sm:text-xs text-white/90">Redes sociales - Score: {scores.social}/10</p>
@@ -673,10 +674,10 @@ export default function DataLayer() {
       <div className="bg-fitzone-slate rounded-xl shadow-lg overflow-hidden border border-fitzone-purple/10">
         <button
           onClick={() => toggleSection('ga4')}
-          className="w-full bg-fitzone-amber text-white p-3 sm:p-4 flex items-center justify-between hover:brightness-110 transition"
+          className="w-full bg-platform-ga4 text-white p-3 sm:p-4 flex items-center justify-between hover:brightness-105 transition"
         >
           <div className="flex items-center gap-2 sm:gap-3">
-            <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+            <GoogleAnalyticsIcon className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
             <div className="text-left min-w-0">
               <h3 className="text-sm sm:text-base font-bold">Google Analytics 4</h3>
               <p className="text-[10px] sm:text-xs text-white/90">Conversión - Score: {scores.intent}/10</p>
