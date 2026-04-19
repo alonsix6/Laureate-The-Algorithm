@@ -314,60 +314,62 @@ export default function OptimizationLayer() {
       </div>
 
       {/* CRM Monitoring - CPL Alerts */}
-      <div className="bg-fitzone-purple text-white rounded-xl sm:rounded-2xl shadow-lg p-3 sm:p-4 lg:p-6">
+      <div className="bg-white rounded-xl sm:rounded-2xl shadow-card border border-fitzone-purple/20 p-3 sm:p-4 lg:p-6">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
           <div className="flex items-center gap-2 sm:gap-3">
-            <Bell className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
+            <div className="w-9 h-9 bg-fitzone-purple rounded-lg flex items-center justify-center flex-shrink-0">
+              <Bell className="w-5 h-5 text-white" />
+            </div>
             <div>
-              <h3 className="text-sm sm:text-base lg:text-lg font-bold">CRM - Monitoreo CPL por Audiencia</h3>
-              <p className="text-xs sm:text-sm text-white/90">Alertas automaticas de costo por lead</p>
+              <h3 className="text-sm sm:text-base lg:text-lg font-bold text-fitzone-navy">CRM - Monitoreo CPL por Audiencia</h3>
+              <p className="text-xs sm:text-sm text-fitzone-textGray">Alertas automaticas de costo por lead</p>
             </div>
           </div>
-          <span className="px-2 sm:px-3 py-1 bg-white/20 rounded-full text-xs font-bold self-start sm:self-auto">
+          <span className="px-2 sm:px-3 py-1 bg-fitzone-emerald text-white rounded-full text-xs font-bold self-start sm:self-auto">
             {CRM_CONFIG.enabled ? 'ACTIVO' : 'MONITOREO'}
           </span>
         </div>
 
         {/* CPL Thresholds by Audience */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 mb-4 sm:mb-6">
-          <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4">
-            <h4 className="font-bold text-sm sm:text-base mb-2 sm:mb-3 flex items-center gap-1.5 sm:gap-2">
-              <Zap className="w-4 h-4 sm:w-5 sm:h-5" />
+          <div className="bg-fitzone-darkSlate rounded-lg sm:rounded-xl p-3 sm:p-4 border border-fitzone-border">
+            <h4 className="font-bold text-sm sm:text-base mb-2 sm:mb-3 flex items-center gap-1.5 sm:gap-2 text-fitzone-navy">
+              <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
               Bachilleres Jóvenes (17-22)
             </h4>
             <div className="space-y-1.5 sm:space-y-2">
               <div className="flex justify-between text-xs sm:text-sm">
-                <span>CPL Target</span>
-                <span className="font-bold">${CRM_CONFIG.cpl_thresholds.bachilleres_jovenes.cpl_target}</span>
+                <span className="text-fitzone-lightGray">CPL Target</span>
+                <span className="font-bold text-fitzone-navy">${CRM_CONFIG.cpl_thresholds.bachilleres_jovenes.cpl_target}</span>
               </div>
               <div className="flex justify-between text-xs sm:text-sm">
-                <span>Alerta en</span>
-                <span className="font-bold text-yellow-300">${CRM_CONFIG.cpl_thresholds.bachilleres_jovenes.cpl_alert}</span>
+                <span className="text-fitzone-lightGray">Alerta en</span>
+                <span className="font-bold text-amber-600">${CRM_CONFIG.cpl_thresholds.bachilleres_jovenes.cpl_alert}</span>
               </div>
               <div className="flex justify-between text-xs sm:text-sm">
-                <span>Pausar en</span>
-                <span className="font-bold text-red-300">${CRM_CONFIG.cpl_thresholds.bachilleres_jovenes.cpl_pause}</span>
+                <span className="text-fitzone-lightGray">Pausar en</span>
+                <span className="font-bold text-red-600">${CRM_CONFIG.cpl_thresholds.bachilleres_jovenes.cpl_pause}</span>
               </div>
             </div>
           </div>
 
-          <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4">
-            <h4 className="font-bold text-sm sm:text-base mb-2 sm:mb-3 flex items-center gap-1.5 sm:gap-2">
-              <Target className="w-4 h-4 sm:w-5 sm:h-5" />
+          <div className="bg-fitzone-darkSlate rounded-lg sm:rounded-xl p-3 sm:p-4 border border-fitzone-border">
+            <h4 className="font-bold text-sm sm:text-base mb-2 sm:mb-3 flex items-center gap-1.5 sm:gap-2 text-fitzone-navy">
+              <Target className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-cyan" />
               Padres de Familia (35-55)
             </h4>
             <div className="space-y-1.5 sm:space-y-2">
               <div className="flex justify-between text-xs sm:text-sm">
-                <span>CPL Target</span>
-                <span className="font-bold">${CRM_CONFIG.cpl_thresholds.padres_de_familia.cpl_target}</span>
+                <span className="text-fitzone-lightGray">CPL Target</span>
+                <span className="font-bold text-fitzone-navy">${CRM_CONFIG.cpl_thresholds.padres_de_familia.cpl_target}</span>
               </div>
               <div className="flex justify-between text-xs sm:text-sm">
-                <span>Alerta en</span>
-                <span className="font-bold text-yellow-300">${CRM_CONFIG.cpl_thresholds.padres_de_familia.cpl_alert}</span>
+                <span className="text-fitzone-lightGray">Alerta en</span>
+                <span className="font-bold text-amber-600">${CRM_CONFIG.cpl_thresholds.padres_de_familia.cpl_alert}</span>
               </div>
               <div className="flex justify-between text-xs sm:text-sm">
-                <span>Pausar en</span>
-                <span className="font-bold text-red-300">${CRM_CONFIG.cpl_thresholds.padres_de_familia.cpl_pause}</span>
+                <span className="text-fitzone-lightGray">Pausar en</span>
+                <span className="font-bold text-red-600">${CRM_CONFIG.cpl_thresholds.padres_de_familia.cpl_pause}</span>
               </div>
             </div>
           </div>
@@ -376,14 +378,18 @@ export default function OptimizationLayer() {
         {/* Alertas Recientes */}
         {CRM_MOCKUP && CRM_MOCKUP.alerts && CRM_MOCKUP.alerts.length > 0 && (
           <div className="space-y-1.5 sm:space-y-2">
-            <h4 className="font-bold text-xs sm:text-sm mb-1.5 sm:mb-2">Alertas Recientes:</h4>
+            <h4 className="font-bold text-xs sm:text-sm mb-1.5 sm:mb-2 text-fitzone-navy">Alertas Recientes:</h4>
             {CRM_MOCKUP.alerts.slice(0, 2).map((alert, idx) => (
               <div key={idx} className={`p-2 sm:p-3 rounded-lg ${
-                alert.type === 'critical' ? 'bg-red-500/30 border border-red-300' :
-                alert.type === 'warning' ? 'bg-yellow-500/30 border border-yellow-300' :
-                'bg-green-500/30 border border-green-300'
+                alert.type === 'critical' ? 'bg-red-50 border border-red-200' :
+                alert.type === 'warning' ? 'bg-amber-50 border border-amber-200' :
+                'bg-emerald-50 border border-emerald-200'
               }`}>
-                <p className="text-xs sm:text-sm font-medium">{alert.message}</p>
+                <p className={`text-xs sm:text-sm font-medium ${
+                  alert.type === 'critical' ? 'text-red-800' :
+                  alert.type === 'warning' ? 'text-amber-800' :
+                  'text-emerald-800'
+                }`}>{alert.message}</p>
               </div>
             ))}
           </div>
@@ -484,24 +490,24 @@ export default function OptimizationLayer() {
                 <GraduationCap className="w-4 h-4 sm:w-5 sm:h-5" />
                 UPN — Universidad Privada del Norte
               </h4>
-              <p className="text-xs text-white/70 mb-2">Red Laureate · Value Premium · Mejor empleabilidad vs precio en el segmento</p>
+              <p className="text-xs text-white/90 mb-2">Red Laureate · Value Premium · Mejor empleabilidad vs precio en el segmento</p>
               <div className="flex flex-wrap gap-4 sm:gap-6">
                 <div>
-                  <p className="text-xs text-white/70">Share of Voice</p>
+                  <p className="text-xs text-white/80">Share of Voice</p>
                   <p className="text-lg sm:text-xl font-bold">20%</p>
                 </div>
                 <div>
-                  <p className="text-xs text-white/70">Sentimiento</p>
+                  <p className="text-xs text-white/80">Sentimiento</p>
                   <p className="text-lg sm:text-xl font-bold">79%</p>
                 </div>
                 <div>
-                  <p className="text-xs text-white/70">Campus</p>
+                  <p className="text-xs text-white/80">Campus</p>
                   <p className="text-lg sm:text-xl font-bold">10</p>
                 </div>
               </div>
             </div>
             <div className="sm:text-right">
-              <span className="px-2 sm:px-3 py-1.5 sm:py-2 bg-white/20 rounded-lg text-xs sm:text-sm font-bold inline-block">
+              <span className="px-2 sm:px-3 py-1.5 sm:py-2 bg-white/25 rounded-lg text-xs sm:text-sm font-bold inline-block border border-white/30">
                 Nuestra Marca
               </span>
             </div>

@@ -374,7 +374,7 @@ export default function DataLayer() {
             <Search className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
             <div className="text-left min-w-0">
               <h3 className="text-sm sm:text-base font-bold">Google Trends</h3>
-              <p className="text-[10px] sm:text-xs text-white/80">Keywords admisión universitaria - Score: {scores.search}/10</p>
+              <p className="text-[10px] sm:text-xs text-white/90">Keywords admisión universitaria - Score: {scores.search}/10</p>
             </div>
           </div>
           {expandedSections.trends ? <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" /> : <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />}
@@ -448,7 +448,7 @@ export default function DataLayer() {
             <Video className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
             <div className="text-left min-w-0">
               <h3 className="text-sm sm:text-base font-bold">TikTok Creative Center</h3>
-              <p className="text-[10px] sm:text-xs text-upn-navy/80">Hashtags virales - Score: {scores.trend}/10</p>
+              <p className="text-[10px] sm:text-xs text-white/90">Hashtags virales - Score: {scores.trend}/10</p>
             </div>
           </div>
           {expandedSections.tiktok ? <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" /> : <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />}
@@ -552,7 +552,7 @@ export default function DataLayer() {
             <Share2 className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
             <div className="text-left min-w-0">
               <h3 className="text-sm sm:text-base font-bold">Meta/Facebook Trends</h3>
-              <p className="text-[10px] sm:text-xs text-white/80">Redes sociales - Score: {scores.social}/10</p>
+              <p className="text-[10px] sm:text-xs text-white/90">Redes sociales - Score: {scores.social}/10</p>
             </div>
           </div>
           {expandedSections.meta ? <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" /> : <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />}
@@ -679,7 +679,7 @@ export default function DataLayer() {
             <BarChart3 className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
             <div className="text-left min-w-0">
               <h3 className="text-sm sm:text-base font-bold">Google Analytics 4</h3>
-              <p className="text-[10px] sm:text-xs text-white/80">Conversión - Score: {scores.intent}/10</p>
+              <p className="text-[10px] sm:text-xs text-white/90">Conversión - Score: {scores.intent}/10</p>
             </div>
           </div>
           {expandedSections.ga4 ? <ChevronUp className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" /> : <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />}
@@ -852,24 +852,24 @@ export default function DataLayer() {
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
           <div>
-            <p className="text-xs sm:text-sm text-white/70 mb-1.5 sm:mb-2 font-semibold">Marca UPN:</p>
+            <p className="text-xs sm:text-sm text-white/90 mb-1.5 sm:mb-2 font-semibold">Marca UPN:</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">UPN</span>
-              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">Admisión UPN</span>
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/30 rounded-full text-xs sm:text-sm">UPN</span>
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/30 rounded-full text-xs sm:text-sm">Admisión UPN</span>
             </div>
           </div>
           <div>
-            <p className="text-xs sm:text-sm text-white/70 mb-1.5 sm:mb-2 font-semibold">Mercado Universitario:</p>
+            <p className="text-xs sm:text-sm text-white/90 mb-1.5 sm:mb-2 font-semibold">Mercado Universitario:</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">Carreras Lima</span>
-              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">Becas 2026</span>
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/30 rounded-full text-xs sm:text-sm">Carreras Lima</span>
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/30 rounded-full text-xs sm:text-sm">Becas 2026</span>
             </div>
           </div>
           <div>
-            <p className="text-xs sm:text-sm text-white/70 mb-1.5 sm:mb-2 font-semibold">Competencia:</p>
+            <p className="text-xs sm:text-sm text-white/90 mb-1.5 sm:mb-2 font-semibold">Competencia:</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">UTP</span>
-              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/20 rounded-full text-xs sm:text-sm">César Vallejo</span>
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/30 rounded-full text-xs sm:text-sm">UTP</span>
+              <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-white/30 rounded-full text-xs sm:text-sm">César Vallejo</span>
             </div>
           </div>
         </div>

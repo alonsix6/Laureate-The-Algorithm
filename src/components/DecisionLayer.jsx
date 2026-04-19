@@ -119,7 +119,7 @@ export default function DecisionLayer() {
               }`}>
                 Grado {getScoreGrade(OPPORTUNITY_SCORE.current_score)}
               </span>
-              <span className="text-fitzone-emerald font-semibold text-xs sm:text-sm">
+              <span className="text-white font-semibold text-xs sm:text-sm">
                 {OPPORTUNITY_SCORE.trend} vs periodo anterior
               </span>
             </div>
@@ -129,21 +129,21 @@ export default function DecisionLayer() {
         {/* Score Components */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           {Object.entries(OPPORTUNITY_SCORE.components).map(([key, component]) => (
-            <div key={key} className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5">
+            <div key={key} className="bg-white/15 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5">
               <div className="flex items-center justify-between mb-2 sm:mb-3">
-                <h4 className="font-semibold text-xs sm:text-sm text-white/80">
+                <h4 className="font-semibold text-xs sm:text-sm text-white/90">
                   {key === 'search_interest' ? 'Interes Busqueda' :
                    key === 'social_engagement' ? 'Engagement Social' :
                    key === 'competitor_gap' ? 'Gap Competitivo' :
                    key === 'seasonal_index' ? 'Indice Estacional' :
                    key === 'conversion_efficiency' ? 'Eficiencia Conversion' : key}
                 </h4>
-                <span className="text-xs bg-white/20 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded">
+                <span className="text-xs bg-white/25 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded">
                   {(component.weight * 100).toFixed(0)}% peso
                 </span>
               </div>
               <div className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">{component.score}</div>
-              <div className="text-xs text-white/70">
+              <div className="text-xs text-white/80">
                 {component.insight}
               </div>
             </div>
@@ -288,66 +288,66 @@ export default function DecisionLayer() {
           <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-white/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Award className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 1: {KEY_MESSAGES.empleabilidad.title}</p>
+              <p className="text-white/70 text-xs sm:text-sm font-semibold">Pilar 1: {KEY_MESSAGES.empleabilidad.title}</p>
             </div>
             <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.empleabilidad.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.empleabilidad.description}</p>
+            <p className="text-white/60 text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.empleabilidad.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Egresados empleados</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Primer sueldo</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs text-white">Egresados empleados</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs text-white">Primer sueldo</span>
             </div>
           </div>
 
           <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-white/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Zap className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 2: {KEY_MESSAGES.acceso.title}</p>
+              <p className="text-white/70 text-xs sm:text-sm font-semibold">Pilar 2: {KEY_MESSAGES.acceso.title}</p>
             </div>
             <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.acceso.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.acceso.description}</p>
+            <p className="text-white/60 text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.acceso.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Becas</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Financiamiento</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs text-white">Becas</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs text-white">Financiamiento</span>
             </div>
           </div>
 
           <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-white/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Users className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 3: {KEY_MESSAGES.acreditacion.title}</p>
+              <p className="text-white/70 text-xs sm:text-sm font-semibold">Pilar 3: {KEY_MESSAGES.acreditacion.title}</p>
             </div>
             <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.acreditacion.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.acreditacion.description}</p>
+            <p className="text-white/60 text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.acreditacion.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">SUNEDU</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Acreditada</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs text-white">SUNEDU</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs text-white">Acreditada</span>
             </div>
           </div>
 
           <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-white/20">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <Target className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 4: {KEY_MESSAGES.red.title}</p>
+              <p className="text-white/70 text-xs sm:text-sm font-semibold">Pilar 4: {KEY_MESSAGES.red.title}</p>
             </div>
             <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.red.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.red.description}</p>
+            <p className="text-white/60 text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.red.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Laureate</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Red global</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs text-white">Laureate</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs text-white">Red global</span>
             </div>
           </div>
 
           <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-white/20 sm:col-span-2">
             <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
               <AlertCircle className="w-4 h-4 sm:w-5 sm:h-5 text-fitzone-purple" />
-              <p className="text-fitzone-textGray text-xs sm:text-sm font-semibold">Pilar 5: {KEY_MESSAGES.flexibilidad.title}</p>
+              <p className="text-white/70 text-xs sm:text-sm font-semibold">Pilar 5: {KEY_MESSAGES.flexibilidad.title}</p>
             </div>
             <p className="text-sm sm:text-base font-bold mb-1 sm:mb-2">"{KEY_MESSAGES.flexibilidad.message}"</p>
-            <p className="text-fitzone-textGray text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.flexibilidad.description}</p>
+            <p className="text-white/60 text-xs sm:text-sm mb-2 sm:mb-3">{KEY_MESSAGES.flexibilidad.description}</p>
             <div className="flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Modalidad virtual</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Horarios noche</span>
-              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-fitzone-purple/20 rounded text-xs">Trabajo + estudio</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs text-white">Modalidad virtual</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs text-white">Horarios noche</span>
+              <span className="px-1.5 sm:px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs text-white">Trabajo + estudio</span>
             </div>
           </div>
         </div>

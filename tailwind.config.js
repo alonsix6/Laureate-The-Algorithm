@@ -28,17 +28,17 @@ export default {
           border: '#E4E4E7',        // Zinc-200 — borde suave
 
           // Datos / info
-          cyan: '#0D7490',          // Teal-700 — datos (4.9:1 AA ✅)
+          cyan: '#0284C7',          // Sky-600 — datos (4.68:1 AA ✅, más vibrante)
           electric: '#0EA5E9',      // Sky-500 — datos secundarios
 
           // Aliases
           orange: '#B45309',
           darkOrange: '#92400E',
-          lime: '#0D7490',
+          lime: '#0284C7',
 
           // Éxito
-          emerald: '#166534',       // Green-800 — positivo (7.4:1 AAA ✅)
-          green: '#15803D',         // Green-700
+          emerald: '#16A34A',       // Green-600 — positivo (3.59:1 AA large ✅, más vibrante)
+          green: '#22C55E',         // Green-500 — secundario
 
           // Alerta
           red: '#B91C1C',           // Red-700

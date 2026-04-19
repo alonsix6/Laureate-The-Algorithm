@@ -70,25 +70,25 @@ export default function ExecutionLayer() {
 
           <div className="text-left sm:text-center lg:text-right">
             <div className="flex items-baseline gap-1 sm:gap-2">
-              <span className="text-base sm:text-lg lg:text-xl text-white/80">$</span>
+              <span className="text-base sm:text-lg lg:text-xl text-white/90">$</span>
               <span className="text-2xl sm:text-3xl lg:text-4xl font-bold">{(BUDGET_ALLOCATION.total_budget / 1000).toFixed(0)}K</span>
             </div>
-            <p className="text-white/80 mt-1 sm:mt-2 text-xs sm:text-sm">Total presupuesto mensual</p>
+            <p className="text-white/90 mt-1 sm:mt-2 text-xs sm:text-sm">Total presupuesto mensual</p>
           </div>
         </div>
 
         {/* Budget Progress */}
-        <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5">
+        <div className="bg-white/15 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5">
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-2 mb-2 sm:mb-3">
             <span className="text-xs sm:text-sm font-medium">Ejecución del mes</span>
             <span className="text-lg sm:text-xl font-bold">
               ${(Object.values(BUDGET_ALLOCATION.distribution).reduce((sum, ch) => sum + ch.amount, 0)).toLocaleString()}
             </span>
           </div>
-          <div className="w-full h-2 sm:h-3 bg-white/20 rounded-full overflow-hidden">
+          <div className="w-full h-2 sm:h-3 bg-white/25 rounded-full overflow-hidden">
             <div className="h-full bg-white rounded-full" style={{ width: '100%' }}></div>
           </div>
-          <p className="text-xs text-white/70 mt-1.5 sm:mt-2">100% del presupuesto asignado</p>
+          <p className="text-xs text-white/80 mt-1.5 sm:mt-2">100% del presupuesto asignado</p>
         </div>
       </div>
 
@@ -328,56 +328,58 @@ export default function ExecutionLayer() {
       </div>
 
       {/* Timing Recommendations */}
-      <div className="bg-fitzone-cyan text-white rounded-xl sm:rounded-2xl shadow-lg p-4 sm:p-6 lg:p-8">
+      <div className="bg-white rounded-xl sm:rounded-2xl shadow-card border border-fitzone-cyan/20 p-4 sm:p-6 lg:p-8">
         <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-          <Calendar className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8" />
-          <h3 className="text-base sm:text-lg font-bold">Timing Óptimo de Campaña</h3>
+          <div className="w-9 h-9 bg-fitzone-cyan rounded-lg flex items-center justify-center flex-shrink-0">
+            <Calendar className="w-5 h-5 text-white" />
+          </div>
+          <h3 className="text-base sm:text-lg font-bold text-fitzone-navy">Timing Óptimo de Campaña</h3>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-          <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5">
-            <h4 className="font-bold text-sm sm:text-base mb-2 sm:mb-3">Mejores horarios del día</h4>
+          <div className="bg-fitzone-darkSlate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-border">
+            <h4 className="font-bold text-sm sm:text-base mb-2 sm:mb-3 text-fitzone-navy">Mejores horarios del día</h4>
             <div className="space-y-2">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-2">
-                <span className="text-white/90 text-xs sm:text-sm">5:00 - 8:00 AM (Early birds)</span>
-                <span className="px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs sm:text-sm font-bold w-fit">+40%</span>
+                <span className="text-fitzone-lightGray text-xs sm:text-sm">5:00 - 8:00 AM (Early birds)</span>
+                <span className="px-2 py-0.5 sm:py-1 bg-fitzone-cyan/10 text-fitzone-cyan border border-fitzone-cyan/20 rounded text-xs sm:text-sm font-bold w-fit">+40%</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-2">
-                <span className="text-white/90 text-xs sm:text-sm">12:00 - 2:00 PM (Lunch)</span>
-                <span className="px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs sm:text-sm font-bold w-fit">+10%</span>
+                <span className="text-fitzone-lightGray text-xs sm:text-sm">12:00 - 2:00 PM (Lunch)</span>
+                <span className="px-2 py-0.5 sm:py-1 bg-fitzone-cyan/10 text-fitzone-cyan border border-fitzone-cyan/20 rounded text-xs sm:text-sm font-bold w-fit">+10%</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-2">
-                <span className="text-white/90 text-xs sm:text-sm">6:00 - 9:00 PM (After work)</span>
-                <span className="px-2 py-0.5 sm:py-1 bg-fitzone-emerald/30 rounded text-xs sm:text-sm font-bold w-fit">+60%</span>
+                <span className="text-fitzone-lightGray text-xs sm:text-sm">6:00 - 9:00 PM (After work)</span>
+                <span className="px-2 py-0.5 sm:py-1 bg-fitzone-emerald/15 text-fitzone-emerald border border-fitzone-emerald/25 rounded text-xs sm:text-sm font-bold w-fit">+60%</span>
               </div>
             </div>
-            <p className="text-[10px] sm:text-xs text-white/70 mt-2 sm:mt-3">Pico máximo: 6-9 PM post-trabajo</p>
+            <p className="text-[10px] sm:text-xs text-fitzone-textGray mt-2 sm:mt-3">Pico máximo: 6-9 PM post-trabajo</p>
           </div>
 
-          <div className="bg-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5">
-            <h4 className="font-bold text-sm sm:text-base mb-2 sm:mb-3">Mejores días de la semana</h4>
+          <div className="bg-fitzone-darkSlate rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5 border border-fitzone-border">
+            <h4 className="font-bold text-sm sm:text-base mb-2 sm:mb-3 text-fitzone-navy">Mejores días de la semana</h4>
             <div className="space-y-2">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-2">
-                <span className="text-white/90 text-xs sm:text-sm">Lunes</span>
-                <span className="px-2 py-0.5 sm:py-1 bg-fitzone-emerald/30 rounded text-xs sm:text-sm font-bold w-fit">Muy Alta</span>
+                <span className="text-fitzone-lightGray text-xs sm:text-sm">Lunes</span>
+                <span className="px-2 py-0.5 sm:py-1 bg-fitzone-emerald/15 text-fitzone-emerald border border-fitzone-emerald/25 rounded text-xs sm:text-sm font-bold w-fit">Muy Alta</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-2">
-                <span className="text-white/90 text-xs sm:text-sm">Martes</span>
-                <span className="px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs sm:text-sm font-bold w-fit">Alta</span>
+                <span className="text-fitzone-lightGray text-xs sm:text-sm">Martes</span>
+                <span className="px-2 py-0.5 sm:py-1 bg-fitzone-cyan/10 text-fitzone-cyan border border-fitzone-cyan/20 rounded text-xs sm:text-sm font-bold w-fit">Alta</span>
               </div>
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-2">
-                <span className="text-white/90 text-xs sm:text-sm">Sábado AM</span>
-                <span className="px-2 py-0.5 sm:py-1 bg-white/20 rounded text-xs sm:text-sm font-bold w-fit">Media</span>
+                <span className="text-fitzone-lightGray text-xs sm:text-sm">Sábado AM</span>
+                <span className="px-2 py-0.5 sm:py-1 bg-fitzone-amber/10 text-fitzone-amber border border-fitzone-amber/20 rounded text-xs sm:text-sm font-bold w-fit">Media</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-white/20 rounded-lg sm:rounded-xl">
-          <p className="text-xs sm:text-sm font-semibold mb-1.5 sm:mb-2 flex items-center gap-1.5 sm:gap-2">
+        <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-fitzone-cyan/8 border border-fitzone-cyan/20 rounded-lg sm:rounded-xl">
+          <p className="text-xs sm:text-sm font-semibold mb-1.5 sm:mb-2 flex items-center gap-1.5 sm:gap-2 text-fitzone-cyan">
             <Lightbulb className="w-3 h-3 sm:w-4 sm:h-4" /> Estacionalidad UPN — Admisión:
           </p>
-          <p className="text-xs sm:text-sm">Ene-Feb (pico máximo — admisión 2026-I), Jul-Ago (pico secundario — admisión 2026-II), Nov-Dic (pre-campaña). Marzo-Junio es temporada baja — reducir budget 25%.</p>
+          <p className="text-xs sm:text-sm text-fitzone-lightGray">Ene-Feb (pico máximo — admisión 2026-I), Jul-Ago (pico secundario — admisión 2026-II), Nov-Dic (pre-campaña). Marzo-Junio es temporada baja — reducir budget 25%.</p>
         </div>
       </div>
     </div>
