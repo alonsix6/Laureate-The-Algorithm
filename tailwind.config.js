@@ -50,6 +50,13 @@ export default {
           textGray: '#52525B',      // Zinc-600 — texto muted (5.9:1 AA ✅)
           mediumGray: '#71717A',    // Zinc-500
         },
+        // Platform brand colors (Simple Icons official)
+        platform: {
+          google: '#1A73E8',   // Google Blue — Google Trends (4.34:1 AA ✅)
+          tiktok: '#010101',   // TikTok Black (21:1 AAA ✅)
+          meta: '#1877F2',     // Meta Blue (4.17:1 AA ✅)
+          ga4: '#E37400',      // Google Analytics Orange (large text ✅)
+        },
         // UPN Brand — Ink Navy header
         upn: {
           navy: '#1C2B4A',          // Ink navy — header/nav
