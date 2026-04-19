@@ -132,11 +132,11 @@ export default function DecisionLayer() {
             <div key={key} className="bg-white/15 rounded-lg sm:rounded-xl p-3 sm:p-4 lg:p-5">
               <div className="flex items-center justify-between mb-2 sm:mb-3">
                 <h4 className="font-semibold text-xs sm:text-sm text-white/90">
-                  {key === 'search_interest' ? 'Interes Busqueda' :
+                  {key === 'search_interest' ? 'Interés de Búsqueda' :
                    key === 'social_engagement' ? 'Engagement Social' :
                    key === 'competitor_gap' ? 'Gap Competitivo' :
-                   key === 'seasonal_index' ? 'Indice Estacional' :
-                   key === 'conversion_efficiency' ? 'Eficiencia Conversion' : key}
+                   key === 'seasonal_index' ? 'Índice Estacional' :
+                   key === 'conversion_efficiency' ? 'Eficiencia de Conversión' : key}
                 </h4>
                 <span className="text-xs bg-white/25 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded">
                   {(component.weight * 100).toFixed(0)}% peso

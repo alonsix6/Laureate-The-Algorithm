@@ -3,7 +3,7 @@
   "source": "TikTok Trends via Apify",
   "region": "PE",
   "category": "Education",
-  "client": "UPN — Universidad Privada del Norte",
+  "client": "UPN - Universidad Privada del Norte",
   "trends": {
     "hashtags": [
       {
@@ -159,7 +159,7 @@
   },
   "metadata": {
     "method": "Apify clockworks/tiktok-trends-scraper",
-    "note": "Datos orientados a admisión universitaria UPN — Perú 2026",
+    "note": "Datos orientados a admisión universitaria UPN - Perú 2026",
     "timeframe": "Last 30 days",
     "industry": "Education",
     "items_fetched": 21

@@ -1,5 +1,5 @@
-// Mock Data — UPN (Universidad Privada del Norte) · The Algorithm by Reset
-// Datos simulados realistas para campaña de admisión universitaria — Perú 2026
+// Mock Data - UPN (Universidad Privada del Norte) · The Algorithm by Reset
+// Datos simulados realistas para campaña de admisión universitaria - Perú 2026
 
 // ============================================================================
 // MOCK GA4 DATA - Google Analytics 4 simulado (benchmark SimilarWeb upn.edu.pe)
@@ -191,7 +191,7 @@ export const OPPORTUNITY_SCORE = {
       score: 91,
       weight: 0.25,
       contribution: 22.8,
-      insight: 'Búsquedas "admisión UPN 2026" +38% vs mes anterior — pico estacional activo',
+      insight: 'Búsquedas "admisión UPN 2026" +38% vs mes anterior, pico estacional activo',
     },
     social_engagement: {
       score: 82,
@@ -215,18 +215,18 @@ export const OPPORTUNITY_SCORE = {
       score: 79,
       weight: 0.20,
       contribution: 15.8,
-      insight: 'CPL actual $7.80 — 8.2% bajo del target $8.50 para segmento bachilleres',
+      insight: 'CPL actual $7,80 - 8,2% por debajo del target $8,50 para el segmento bachilleres',
     },
   },
   recommendation: {
-    message: 'Momento óptimo para maximizar inversión en TikTok y Meta. Audiencia de bachilleres en alta intención de búsqueda. Activar campaña de becas para capturar segmento sensible al precio.',
+    message: 'Ventana favorable para incrementar la inversión en TikTok y Meta. La audiencia de bachilleres muestra alta intención de búsqueda. Se sugiere activar una campaña de becas orientada al segmento sensible al precio.',
     confidence: '94%',
     priority: 'high',
     actions: [
-      'Aumentar budget TikTok 30% para semanas pico',
+      'Considerar incremento de presupuesto en TikTok 30% durante las semanas pico',
       'Lanzar campaña "Tu Futuro Empieza Aquí" con testimoniales de egresados',
-      'Activar lead magnets: charla virtual gratuita + brochure de carreras',
-      'Campaña de becas dirigida a padres en Facebook (35-55 años)',
+      'Activar lead magnets: charla virtual gratuita y brochure de carreras',
+      'Considerar campaña de becas dirigida a padres en Facebook (35-55 años)',
     ],
   },
 };
@@ -301,7 +301,7 @@ export const SERVICIOS_PERFORMANCE = [
     cpl: 18.50,
     revenue: 1008000,
     trend: '+8%',
-    precio: 'S/1,200-1,800/mes',
+    precio: 'S/1.200-1.800/mes',
     leadAds: { formularios: 242, conversion_rate: 28, cpl: 14.20 },
     whatsapp: { conversaciones: 102, respondidas: 82, tasa_respuesta: 80 },
   },
@@ -350,7 +350,7 @@ export const COMPETENCIA = [
     type: 'Value / Masivo',
     precio: 'S/450-700/mes',
     fortalezas: ['Mayor volumen', 'Precio competitivo', 'Cobertura nacional'],
-    debilidades: ['Percepción académica menor', 'Alta masificación', 'Soporte limitado'],
+    debilidades: ['Menor diferenciación académica percibida', 'Alta densidad de estudiantes', 'Atención personalizada limitada'],
   },
   {
     name: 'César Vallejo',
@@ -361,7 +361,7 @@ export const COMPETENCIA = [
     type: 'Budget / Nacional',
     precio: 'S/350-550/mes',
     fortalezas: ['Precio muy accesible', 'Presencia nacional', 'Fácil admisión'],
-    debilidades: ['Sin licenciamiento SUNEDU en algunas sedes', 'Baja empleabilidad percibida'],
+    debilidades: ['Licenciamiento SUNEDU en revisión para algunas sedes', 'Empleabilidad percibida por debajo del promedio del segmento'],
   },
   {
     name: 'San Martín',
@@ -372,7 +372,7 @@ export const COMPETENCIA = [
     type: 'Tradicional / Mid',
     precio: 'S/700-1,100/mes',
     fortalezas: ['Trayectoria reconocida', 'Acreditaciones', 'Medicina y Derecho sólidos'],
-    debilidades: ['Precio alto para NSE C', 'Digital marketing débil'],
+    debilidades: ['Precio elevado para NSE C', 'Menor presencia en canales digitales'],
   },
   {
     name: 'USIL',
@@ -392,7 +392,7 @@ export const COMPETENCIA = [
     sedes: 5,
     rank: 5,
     type: 'Premium Laureate',
-    precio: 'S/1,200-1,800/mes',
+    precio: 'S/1.200-1.800/mes',
     fortalezas: ['Misma red Laureate', 'Alta empleabilidad', 'Tecnología e innovación'],
     debilidades: ['Precio inasequible NSE C/D', 'Solo Lima'],
   },
@@ -416,7 +416,7 @@ export const CRM_MOCKUP = {
   campaigns: [
     {
       id: 'camp_001',
-      name: 'Admisión 2026-I — Bachilleres Lima',
+      name: 'Admisión 2026-I - Bachilleres Lima',
       status: 'active',
       budget: 9200,
       spent: 8450,
@@ -428,7 +428,7 @@ export const CRM_MOCKUP = {
     },
     {
       id: 'camp_002',
-      name: 'Google Search — Carreras UPN',
+      name: 'Google Search - Carreras UPN',
       status: 'active',
       budget: 6800,
       spent: 6120,
@@ -452,7 +452,7 @@ export const CRM_MOCKUP = {
     },
     {
       id: 'camp_004',
-      name: 'Becas UPN — Padres de Familia',
+      name: 'Becas UPN - Padres de Familia',
       status: 'active',
       budget: 2200,
       spent: 1950,
@@ -472,7 +472,7 @@ export const CRM_MOCKUP = {
     },
     {
       type: 'warning',
-      message: 'Campaña "Becas — Padres" con CPL $10.54, revisar segmentación 40-50 años',
+      message: 'Campaña "Becas - Padres" con CPL $10.54, revisar segmentación 40-50 años',
       campaign_id: 'camp_004',
       timestamp: '2026-01-20T13:15:00',
     },
@@ -543,7 +543,7 @@ export const BUDGET_ALLOCATION = {
       channel: 'tiktok_ads',
       from: 13,
       to: 20,
-      reason: 'CPL 14% bajo del target, máximo engagement con bachilleres 17-22 durante pico estacional',
+      reason: 'El CPL se ubica 14% por debajo del target con alto engagement en bachilleres 17-22 durante el pico estacional',
       impact: '+280 leads/mes estimados para admisión 2026-I',
     },
     {
@@ -557,7 +557,7 @@ export const BUDGET_ALLOCATION = {
       channel: 'google_display',
       from: 10,
       to: 5,
-      reason: 'Display con conversion rate bajo vs search y social; redistribuir a TikTok en pico de admisión',
+      reason: 'Display presenta una tasa de conversión menor que search y social; se sugiere redistribuir hacia TikTok durante el pico de admisión',
       impact: 'Redistribución más eficiente hacia canales de alta conversión',
     },
   ],
@@ -643,7 +643,7 @@ export const ALERTS = [
     severity: 'high',
     title: 'Pico de admisión detectado',
     message: 'Búsquedas "admisión UPN 2026" y "carreras universitarias Lima" aumentaron 92% esta semana. Ventana crítica de 3 semanas.',
-    action: 'Aumentar budget 25% en TikTok y Meta para capturar demanda pico de enero',
+    action: 'Se recomienda considerar incremento de presupuesto en TikTok y Meta durante el pico de enero',
     timestamp: '2026-01-20T09:00:00',
   },
   {
@@ -651,15 +651,15 @@ export const ALERTS = [
     severity: 'medium',
     title: 'UTP lanzó campaña agresiva de becas',
     message: 'UTP activó "100% de descuento en matrícula" en Meta Ads. Detectado en Ad Library con alto presupuesto estimado.',
-    action: 'Activar diferenciadores: red Laureate, empleabilidad y trato personalizado en creativos',
+    action: 'Se sugiere destacar los diferenciadores de UPN en creativos: red Laureate, empleabilidad y trato personalizado',
     timestamp: '2026-01-19T15:30:00',
   },
   {
     id: 3,
     severity: 'low',
     title: 'Oportunidad en Lima Norte',
-    message: 'Tráfico desde Los Olivos y Comas creció +42% esta semana con CPL de $6.20 — el más bajo de todos los distritos.',
-    action: 'Aumentar segmentación geográfica en Lima Norte; considerar evento presencial campus Los Olivos',
+    message: 'El tráfico desde Los Olivos y Comas creció +42% esta semana con un CPL de $6,20, el más bajo de todos los distritos.',
+    action: 'Se sugiere ampliar la segmentación geográfica en Lima Norte y evaluar un evento presencial en el campus Los Olivos',
     timestamp: '2026-01-19T11:45:00',
   },
   {
@@ -667,7 +667,7 @@ export const ALERTS = [
     severity: 'high',
     title: 'Contenido viral de egresado UPN',
     message: 'TikTok orgánico de egresada de Administración compartiendo primer sueldo alcanzó 840K views en 48h.',
-    action: 'Contactar a la egresada para colaboración pagada y amplificar con paid TikTok Spark Ads',
+    action: 'Se recomienda explorar una colaboración con la egresada y amplificar el contenido mediante TikTok Spark Ads',
     timestamp: '2026-01-18T18:00:00',
   },
 ];
@@ -684,8 +684,8 @@ export const COMPETITOR_INSIGHTS = [
     sentiment: 62,
     threat_level: 'high',
     trending_topics: ['precio accesible', 'muchos campus', 'fácil ingreso', 'clases llenas'],
-    description: 'Mayor volumen del segmento value; saturando canales digitales con presupuesto alto',
-    opportunity: 'Capturar prospectos insatisfechos con masificación — comunicar trato personalizado UPN',
+    description: 'Mayor volumen del segmento value con amplia presencia en canales digitales',
+    opportunity: 'Destacar el trato personalizado de UPN frente a la alta densidad de alumnos del competidor',
   },
   {
     brand: 'César Vallejo',
@@ -695,8 +695,8 @@ export const COMPETITOR_INSIGHTS = [
     sentiment: 54,
     threat_level: 'high',
     trending_topics: ['muy barato', 'fácil de entrar', 'muchas sedes', 'calidad variable'],
-    description: 'Competidor precio-bajo con máxima penetración nacional; bajo costo pero baja reputación',
-    opportunity: 'Capturar segmento que busca calidad y empleabilidad real, no solo precio',
+    description: 'Competidor de precio accesible con amplia penetración nacional',
+    opportunity: 'Conectar con el segmento que valora la calidad académica y la empleabilidad, además del precio',
   },
   {
     brand: 'San Martín',
@@ -728,7 +728,7 @@ export const COMPETITOR_INSIGHTS = [
     sentiment: 82,
     threat_level: 'low',
     trending_topics: ['premium', 'red Laureate', 'tecnología', 'caro', 'empleabilidad alta'],
-    description: 'Hermana premium en Laureate; misma red pero doble precio — sirve de referencia aspiracional',
+    description: 'Hermana premium en Laureate; misma red pero doble precio - sirve de referencia aspiracional',
     opportunity: 'Comunicar los mismos beneficios de red Laureate a mitad de precio de UPC',
   },
   {
@@ -740,7 +740,7 @@ export const COMPETITOR_INSIGHTS = [
     threat_level: null,
     trending_topics: ['empleabilidad', 'red Laureate', 'tecnología', 'becas', 'campus modernos'],
     description: 'Mejor relación calidad-precio del segmento value premium; red Laureate como diferenciador clave',
-    opportunity: 'Aumentar share of voice comunicando empleabilidad comprobada y acceso a red global Laureate',
+    opportunity: 'Fortalecer el share of voice destacando la empleabilidad comprobada y el acceso a la red global Laureate',
   },
 ];
 
@@ -750,10 +750,10 @@ export const COMPETITOR_INSIGHTS = [
 export const TRENDING_SOUNDS = [
   { name: 'Bad Bunny - Un Verano Sin Ti', type: 'Reggaeton', usage: 'Vida universitaria / campus', popularity: 96 },
   { name: 'Bizarrap - Shakira BZRP #53', type: 'Latin Pop', usage: 'Empoderamiento / logros académicos', popularity: 92 },
-  { name: 'Lo-fi Study Beats — Chillhop', type: 'Lo-fi', usage: 'Época de exámenes / estudio', popularity: 88 },
-  { name: 'Grupo 5 — A Ritmo de Cumbia', type: 'Cumbia', usage: 'Contenido gracioso / campus relatable', popularity: 82 },
-  { name: 'Feid — Pantone', type: 'Urbano', usage: 'GRWM primer día de clases', popularity: 90 },
-  { name: 'Junior H — El Azul', type: 'Corridos Tumbados', usage: 'Historias de esfuerzo y éxito', popularity: 78 },
+  { name: 'Lo-fi Study Beats - Chillhop', type: 'Lo-fi', usage: 'Época de exámenes / estudio', popularity: 88 },
+  { name: 'Grupo 5 - A Ritmo de Cumbia', type: 'Cumbia', usage: 'Contenido gracioso / campus relatable', popularity: 82 },
+  { name: 'Feid - Pantone', type: 'Urbano', usage: 'GRWM primer día de clases', popularity: 90 },
+  { name: 'Junior H - El Azul', type: 'Corridos Tumbados', usage: 'Historias de esfuerzo y éxito', popularity: 78 },
 ];
 
 // ============================================================================

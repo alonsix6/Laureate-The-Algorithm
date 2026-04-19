@@ -10,7 +10,7 @@ export const BRAND_CONFIG = {
   subtitle: 'Optimización automática de inversión digital en captación de estudiantes',
   product: 'Pregrado y Posgrado 2026',
   market: 'Lima Metropolitana y Norte del Perú (10 campus)',
-  client: 'UPN — Universidad Privada del Norte',
+  client: 'UPN - Universidad Privada del Norte',
   agency: 'Reset Agency',
   isTemplate: false,
   version: '1.0.0',
@@ -61,13 +61,13 @@ export const LAYER_CONFIG = {
 // ============================================================================
 export const KEY_MESSAGES = {
   empleabilidad: {
-    title: 'Empleabilidad Garantizada',
+    title: 'Empleabilidad Comprobada',
     message: '9 de cada 10 egresados consigue empleo en su primer año',
-    description: '5 Estrellas QS en Empleabilidad — el mejor indicador del mercado',
+    description: '5 Estrellas QS en Empleabilidad, el mejor indicador del mercado',
   },
   acceso: {
     title: 'Calidad Accesible',
-    message: 'Desde S/450/cuota — educación internacional sin costo internacional',
+    message: 'Desde S/450/cuota - educación internacional sin costo internacional',
     description: 'Becas, financiamiento y planes de pago a tu medida',
   },
   acreditacion: {
@@ -77,7 +77,7 @@ export const KEY_MESSAGES = {
   },
   red: {
     title: 'Red Laureate Global',
-    message: 'Parte de Laureate International Universities — 25+ países',
+    message: 'Parte de Laureate International Universities - 25+ países',
     description: 'Intercambios internacionales y doble titulación disponibles',
   },
   flexibilidad: {
@@ -212,9 +212,9 @@ export const SEDES_CONFIG = [
   { id: 4, name: 'UPN Comas', distrito: 'Comas', nse: 'C', size: 'Campus Completo', type: 'Lima Norte' },
   { id: 5, name: 'UPN San Juan de Lurigancho', distrito: 'SJL', nse: 'C', size: 'Campus Completo', type: 'Lima Este' },
   { id: 6, name: 'UPN San Juan de Miraflores', distrito: 'SJM', nse: 'B/C', size: 'Campus Completo', type: 'Lima Sur' },
-  { id: 7, name: 'UPN Ate', distrito: 'Ate', nse: 'C', size: 'Campus Nuevo', type: 'Lima Este — Inversión US$28M' },
+  { id: 7, name: 'UPN Ate', distrito: 'Ate', nse: 'C', size: 'Campus Nuevo', type: 'Lima Este - Inversión US$28M' },
   { id: 8, name: 'UPN Trujillo El Molino', distrito: 'Trujillo', nse: 'B/C', size: 'Campus Regional', type: 'Sede Fundacional 1994' },
-  { id: 9, name: 'UPN Trujillo San Isidro', distrito: 'Trujillo Norte', nse: 'B/C', size: 'Campus Regional', type: 'Trujillo — La Libertad' },
+  { id: 9, name: 'UPN Trujillo San Isidro', distrito: 'Trujillo Norte', nse: 'B/C', size: 'Campus Regional', type: 'Trujillo - La Libertad' },
   { id: 10, name: 'UPN Cajamarca', distrito: 'Cajamarca', nse: 'B/C', size: 'Campus Regional', type: 'Sierra Norte' },
 ];
 
@@ -271,20 +271,20 @@ export const TARGET_AUDIENCES = [
     priority: 'high',
     segments: [
       {
-        name: 'Padres NSE B — Lima',
+        name: 'Padres NSE B - Lima',
         size: '~280,000',
         age: '35-48',
         characteristics: ['Priorizan reputación', 'Buscan empleabilidad', 'Investigan en Google y Facebook'],
       },
       {
-        name: 'Padres NSE C — Lima y Trujillo',
+        name: 'Padres NSE C - Lima y Trujillo',
         size: '~470,000',
         age: '40-55',
         characteristics: ['Costo y financiamiento decisivo', 'SUNEDU es garantía de calidad', 'WhatsApp para consultas'],
       },
     ],
     interests: ['Empleabilidad del egresado', 'Costo y becas', 'Licencia SUNEDU', 'Seguridad del campus'],
-    message: 'La mejor inversión para el futuro de tu hijo/a — desde S/450/cuota',
+    message: 'La mejor inversión para el futuro de tu hijo/a - desde S/450/cuota',
     channels: {
       'Facebook': 43,
       'Google Search': 22,
@@ -315,20 +315,20 @@ export const OPTIMAL_TIMING = {
     { name: 'Noche', hours: '20:00 - 23:00', performance: 'high', multiplier: 1.3, audience: 'Jóvenes 17-22' },
   ],
   weekdays: [
-    { name: 'Lunes', performance: 'high', recommended: true, note: 'Inicio de semana — decisión activa' },
+    { name: 'Lunes', performance: 'high', recommended: true, note: 'Inicio de semana - decisión activa' },
     { name: 'Martes', performance: 'very_high', recommended: true, note: 'Pico de búsquedas de carreras' },
     { name: 'Miércoles', performance: 'high', recommended: true, note: 'Comparación de opciones' },
-    { name: 'Jueves', performance: 'high', recommended: true, note: 'Pre-fin de semana — visita campus' },
+    { name: 'Jueves', performance: 'high', recommended: true, note: 'Pre-fin de semana - visita campus' },
     { name: 'Viernes', performance: 'medium', recommended: true, note: 'Charlas de orientación' },
     { name: 'Sábado', performance: 'high', recommended: true, note: 'Ferias universitarias, visita campus' },
     { name: 'Domingo', performance: 'medium', recommended: false, note: 'Consultas familiares informales' },
   ],
   seasonality: [
-    { month: 'Enero-Febrero', demand: 'very_high', note: 'Pico máximo — admisión Semestre I' },
+    { month: 'Enero-Febrero', demand: 'very_high', note: 'Pico máximo - admisión Semestre I' },
     { month: 'Marzo', demand: 'high', note: 'Inicio de ciclo, inscripciones tardías' },
     { month: 'Abril-Mayo', demand: 'medium', note: 'Pre-admisión Semestre II' },
     { month: 'Junio', demand: 'high', note: 'Inicio admisión Semestre II' },
-    { month: 'Julio-Agosto', demand: 'very_high', note: 'Pico secundario — admisión Semestre II' },
+    { month: 'Julio-Agosto', demand: 'very_high', note: 'Pico secundario - admisión Semestre II' },
     { month: 'Sept-Oct', demand: 'medium', note: 'Pre-admisión ciclo siguiente' },
     { month: 'Nov-Dic', demand: 'high', note: 'Pre-inscripción anticipada Semestre I' },
   ],
@@ -338,11 +338,11 @@ export const OPTIMAL_TIMING = {
 // PROGRAMAS - Productos académicos UPN monitoreados
 // ============================================================================
 export const SERVICIOS_CONFIG = [
-  { id: 1, nombre: 'Pregrado — Ingeniería', revenue_pct: 32, cpl_target: 7, conversion: 8 },
-  { id: 2, nombre: 'Pregrado — Negocios', revenue_pct: 28, cpl_target: 7, conversion: 9 },
-  { id: 3, nombre: 'Pregrado — Derecho y CC.SS.', revenue_pct: 18, cpl_target: 8, conversion: 7 },
-  { id: 4, nombre: 'Pregrado — Ciencias de la Salud', revenue_pct: 12, cpl_target: 9, conversion: 6 },
-  { id: 5, nombre: 'Posgrado — MBA Ejecutivo', revenue_pct: 6, cpl_target: 20, conversion: 5 },
+  { id: 1, nombre: 'Pregrado - Ingeniería', revenue_pct: 32, cpl_target: 7, conversion: 8 },
+  { id: 2, nombre: 'Pregrado - Negocios', revenue_pct: 28, cpl_target: 7, conversion: 9 },
+  { id: 3, nombre: 'Pregrado - Derecho y CC.SS.', revenue_pct: 18, cpl_target: 8, conversion: 7 },
+  { id: 4, nombre: 'Pregrado - Ciencias de la Salud', revenue_pct: 12, cpl_target: 9, conversion: 6 },
+  { id: 5, nombre: 'Posgrado - MBA Ejecutivo', revenue_pct: 6, cpl_target: 20, conversion: 5 },
   { id: 6, nombre: 'Educación Continua / Diplomas', revenue_pct: 4, cpl_target: 12, conversion: 8 },
 ];
 
@@ -430,7 +430,7 @@ export const UI_TEXT = {
   retry: 'Reintentar',
 
   footer: {
-    copyright: '2026 The Algorithm by Reset · UPN — Universidad Privada del Norte',
+    copyright: '2026 The Algorithm by Reset · UPN - Universidad Privada del Norte',
     version: 'v1.0.0',
   },
 

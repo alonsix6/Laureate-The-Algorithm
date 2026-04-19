@@ -76,7 +76,7 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-fitzone-charcoal">
-      {/* Header — dark navy, enterprise style */}
+      {/* Header - dark navy, enterprise style */}
       <header className="bg-upn-navy text-white shadow-nav border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
@@ -116,7 +116,7 @@ export default function Dashboard() {
         </div>
       </header>
 
-      {/* Layer Navigation — dark sub-header */}
+      {/* Layer Navigation - dark sub-header */}
       <div className="bg-upn-deepNavy border-b border-white/10 sticky top-0 z-40 shadow-nav">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex gap-2 overflow-x-auto py-3 scrollbar-hide">
@@ -151,7 +151,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Main Content — light background */}
+      {/* Main Content - light background */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="animate-fadeIn">
           {activeLayer === 'data' && <DataLayer />}
@@ -161,7 +161,7 @@ export default function Dashboard() {
         </div>
       </main>
 
-      {/* Footer — dark to match header */}
+      {/* Footer - dark to match header */}
       <footer className="bg-upn-navy border-t border-white/10 mt-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
