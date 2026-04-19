@@ -340,20 +340,20 @@ export default function DataLayer() {
         </div>
 
         {/* Multi-Source Analysis - Full Width at Bottom */}
-        <div className="relative bg-gradient-to-r from-fitzone-purple/20 to-fitzone-cyan/20 rounded-xl p-3 sm:p-6 border border-fitzone-purple/30">
+        <div className="relative bg-fitzone-slate rounded-xl p-3 sm:p-6 border border-fitzone-border">
           <div className="flex items-start gap-2 sm:gap-4">
-            <div className="w-10 h-10 sm:w-14 sm:h-14 bg-gradient-to-br from-fitzone-purple to-fitzone-cyan rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 sm:w-14 sm:h-14 bg-fitzone-purple rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
               <Layers className="w-5 h-5 sm:w-7 sm:h-7 text-white" />
             </div>
             <div className="flex-1 min-w-0">
               <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
                 <p className="text-xs sm:text-sm font-bold text-fitzone-purple uppercase tracking-wider">{multiSourceInsight.source}</p>
-                <span className="bg-fitzone-purple/30 text-fitzone-purple px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold">
+                <span className="bg-fitzone-purple/15 text-fitzone-purple px-2 sm:px-3 py-0.5 sm:py-1 rounded-full text-[10px] sm:text-xs font-bold border border-fitzone-purple/20">
                   Consolidado
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-fitzone-lightGray leading-relaxed mb-2 sm:mb-3">{multiSourceInsight.text}</p>
-              <div className="bg-upn-navy/80 rounded-lg p-2 sm:p-3 border border-fitzone-purple/20">
+              <div className="rounded-lg p-2 sm:p-3 border border-fitzone-emerald/25 bg-fitzone-emerald/10">
                 <p className="text-xs sm:text-sm text-fitzone-emerald font-semibold flex items-start sm:items-center gap-1.5 sm:gap-2">
                   <Lightbulb className="w-3.5 h-3.5 sm:w-4 sm:h-4 flex-shrink-0 mt-0.5 sm:mt-0" />
                   <span>{multiSourceInsight.recommendation}</span>
@@ -361,7 +361,7 @@ export default function DataLayer() {
               </div>
             </div>
           </div>
-          <div className="absolute top-0 left-0 w-1 sm:w-1.5 h-full bg-gradient-to-b from-fitzone-purple to-fitzone-cyan rounded-l-xl"></div>
+          <div className="absolute top-0 left-0 w-1 sm:w-1.5 h-full bg-fitzone-purple rounded-l-xl"></div>
         </div>
       </div>
 
