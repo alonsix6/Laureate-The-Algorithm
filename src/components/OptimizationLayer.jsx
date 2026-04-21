@@ -15,31 +15,31 @@ export default function OptimizationLayer() {
 
   // Performance últimos 7 días - UPN Admisión
   const performanceData = [
-    { date: '14 Ene', leads: 58, reach: 340000, engagement: 32500, spent: 3280 },
-    { date: '15 Ene', leads: 72, reach: 385000, engagement: 38200, spent: 3520 },
-    { date: '16 Ene', leads: 64, reach: 360000, engagement: 35100, spent: 3380 },
-    { date: '17 Ene', leads: 85, reach: 410000, engagement: 42800, spent: 3680 },
-    { date: '18 Ene', leads: 78, reach: 395000, engagement: 39600, spent: 3580 },
-    { date: '19 Ene', leads: 92, reach: 445000, engagement: 48500, spent: 3850 },
-    { date: '20 Ene', leads: 68, reach: 375000, engagement: 36200, spent: 3420 }
+    { date: '14 Ene', leads: 262, reach: 1520000, engagement: 146000, spent: 14800 },
+    { date: '15 Ene', leads: 326, reach: 1732000, engagement: 172000, spent: 15800 },
+    { date: '16 Ene', leads: 290, reach: 1620000, engagement: 158000, spent: 15200 },
+    { date: '17 Ene', leads: 386, reach: 1845000, engagement: 193000, spent: 16600 },
+    { date: '18 Ene', leads: 354, reach: 1778000, engagement: 178000, spent: 16100 },
+    { date: '19 Ene', leads: 418, reach: 2003000, engagement: 218000, spent: 17300 },
+    { date: '20 Ene', leads: 308, reach: 1688000, engagement: 163000, spent: 15400 }
   ];
 
   // Channel performance distribution - UPN
   const channelData = [
-    { name: 'Meta Ads', value: 38, leads: 975, color: '#FF6B35' },
-    { name: 'Google Search', value: 32, leads: 820, color: '#00D4FF' },
-    { name: 'TikTok Ads', value: 13, leads: 334, color: '#B8FF00' },
-    { name: 'Display', value: 10, leads: 257, color: '#F97316' },
-    { name: 'Influencers', value: 7, leads: 179, color: '#14B8A6' }
+    { name: 'TikTok Ads', value: 32, leads: 4390, color: '#010101' },
+    { name: 'Meta Ads', value: 28, leads: 3040, color: '#1877F2' },
+    { name: 'Google Search', value: 22, leads: 1850, color: '#1A73E8' },
+    { name: 'Display', value: 10, leads: 685, color: '#E37400' },
+    { name: 'Influencers', value: 8, leads: 548, color: '#14B8A6' }
   ];
 
   // Funnel de conversión UPN - Journey del prospecto
   const funnelSteps = [
-    { stage: 'Alcance', value: 2350000, conversionRate: 3.2, IconComponent: Users, bgColor: 'bg-fitzone-purple' },
-    { stage: 'Visitas Landing', value: 74200, conversionRate: 3.5, IconComponent: Globe, bgColor: 'bg-fitzone-darkPurple' },
-    { stage: 'Leads Generados', value: 2565, conversionRate: 72.1, IconComponent: Activity, bgColor: 'bg-fitzone-cyan' },
-    { stage: 'Leads Calificados', value: 1850, conversionRate: 24.3, IconComponent: Target, bgColor: 'bg-fitzone-emerald' },
-    { stage: 'Nuevos Matriculados', value: 449, conversionRate: null, IconComponent: CheckCircle, bgColor: 'bg-green-500' }
+    { stage: 'Alcance', value: 10400000, conversionRate: 3.2, IconComponent: Users, bgColor: 'bg-fitzone-purple' },
+    { stage: 'Visitas Landing', value: 334000, conversionRate: 3.4, IconComponent: Globe, bgColor: 'bg-fitzone-darkPurple' },
+    { stage: 'Leads Generados', value: 11400, conversionRate: 71.9, IconComponent: Activity, bgColor: 'bg-fitzone-cyan' },
+    { stage: 'Leads Calificados', value: 8200, conversionRate: 23.8, IconComponent: Target, bgColor: 'bg-fitzone-emerald' },
+    { stage: 'Nuevos Matriculados', value: 1950, conversionRate: null, IconComponent: CheckCircle, bgColor: 'bg-green-500' }
   ];
 
   return (
