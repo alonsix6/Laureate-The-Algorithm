@@ -16,37 +16,37 @@ export default function DecisionLayer() {
     {
       priority: 'high',
       category: 'TikTok Ads',
-      action: 'Aumentar budget TikTok 30% - CPL $7.29 supera el objetivo, pico estacional de admisión activo',
-      impact: '+280 leads/mes estimados de bachilleres 17-22',
-      confidence: 94
+      action: 'Canal principal activo: $32.000/mes con CPL $7,29 - mantener producción constante de creativos de vida universitaria y testimoniales reales',
+      impact: '4.390 leads/mes proyectados de bachilleres 17-22 (mayor volumen del portfolio)',
+      confidence: 96
     },
     {
       priority: 'high',
       category: 'Campaña',
-      action: 'Lanzar "Tu Futuro Empieza Aquí" - Enero-Febrero es ventana crítica de admisión (+92% búsquedas)',
-      impact: '+420 charlas de orientación estimadas primera quincena',
+      action: 'Activar "Tu Futuro Empieza Aquí" - Enero-Febrero es la ventana crítica de admisión (+92% búsquedas)',
+      impact: '+1.900 charlas de orientación proyectadas en la primera quincena',
       confidence: 92
     },
     {
       priority: 'medium',
       category: 'Influencers',
-      action: 'Activar micro-influencers universitarios (10-50K) - UGC de egresados tiene 3.8x engagement vs branded',
-      impact: '+680K alcance orgánico estimado en segmento 16-24',
+      action: 'Activar micro-influencers universitarios (10-50K seguidores) - el UGC de egresados genera 3,8x más engagement que el contenido de marca',
+      impact: '+3,1M de alcance orgánico estimado en el segmento 16-24',
       confidence: 88
     },
     {
       priority: 'medium',
       category: 'Becas',
-      action: 'Campaña de becas dirigida a padres (Facebook 35-55) - Segmento sensible al precio en pico decisión',
-      impact: 'Capturar segmento NSE C con alta intención de postular',
+      action: 'Reforzar campaña de becas en Meta dirigida a padres (Facebook 35-55) - segmento sensible al precio en pico de decisión',
+      impact: 'Proyección de 850 leads calificados de padres NSE C durante el ciclo',
       confidence: 85
     },
     {
       priority: 'low',
       category: 'Lima Norte',
-      action: 'Aumentar budget 20% para Los Olivos/Comas - CPL $6.20 vs promedio $7.80 del portfolio',
-      impact: '+120 leads adicionales/mes en Lima Norte',
-      confidence: 78
+      action: 'Reforzar segmentación geográfica en Los Olivos/Comas - CPL $6,10 vs promedio $7,20 del portfolio',
+      impact: '+550 leads adicionales/mes concentrados en Lima Norte',
+      confidence: 80
     }
   ];
 
